@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <InstanceOfName>_ML2_ts_block1</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="R_ALL" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="SwAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="AutoRuning" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Arrived" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="R_SeimAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="Q0_Auto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="q0_AutoWaiting" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q0_SemiAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P1_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q1_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P2_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q2_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P3_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q3_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P4_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q4_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P5_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q5_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P6_Control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q6_control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q99_none" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q99_Any" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="memarrived" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="reset_Qs" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="last_button_stands_Instance" Datatype="&quot;last_button_stands&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="pt" Datatype="Time" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="safe1" Datatype="Bool" />
+          <Member Name="safe2" Datatype="Bool" />
+          <Member Name="safe3" Datatype="Bool" />
+          <Member Name="safe4" Datatype="Bool" />
+          <Member Name="safe5" Datatype="Bool" />
+          <Member Name="safe6" Datatype="Bool" />
+          <Member Name="safe7" Datatype="Bool" />
+          <Member Name="safe8" Datatype="Bool" />
+          <Member Name="none_selected" Datatype="Bool" />
+          <Member Name="change_trig" Datatype="Bool" />
+          <Member Name="reset_or_ch_or_none" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="B1" Datatype="Bool" />
+          <Member Name="B2" Datatype="Bool" />
+          <Member Name="B3" Datatype="Bool" />
+          <Member Name="B4" Datatype="Bool" />
+          <Member Name="B5" Datatype="Bool" />
+          <Member Name="B6" Datatype="Bool" />
+          <Member Name="B7" Datatype="Bool" />
+          <Member Name="B8" Datatype="Bool" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="t" Datatype="Array[1..8] of R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="B" Datatype="Array[1..8] of Bool" />
+          <Member Name="S" Datatype="Array[1..8] of Bool" />
+          <Member Name="tp" Datatype="&quot;tp_peter&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+                <Member Name="pt" Datatype="Time" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="was" Datatype="Bool" />
+                <Member Name="ton" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Q_integer" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="trDefect" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="trSpot" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_Spot" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_Defect" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuHome" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_load" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuControl1" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuControl2" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>deleter</Name>
+      <Namespace />
+      <Number>66</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

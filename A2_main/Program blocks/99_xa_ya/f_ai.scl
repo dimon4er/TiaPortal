@@ -1,0 +1,12 @@
+﻿FUNCTION "f_ai" : Real
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      in : Int;
+   END_VAR
+
+
+BEGIN
+	#f_ai:=INT_TO_REAL(#in)*10.0 /27632.0;
+END_FUNCTION
+

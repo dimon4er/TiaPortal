@@ -1,0 +1,23 @@
+﻿FUNCTION "f_ao_10V" : Int
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      "in 0.0-10.0" : Real;
+   END_VAR
+
+   VAR_TEMP 
+      value_for_10V : Real;
+      "r10.0" : Real;
+   END_VAR
+
+
+BEGIN
+	#value_for_10V := 27648.0;(* tested FPY value 27175.0 *)
+	#"r10.0" := 10.0;
+	#f_ao_10V := DINT_TO_INT(
+	                                 REAL_TO_DINT(
+	                                              LIMIT(IN := #"in 0.0-10.0", MN := 0, MX := #"r10.0")
+	                                              / #"r10.0" * #value_for_10V)
+	);
+END_FUNCTION
+

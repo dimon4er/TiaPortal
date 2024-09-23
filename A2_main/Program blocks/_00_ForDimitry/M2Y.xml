@@ -1,0 +1,1568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <InstanceOfName>axis_FBD</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="mm_per_ reductur outputshaft_rev (AskURmechEngineer)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="reduction_ rotation (AskURmechEngineer)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ABincrements_per_ encoder_rev (CheckEnc Label and HSC hardware settings dont forget input filtration)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="max_revs_ at_10V (CheckMotorLabel)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="enc_placed_ on_motor not reductor output shaft(visually inspect)" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="isMultiturn (visually inspect)" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="soft_speed_change_req" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENC_REVERSED_DIR" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENCODER_DINT" Datatype="DInt" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetUnison" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetHome" Datatype="Real" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bHome" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bFwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bRev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_fwd_mechOK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_rev_mecOK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_fwd_ind" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_rev_ind" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xPredifCal" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_MODE_EN" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_FWD" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_REV" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_SPDABS" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ExecUni" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TheseAreDoors" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xOverrideLocal" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hbStepPlus" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hbStepMinus" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetStep" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамические_границы_используются" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамическая_граница_fwd" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамическая_граница_rev" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="max_speed_10V_p_mm" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="speed_V" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="speed" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yaINTSPEED" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yFWD" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yREV" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yFwd_STOP" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yRev_STOP" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yIN_POS" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ER" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="WN" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALLOWED" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="dist_stop(check t_acc)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MovingHomeWhileFree" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ERWSTRING" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="aut_target" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="para" Datatype="&quot;typeMotPara&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="POS" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="calibrated" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENC_RET" Datatype="&quot;typePOSMEMcalib&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="MEM" Datatype="Real" />
+          <Member Name="offset" Datatype="Real" />
+          <Member Name="calibrated" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="para_ArtLimits" Datatype="&quot;typeMotPara&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="v_absMax" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="au_execute" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="AMANGRDB" Datatype="&quot;axis_manager&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="allowed" Datatype="Bool" />
+          <Member Name="targetUnison" Datatype="Real" />
+          <Member Name="targetHome" Datatype="Real" />
+          <Member Name="targetStep" Datatype="Real" />
+          <Member Name="bSoftStop" Datatype="Bool" />
+          <Member Name="bHome" Datatype="Bool" />
+          <Member Name="hbStepPlus" Datatype="Bool" />
+          <Member Name="hbStepMinus" Datatype="Bool" />
+          <Member Name="bFwd" Datatype="Bool" />
+          <Member Name="bRev" Datatype="Bool" />
+          <Member Name="Params" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ExecUni" Datatype="Bool" />
+          <Member Name="theseAreDoors" Datatype="Bool" />
+          <Member Name="xOverrideLOCAL" Datatype="Bool" />
+          <Member Name="POS" Datatype="Real" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="team_unison" Datatype="Bool" />
+          <Member Name="team_free" Datatype="Bool" />
+          <Member Name="team_override" Datatype="Bool" />
+          <Member Name="Desk_slowly" Datatype="Bool" />
+          <Member Name="yaSpeedManual" Datatype="Real" />
+          <Member Name="yaSpeedAuto" Datatype="Real" />
+          <Member Name="m_auto" Datatype="Bool" />
+          <Member Name="m_man" Datatype="Bool" />
+          <Member Name="au_execute" Datatype="Bool" />
+          <Member Name="aut_target" Datatype="Real" />
+          <Member Name="OVERRIDE" Datatype="Bool" />
+          <Member Name="ExecutingManuverFreeMode" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="st_Fwd" Datatype="Bool" />
+          <Member Name="st_Rev" Datatype="Bool" />
+          <Member Name="st_speed_slow_or_fast_negative" Datatype="Real" />
+          <Member Name="aman_sel_target_Instance" Datatype="&quot;aman_sel_target&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="allowed" Datatype="Bool" />
+                <Member Name="team_unison" Datatype="Bool" />
+                <Member Name="team_free" Datatype="Bool" />
+                <Member Name="team_override" Datatype="Bool" />
+                <Member Name="xbtnAnyMan" Datatype="Bool" />
+                <Member Name="xbtnHome" Datatype="Bool" />
+                <Member Name="xbtnStepPlus" Datatype="Bool" />
+                <Member Name="xbtnStepMinus" Datatype="Bool" />
+                <Member Name="execUni" Datatype="Bool" />
+                <Member Name="targetUni" Datatype="Real" />
+                <Member Name="targetHome" Datatype="Real" />
+                <Member Name="targetStep" Datatype="Real" />
+                <Member Name="POS" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="ExecuteSemiAutoManuver" Datatype="Bool" />
+                <Member Name="m_auto" Datatype="Bool" />
+                <Member Name="m_man" Datatype="Bool" />
+                <Member Name="m_override" Datatype="Bool" />
+                <Member Name="target" Datatype="Real" />
+                <Member Name="execute" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="auto_allowed" Datatype="Bool" />
+                <Member Name="anyBtn" Datatype="Bool" />
+                <Member Name="xbtnHome_was" Datatype="Bool" />
+                <Member Name="bsuhome" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="p1Home" Datatype="Bool" />
+                <Member Name="q1Home" Datatype="Bool" />
+                <Member Name="Q_integer" Datatype="Int" />
+                <Member Name="bsu_step_plus" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="p2StepPlus" Datatype="Bool" />
+                <Member Name="q2StepPlus" Datatype="Bool" />
+                <Member Name="p3StepMinus" Datatype="Bool" />
+                <Member Name="q3StepMinus" Datatype="Bool" />
+                <Member Name="bsu_step_minus" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="MOTDB" Datatype="&quot;__mot_universal_&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ALLOWED" Datatype="Bool" />
+          <Member Name="ALLOWED_ONLY_IN_OVERRIDE" Datatype="Bool" />
+          <Member Name="OVERRIDE_NOW" Datatype="Bool" />
+          <Member Name="isMultiturn" Datatype="Bool" />
+          <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+          <Member Name="xFwdOk" Datatype="Bool" />
+          <Member Name="xRevOk" Datatype="Bool" />
+          <Member Name="xPredefCal" Datatype="Bool" />
+          <Member Name="MAN_SET_SPEED_maxParSpeed" Datatype="Real" />
+          <Member Name="ENC" Datatype="Real" />
+          <Member Name="par" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="partnerCalibrated" Datatype="Bool" />
+          <Member Name="artLimits" Datatype="Bool" />
+          <Member Name="artLimFwd" Datatype="Real" />
+          <Member Name="artLimRev" Datatype="Real" />
+          <Member Name="AU_EXECUTE_TO_TARGET" Datatype="Bool" />
+          <Member Name="AU_SPD" Datatype="Real" />
+          <Member Name="AUT_MD_SPD_notPos" Datatype="Bool" />
+          <Member Name="AUT" Datatype="Bool" />
+          <Member Name="MAN" Datatype="Bool" />
+          <Member Name="CLOCK_S_P_SCAN" Datatype="Real" />
+          <Member Name="ALIEN_HOST_CONTROL_MODE_ENABLE" Datatype="Bool" />
+          <Member Name="ALIEN_FWD" Datatype="Bool" />
+          <Member Name="ALIEN_REV" Datatype="Bool" />
+          <Member Name="ALIEN_SPEED_ABS" Datatype="Real" />
+          <Member Name="TheseAreDoors" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="AU_INPOS" Datatype="Bool" />
+          <Member Name="FWD" Datatype="Bool" />
+          <Member Name="REV" Datatype="Bool" />
+          <Member Name="BRK_REL" Datatype="Bool" />
+          <Member Name="SPEED_ABS" Datatype="Real" />
+          <Member Name="SPEED" Datatype="Real" />
+          <Member Name="BLIND" Datatype="Bool" />
+          <Member Name="ER_FOLLOW" Datatype="Bool" />
+          <Member Name="ER_SET" Datatype="Bool" />
+          <Member Name="ER_FWD" Datatype="Bool" />
+          <Member Name="ER_REV" Datatype="Bool" />
+          <Member Name="er_ws" Datatype="WString" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="AU_TRGT" Datatype="Real" />
+          <Member Name="calibrated" Datatype="Bool" />
+          <Member Name="POS" Datatype="Real" />
+          <Member Name="ENC_RET_DATA" Datatype="&quot;typePOSMEMcalib&quot;">
+            <Sections>
+              <Section Name="None" />
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Static">
+          <Member Name="par_Local" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="SERV_block" Datatype="Bool" />
+          <Member Name="AUTO_static" Datatype="Bool" />
+          <Member Name="MAN_static" Datatype="Bool" />
+          <Member Name="M_MD" Datatype="&quot;MD&quot;">
+            <Sections>
+              <Section Name="Input" />
+              <Section Name="Output">
+                <Member Name="CHAN_TR" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut">
+                <Member Name="AUT" Datatype="Bool" />
+                <Member Name="MAN" Datatype="Bool" />
+                <Member Name="SERV" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="lbs" Datatype="&quot;last_button_stands&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="pt" Datatype="Time" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="safe1" Datatype="Bool" />
+                      <Member Name="safe2" Datatype="Bool" />
+                      <Member Name="safe3" Datatype="Bool" />
+                      <Member Name="safe4" Datatype="Bool" />
+                      <Member Name="safe5" Datatype="Bool" />
+                      <Member Name="safe6" Datatype="Bool" />
+                      <Member Name="safe7" Datatype="Bool" />
+                      <Member Name="safe8" Datatype="Bool" />
+                      <Member Name="none_selected" Datatype="Bool" />
+                      <Member Name="change_trig" Datatype="Bool" />
+                      <Member Name="reset_or_ch_or_none" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="B1" Datatype="Bool" />
+                      <Member Name="B2" Datatype="Bool" />
+                      <Member Name="B3" Datatype="Bool" />
+                      <Member Name="B4" Datatype="Bool" />
+                      <Member Name="B5" Datatype="Bool" />
+                      <Member Name="B6" Datatype="Bool" />
+                      <Member Name="B7" Datatype="Bool" />
+                      <Member Name="B8" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="t" Datatype="Array[1..8] of R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                      <Member Name="B" Datatype="Array[1..8] of Bool" />
+                      <Member Name="S" Datatype="Array[1..8] of Bool" />
+                      <Member Name="tp" Datatype="&quot;tp_peter&quot;">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                            <Member Name="pt" Datatype="Time" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="was" Datatype="Bool" />
+                            <Member Name="ton" Datatype="TON_TIME" Version="1.0">
+                              <Sections>
+                                <Section Name="None">
+                                  <Member Name="PT" Datatype="Time" />
+                                  <Member Name="ET" Datatype="Time" />
+                                  <Member Name="IN" Datatype="Bool" />
+                                  <Member Name="Q" Datatype="Bool" />
+                                </Section>
+                              </Sections>
+                            </Member>
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ENC_DB" Datatype="&quot;encoder&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="pos_lim_fwd" Datatype="Real" />
+                <Member Name="pos_lim_rev" Datatype="Real" />
+                <Member Name="ENC" Datatype="Real" />
+                <Member Name="par_calpos_predef" Datatype="Real" />
+                <Member Name="xPredefCal" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="calibrated" Datatype="Bool" />
+                <Member Name="saved_fwd" Datatype="Real" />
+                <Member Name="saved_rev" Datatype="Real" />
+                <Member Name="ER_set" Datatype="Bool" />
+                <Member Name="ER_w" Datatype="WString" />
+              </Section>
+              <Section Name="InOut">
+                <Member Name="RET_DATA" Datatype="&quot;typePOSMEMcalib&quot;">
+                  <Sections>
+                    <Section Name="None" />
+                  </Sections>
+                </Member>
+                <Member Name="target_pos" Datatype="Real" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="not_first_scan" Datatype="Bool" />
+                <Member Name="xPredefCal_filtered" Datatype="Bool" />
+                <Member Name="tr_predef" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="tr_fwd" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="tr_rev" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="ton_filter" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="manual" Datatype="&quot;manual_analog&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="ALLOWED_ONLY_IN_OVERRIDE" Datatype="Bool" />
+                <Member Name="OVERRIDE_NOW" Datatype="Bool" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="SET_SPEED" Datatype="Real" />
+                <Member Name="xFwdOk" Datatype="Bool" />
+                <Member Name="xRevOk" Datatype="Bool" />
+                <Member Name="clibrated" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absmax" Datatype="Real" />
+                <Member Name="par_speed_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_spd_blind" Datatype="Real" />
+                <Member Name="par_fwd_limit" Datatype="Real" />
+                <Member Name="par_rev_limit" Datatype="Real" />
+                <Member Name="par_t_acc" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="er_ws" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="speed_slowly_accelerated" Datatype="Real" />
+                <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed__wdir" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                      <Member Name="STOP_NOW" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="speed_is_zero" Datatype="Bool" />
+                      <Member Name="speed_is_zero_was" Datatype="Bool" />
+                      <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="auto" Datatype="&quot;auto_analog_NORMAL&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="arrived_missed" Datatype="Bool" />
+                <Member Name="SET_SPD_ABS" Datatype="Real" />
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="TARGET" Datatype="Real" />
+                <Member Name="FOLLOW" Datatype="Bool" />
+                <Member Name="xFwdOK" Datatype="Bool" />
+                <Member Name="xRevOK" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absMax" Datatype="Real" />
+                <Member Name="par_spd_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_lim_fwd" Datatype="Real" />
+                <Member Name="par_lim_rev" Datatype="Real" />
+                <Member Name="par_prec_au" Datatype="Real" />
+                <Member Name="par_tout_follw" Datatype="Time" />
+                <Member Name="par_t_acc" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="INPOS" Datatype="Bool" />
+                <Member Name="ER_follow" Datatype="Bool" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="ER" Datatype="Bool" />
+                <Member Name="erws" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="SET_SPD_ABS_slowlyaccelerated" Datatype="Real" />
+                <Member Name="should_go" Datatype="Bool" />
+                <Member Name="mot_speed_slowly_accelerated_Instance" Datatype="&quot;mot_speed_abs_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed_abs" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_abs" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed__wdir" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                      <Member Name="STOP_NOW" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="speed_is_zero" Datatype="Bool" />
+                      <Member Name="speed_is_zero_was" Datatype="Bool" />
+                      <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="arrived1" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="arrived2" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="arrived3" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="IEC_Timer_0_Instance" Datatype="TOF_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ENC_CHECK" Datatype="&quot;enc_no_change_in_time&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="pt" Datatype="Time" />
+                <Member Name="FWD" Datatype="Bool" />
+                <Member Name="REV" Datatype="Bool" />
+                <Member Name="POS" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="ER_FWD" Datatype="Bool" />
+                <Member Name="ER_REV" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="going_fwd" Datatype="Bool" />
+                <Member Name="going_rev" Datatype="Bool" />
+                <Member Name="going_not" Datatype="Bool" />
+                <Member Name="mem" Datatype="Real" />
+                <Member Name="t_fwd" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="t_rev" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="BRK_DB" Datatype="&quot;BRK_FB&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SpeedZero" Datatype="Bool" />
+                <Member Name="fwd" Datatype="Bool" />
+                <Member Name="rev" Datatype="Bool" />
+                <Member Name="pt" Datatype="Time" />
+                <Member Name="error" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="BRK_REL" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="IEC_Timer_0_Instance" Datatype="TOF_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="sr_auto" Datatype="&quot;SR_TRIG&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SR_CNTRL" Datatype="Bool" />
+              </Section>
+              <Section Name="Output" />
+              <Section Name="InOut">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="mem1" Datatype="Bool" />
+                <Member Name="mem2" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="sr_man" Datatype="&quot;SR_TRIG&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SR_CNTRL" Datatype="Bool" />
+              </Section>
+              <Section Name="Output" />
+              <Section Name="InOut">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="mem1" Datatype="Bool" />
+                <Member Name="mem2" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="auto_analog_Speed_Instance" Datatype="&quot;auto_analog_copySpeed&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="SET_SPD_wDir" Datatype="Real" />
+                <Member Name="MASTER_POS" Datatype="Real" />
+                <Member Name="MY_POS" Datatype="Real" />
+                <Member Name="par_max_Vcor" Datatype="Real" />
+                <Member Name="par_max_Pos_delta" Datatype="Real" />
+                <Member Name="xFwdOK" Datatype="Bool" />
+                <Member Name="xRevOK" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absmax" Datatype="Real" />
+                <Member Name="par_spd_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_lim_fwd" Datatype="Real" />
+                <Member Name="par_lim_rev" Datatype="Real" />
+                <Member Name="par_prec_au" Datatype="Real" />
+                <Member Name="par_tout_follw" Datatype="Time" />
+                <Member Name="par_SpeedTHreshold" Datatype="Real" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="INPOS" Datatype="Bool" />
+                <Member Name="ER_follow" Datatype="Bool" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="ER_SET2" Datatype="Bool" />
+                <Member Name="ER_W" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="should_move_static" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="speed_slowed_by_inertia" Datatype="Real" />
+          <Member Name="speed_command" Datatype="Real" />
+          <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="set_speed__wdir" Datatype="Real" />
+                <Member Name="v_absMax" Datatype="Real" />
+                <Member Name="t_acc" Datatype="Real" />
+                <Member Name="STOP_NOW" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="speed_is_zero" Datatype="Bool" />
+                <Member Name="speed_is_zero_was" Datatype="Bool" />
+                <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="mot_missed_target" Datatype="&quot;mot_universal_arrived_missed&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="target" Datatype="Real" />
+                <Member Name="pos" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="arrived_misesd" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="target_was" Datatype="Real" />
+                <Member Name="dir_to_target_pos" Datatype="Bool" />
+                <Member Name="dir_to_target_pos_was" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="arrived_missed" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="WNDB" Datatype="&quot;ER_WORD&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ignoreNewEr" Datatype="Bool" />
+          <Member Name="ak" Datatype="Bool" />
+          <Member Name="x0" Datatype="Bool" />
+          <Member Name="x1" Datatype="Bool" />
+          <Member Name="x2" Datatype="Bool" />
+          <Member Name="x3" Datatype="Bool" />
+          <Member Name="x4" Datatype="Bool" />
+          <Member Name="x5" Datatype="Bool" />
+          <Member Name="x6" Datatype="Bool" />
+          <Member Name="x7" Datatype="Bool" />
+          <Member Name="x8" Datatype="Bool" />
+          <Member Name="x9" Datatype="Bool" />
+          <Member Name="x10" Datatype="Bool" />
+          <Member Name="x11" Datatype="Bool" />
+          <Member Name="x12" Datatype="Bool" />
+          <Member Name="x13" Datatype="Bool" />
+          <Member Name="x14" Datatype="Bool" />
+          <Member Name="x15" Datatype="Bool" />
+          <Member Name="selfreset0" Datatype="Bool" />
+          <Member Name="selfreset1" Datatype="Bool" />
+          <Member Name="selfreset2" Datatype="Bool" />
+          <Member Name="selfreset3" Datatype="Bool" />
+          <Member Name="selfreset4" Datatype="Bool" />
+          <Member Name="selfreset5" Datatype="Bool" />
+          <Member Name="selfreset6" Datatype="Bool" />
+          <Member Name="selfreset7" Datatype="Bool" />
+          <Member Name="selfreset8" Datatype="Bool" />
+          <Member Name="selfreset9" Datatype="Bool" />
+          <Member Name="selfreset10" Datatype="Bool" />
+          <Member Name="selfreset11" Datatype="Bool" />
+          <Member Name="selfreset12" Datatype="Bool" />
+          <Member Name="selfreset13" Datatype="Bool" />
+          <Member Name="selfreset14" Datatype="Bool" />
+          <Member Name="selfreset15" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="_w" Datatype="Word" />
+          <Member Name="er" Datatype="Bool" />
+          <Member Name="count" Datatype="Int" />
+          <Member Name="a_er[0]" Datatype="Bool" />
+          <Member Name="a_er[1]" Datatype="Bool" />
+          <Member Name="a_er[2]" Datatype="Bool" />
+          <Member Name="a_er[3]" Datatype="Bool" />
+          <Member Name="a_er[4]" Datatype="Bool" />
+          <Member Name="a_er[5]" Datatype="Bool" />
+          <Member Name="a_er[6]" Datatype="Bool" />
+          <Member Name="a_er[7]" Datatype="Bool" />
+          <Member Name="a_er[8]" Datatype="Bool" />
+          <Member Name="a_er[9]" Datatype="Bool" />
+          <Member Name="a_er[10]" Datatype="Bool" />
+          <Member Name="a_er[11]" Datatype="Bool" />
+          <Member Name="a_er[12]" Datatype="Bool" />
+          <Member Name="a_er[13]" Datatype="Bool" />
+          <Member Name="a_er[14]" Datatype="Bool" />
+          <Member Name="a_er[15]" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="a_er" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_x" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_is_self_reset" Datatype="Array[0..15] of Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="ERDB" Datatype="&quot;ER_WORD&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ignoreNewEr" Datatype="Bool" />
+          <Member Name="ak" Datatype="Bool" />
+          <Member Name="x0" Datatype="Bool" />
+          <Member Name="x1" Datatype="Bool" />
+          <Member Name="x2" Datatype="Bool" />
+          <Member Name="x3" Datatype="Bool" />
+          <Member Name="x4" Datatype="Bool" />
+          <Member Name="x5" Datatype="Bool" />
+          <Member Name="x6" Datatype="Bool" />
+          <Member Name="x7" Datatype="Bool" />
+          <Member Name="x8" Datatype="Bool" />
+          <Member Name="x9" Datatype="Bool" />
+          <Member Name="x10" Datatype="Bool" />
+          <Member Name="x11" Datatype="Bool" />
+          <Member Name="x12" Datatype="Bool" />
+          <Member Name="x13" Datatype="Bool" />
+          <Member Name="x14" Datatype="Bool" />
+          <Member Name="x15" Datatype="Bool" />
+          <Member Name="selfreset0" Datatype="Bool" />
+          <Member Name="selfreset1" Datatype="Bool" />
+          <Member Name="selfreset2" Datatype="Bool" />
+          <Member Name="selfreset3" Datatype="Bool" />
+          <Member Name="selfreset4" Datatype="Bool" />
+          <Member Name="selfreset5" Datatype="Bool" />
+          <Member Name="selfreset6" Datatype="Bool" />
+          <Member Name="selfreset7" Datatype="Bool" />
+          <Member Name="selfreset8" Datatype="Bool" />
+          <Member Name="selfreset9" Datatype="Bool" />
+          <Member Name="selfreset10" Datatype="Bool" />
+          <Member Name="selfreset11" Datatype="Bool" />
+          <Member Name="selfreset12" Datatype="Bool" />
+          <Member Name="selfreset13" Datatype="Bool" />
+          <Member Name="selfreset14" Datatype="Bool" />
+          <Member Name="selfreset15" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="_w" Datatype="Word" />
+          <Member Name="er" Datatype="Bool" />
+          <Member Name="count" Datatype="Int" />
+          <Member Name="a_er[0]" Datatype="Bool" />
+          <Member Name="a_er[1]" Datatype="Bool" />
+          <Member Name="a_er[2]" Datatype="Bool" />
+          <Member Name="a_er[3]" Datatype="Bool" />
+          <Member Name="a_er[4]" Datatype="Bool" />
+          <Member Name="a_er[5]" Datatype="Bool" />
+          <Member Name="a_er[6]" Datatype="Bool" />
+          <Member Name="a_er[7]" Datatype="Bool" />
+          <Member Name="a_er[8]" Datatype="Bool" />
+          <Member Name="a_er[9]" Datatype="Bool" />
+          <Member Name="a_er[10]" Datatype="Bool" />
+          <Member Name="a_er[11]" Datatype="Bool" />
+          <Member Name="a_er[12]" Datatype="Bool" />
+          <Member Name="a_er[13]" Datatype="Bool" />
+          <Member Name="a_er[14]" Datatype="Bool" />
+          <Member Name="a_er[15]" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="a_er" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_x" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_is_self_reset" Datatype="Array[0..15] of Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="erw_calcspd" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hmiResetCalib" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="IEC_Timer_0_Instance" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="artLimiter_Instance" Datatype="&quot;artLimiter&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="AckEr" Datatype="Bool" />
+          <Member Name="UseArtLimitw" Datatype="Bool" />
+          <Member Name="artLimfwd" Datatype="Real" />
+          <Member Name="artLimRev" Datatype="Real" />
+          <Member Name="para_in" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Output">
+          <Member Name="para_Artlimits" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ER_WS" Datatype="WString" />
+          <Member Name="ER" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static" />
+      </Sections>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>M2Y</Name>
+      <Namespace />
+      <Number>14</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

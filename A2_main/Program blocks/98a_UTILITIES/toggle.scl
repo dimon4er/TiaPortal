@@ -1,0 +1,24 @@
+﻿FUNCTION_BLOCK "toggle"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      flip : Bool;
+   END_VAR
+
+   VAR_IN_OUT 
+      InOut : Bool;
+   END_VAR
+
+   VAR 
+      flip_was : Bool;
+   END_VAR
+
+
+BEGIN
+	IF #flip AND NOT #flip_was THEN
+	    #InOut := NOT #InOut;
+	END_IF;
+	#flip_was := #flip;
+	    
+END_FUNCTION_BLOCK
+

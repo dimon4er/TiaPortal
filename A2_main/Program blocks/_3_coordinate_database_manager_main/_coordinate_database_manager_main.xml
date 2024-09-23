@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>_coordinate_database_manager_main</Name>
+      <Namespace />
+      <Number>14</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Call UId="22">
+      <CallInfo Name="_hmi_spot_manager" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="23">
+          <Component Name="_hmi_spot_manager_DB" />
+        </Instance>
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmi_pos_set" Section="Output" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmi_to_spot_allowed" Section="Output" Type="Bool" />
+        <Parameter Name="Spot_positions_now" Section="Output" Type="&quot;typePositions&quot;" />
+        <Parameter Name="spot_set_encoder" Section="InOut" Type="Bool" />
+        <Parameter Name="spot_set_hmi" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <OpenCon UId="24" />
+      <NameCon UId="22" Name="en" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="21" />
+      <NameCon UId="22" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="32">
+      <OpenCon UId="25" />
+      <NameCon UId="22" Name="spot_set_encoder" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="26" />
+      <NameCon UId="22" Name="spot_set_hmi" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="22" Name="hmi_pos_set" />
+      <OpenCon UId="27" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="22" Name="hmi_to_spot_allowed" />
+      <OpenCon UId="28" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="22" Name="Spot_positions_now" />
+      <OpenCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="_ML3_importantPositionsRETAIN" />
+        <Component Name="Home" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="_ML3_importantPositionsRETAIN" />
+        <Component Name="Load" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="_ML3_importantPositionsRETAIN" />
+        <Component Name="Control1" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="_ML3_importantPositionsRETAIN" />
+        <Component Name="Control2" />
+      </Symbol>
+    </Access>
+    <Call UId="29">
+      <CallInfo Name="_hmi_singleSpotManager" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="30">
+          <Component Name="HomePosManagerDb" />
+        </Instance>
+        <Parameter Name="hmi_PosSet" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmiFromHmi" Section="InOut" Type="Bool" />
+        <Parameter Name="hmiSFromEncoder" Section="InOut" Type="Bool" />
+        <Parameter Name="posToModify" Section="InOut" Type="&quot;typePositions&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="31">
+      <CallInfo Name="_hmi_singleSpotManager" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="32">
+          <Component Name="Load_pos_managerDB" />
+        </Instance>
+        <Parameter Name="hmi_PosSet" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmiFromHmi" Section="InOut" Type="Bool" />
+        <Parameter Name="hmiSFromEncoder" Section="InOut" Type="Bool" />
+        <Parameter Name="posToModify" Section="InOut" Type="&quot;typePositions&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="33">
+      <CallInfo Name="_hmi_singleSpotManager" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="34">
+          <Component Name="control1PosManagerDB" />
+        </Instance>
+        <Parameter Name="hmi_PosSet" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmiFromHmi" Section="InOut" Type="Bool" />
+        <Parameter Name="hmiSFromEncoder" Section="InOut" Type="Bool" />
+        <Parameter Name="posToModify" Section="InOut" Type="&quot;typePositions&quot;" />
+      </CallInfo>
+    </Call>
+    <Call UId="35">
+      <CallInfo Name="_hmi_singleSpotManager" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="36">
+          <Component Name="control2PosManagerDB" />
+        </Instance>
+        <Parameter Name="hmi_PosSet" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmiFromHmi" Section="InOut" Type="Bool" />
+        <Parameter Name="hmiSFromEncoder" Section="InOut" Type="Bool" />
+        <Parameter Name="posToModify" Section="InOut" Type="&quot;typePositions&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="53">
+      <OpenCon UId="37" />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="54">
+      <OpenCon UId="38" />
+      <NameCon UId="29" Name="hmi_PosSet" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="56">
+      <OpenCon UId="39" />
+      <NameCon UId="29" Name="hmiFromHmi" />
+    </Wire>
+    <Wire UId="57">
+      <OpenCon UId="40" />
+      <NameCon UId="29" Name="hmiSFromEncoder" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="posToModify" />
+    </Wire>
+    <Wire UId="59">
+      <OpenCon UId="41" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="60">
+      <OpenCon UId="42" />
+      <NameCon UId="31" Name="hmi_PosSet" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="62">
+      <OpenCon UId="43" />
+      <NameCon UId="31" Name="hmiFromHmi" />
+    </Wire>
+    <Wire UId="63">
+      <OpenCon UId="44" />
+      <NameCon UId="31" Name="hmiSFromEncoder" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="posToModify" />
+    </Wire>
+    <Wire UId="65">
+      <OpenCon UId="45" />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="66">
+      <OpenCon UId="46" />
+      <NameCon UId="33" Name="hmi_PosSet" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="68">
+      <OpenCon UId="47" />
+      <NameCon UId="33" Name="hmiFromHmi" />
+    </Wire>
+    <Wire UId="69">
+      <OpenCon UId="48" />
+      <NameCon UId="33" Name="hmiSFromEncoder" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="posToModify" />
+    </Wire>
+    <Wire UId="71">
+      <OpenCon UId="49" />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="72">
+      <OpenCon UId="50" />
+      <NameCon UId="35" Name="hmi_PosSet" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="74">
+      <OpenCon UId="51" />
+      <NameCon UId="35" Name="hmiFromHmi" />
+    </Wire>
+    <Wire UId="75">
+      <OpenCon UId="52" />
+      <NameCon UId="35" Name="hmiSFromEncoder" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="posToModify" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="12" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="13" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

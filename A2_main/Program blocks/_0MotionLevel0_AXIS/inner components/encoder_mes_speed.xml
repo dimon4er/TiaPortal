@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Cycle_Time_s" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Pos" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="Speed_mm_p_sec" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="MEM" Datatype="LReal" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="RET_VAL" Datatype="LReal" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Pos_was" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="Speed_mm_p_sec_temp" Datatype="Real" />
+    <Member Name="delta" Datatype="Real" />
+    <Member Name="n" Datatype="Real" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>encoder_mes_speed</Name>
+      <Namespace />
+      <Number>20</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="MEM" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="RET_VAL" />
+      </Symbol>
+    </Access>
+    <Part Name="Runtime" UId="23" />
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <OpenCon UId="24" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="mem" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="ret_val" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="delta" UId="23" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="24" />
+  <Token Text=":=" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="LocalVariable" UId="27">
+    <Symbol UId="28">
+      <Component Name="Pos" UId="29" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="30" />
+  <Token Text="-" UId="31" />
+  <Blank Num="1" UId="32" />
+  <Access Scope="LocalVariable" UId="33">
+    <Symbol UId="34">
+      <Component Name="Pos_was" UId="35" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Access Scope="LocalVariable" UId="38">
+    <Symbol UId="39">
+      <Component Name="Speed_mm_p_sec_temp" UId="40" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="41" />
+  <Token Text=":=" UId="42" />
+  <Blank Num="1" UId="43" />
+  <Access Scope="LocalVariable" UId="44">
+    <Symbol UId="45">
+      <Component Name="delta" UId="46" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="47" />
+  <Token Text="/" UId="48" />
+  <Blank Num="1" UId="49" />
+  <Access Scope="LocalVariable" UId="50">
+    <Symbol UId="51">
+      <Component Name="Cycle_Time_s" UId="52" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="53" />
+  <NewLine Num="1" UId="54" />
+  <Access Scope="LocalVariable" UId="55">
+    <Symbol UId="56">
+      <Component Name="n" UId="57" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="58" />
+  <Token Text=":=" UId="59" />
+  <Blank Num="1" UId="60" />
+  <Access Scope="LiteralConstant" UId="61">
+    <Constant UId="62">
+      <ConstantValue UId="64">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="65" />
+  <NewLine Num="1" UId="66" />
+  <Access Scope="LocalVariable" UId="67">
+    <Symbol UId="68">
+      <Component Name="Speed_mm_p_sec" UId="69" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="70" />
+  <Token Text=":=" UId="71" />
+  <Blank Num="1" UId="72" />
+  <Token Text="(" UId="73" />
+  <Access Scope="LocalVariable" UId="74">
+    <Symbol UId="75">
+      <Component Name="Speed_mm_p_sec" UId="76" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="77" />
+  <Token Text="*" UId="78" />
+  <Blank Num="1" UId="79" />
+  <Token Text="(" UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="n" UId="83" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="84" />
+  <Token Text="-" UId="85" />
+  <Blank Num="1" UId="86" />
+  <Access Scope="LiteralConstant" UId="87">
+    <Constant UId="88">
+      <ConstantValue UId="90">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Token Text="+" UId="93" />
+  <Blank Num="1" UId="94" />
+  <Access Scope="LocalVariable" UId="95">
+    <Symbol UId="96">
+      <Component Name="Speed_mm_p_sec_temp" UId="97" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="98" />
+  <Token Text="/" UId="99" />
+  <Blank Num="1" UId="100" />
+  <Access Scope="LocalVariable" UId="101">
+    <Symbol UId="102">
+      <Component Name="n" UId="103" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="104" />
+  <NewLine Num="2" UId="105" />
+  <Access Scope="LocalVariable" UId="106">
+    <Symbol UId="107">
+      <Component Name="Pos_was" UId="108" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="109" />
+  <Token Text=":=" UId="110" />
+  <Blank Num="1" UId="111" />
+  <Access Scope="LocalVariable" UId="112">
+    <Symbol UId="113">
+      <Component Name="Pos" UId="114" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="115" />
+  <NewLine Num="1" UId="116" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="12" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="13" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

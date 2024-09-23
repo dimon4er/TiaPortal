@@ -1,0 +1,185 @@
+﻿FUNCTION_BLOCK "ER_WORD"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      ignoreNewEr : Bool;
+      ak { S7_HiddenAssignment := 'Show'} : Bool;
+      x0 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x1 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x2 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x3 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x4 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x5 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x6 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x7 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      x8 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x9 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x10 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x11 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x12 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x13 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x14 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      x15 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool := false;
+      selfreset0 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset1 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset2 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset3 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset4 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset5 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset6 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset7 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset8 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset9 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset10 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset11 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset12 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset13 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset14 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+      selfreset15 { S7_HiddenAssignment := 'HideIfNoParamAssigned'} : Bool;
+   END_VAR
+
+   VAR_OUTPUT 
+      _w : Word;
+      er : Bool;
+      count : Int;
+      "a_er[0]" : Bool;
+      "a_er[1]" : Bool;
+      "a_er[2]" : Bool;
+      "a_er[3]" : Bool;
+      "a_er[4]" : Bool;
+      "a_er[5]" : Bool;
+      "a_er[6]" : Bool;
+      "a_er[7]" : Bool;
+      "a_er[8]" : Bool;
+      "a_er[9]" : Bool;
+      "a_er[10]" : Bool;
+      "a_er[11]" : Bool;
+      "a_er[12]" : Bool;
+      "a_er[13]" : Bool;
+      "a_er[14]" : Bool;
+      "a_er[15]" : Bool;
+   END_VAR
+
+   VAR 
+      a_er : Array[0..15] of Bool;
+      a_x : Array[0..15] of Bool;
+      a_is_self_reset : Array[0..15] of Bool;
+   END_VAR
+
+   VAR_TEMP 
+      i : Int;
+   END_VAR
+
+
+BEGIN
+	
+	
+	
+	
+	
+	
+	#a_x[0] := #x0;
+	#a_x[1] := #x1;
+	#a_x[2]:= #x2;
+	#a_x[3]:= #x3;
+	#a_x[4]:= #x4;
+	#a_x[5]:= #x5;
+	#a_x[6]:= #x6;
+	#a_x[7]:= #x7;
+	#a_x[8]:= #x8;
+	#a_x[9]:= #x9;
+	#a_x[10]:= #x10;
+	#a_x[11]:= #x11;
+	#a_x[12]:= #x12;
+	#a_x[13]:= #x13;
+	#a_x[14]:= #x14;
+	#a_x[15]:= #x15;
+	
+	#a_is_self_reset[0] := #selfreset0;
+	#a_is_self_reset[1] := #selfreset1;
+	#a_is_self_reset[2] := #selfreset2;
+	#a_is_self_reset[3] := #selfreset3;
+	#a_is_self_reset[4] := #selfreset4;
+	#a_is_self_reset[5] := #selfreset5;
+	#a_is_self_reset[6] := #selfreset6;
+	#a_is_self_reset[7] := #selfreset7;
+	#a_is_self_reset[8] := #selfreset8;
+	#a_is_self_reset[9] := #selfreset9;
+	#a_is_self_reset[10] := #selfreset10;
+	#a_is_self_reset[11] := #selfreset11;
+	#a_is_self_reset[12] := #selfreset12;
+	#a_is_self_reset[13] := #selfreset13;
+	#a_is_self_reset[14] := #selfreset14;
+	#a_is_self_reset[15] := #selfreset15;
+	
+	
+	
+	
+	IF NOT #ignoreNewEr THEN
+	    FOR #i := 0 TO 15 DO
+	        IF #a_x[#i] THEN
+	            #a_er[#i] := TRUE;
+	        END_IF;
+	    END_FOR;
+	END_IF;
+	
+	
+	
+	#count := 0;
+	FOR #i := 0 TO 15 DO
+	    IF #a_er[#i] THEN
+	        #count := #count + 1;
+	    END_IF;
+	END_FOR;
+	
+	#_w.%X0 := #a_er[00];
+	#_w.%X1 := #a_er[01];
+	#_w.%X2 := #a_er[02];
+	#_w.%X3 := #a_er[03];
+	#_w.%X4 := #a_er[04];
+	#_w.%X5 := #a_er[05];
+	#_w.%X6 := #a_er[06];
+	#_w.%X7 := #a_er[07];
+	#_w.%X8 := #a_er[08];
+	#_w.%X9 := #a_er[09];
+	#_w.%X10 := #a_er[10];
+	#_w.%X11 := #a_er[11];
+	#_w.%X12 := #a_er[12];
+	#_w.%X13 := #a_er[13];
+	#_w.%X14 := #a_er[14];
+	#_w.%X15 := #a_er[15];
+	#er := #_w > 0;
+	
+	
+	FOR #i := 0 TO 15 DO
+	    IF #ak THEN
+	        #a_er[#i] := false;
+	    END_IF;
+	END_FOR;
+	
+	FOR #i := 0 TO 15 DO
+	    IF #a_is_self_reset[#i] AND NOT #a_x[#i] THEN
+	        #a_er[#i] := false;
+	    END_IF;
+	END_FOR;
+	
+	
+	#"a_er[0]" := #a_er[00];
+	#"a_er[1]" := #a_er[01];
+	#"a_er[2]" := #a_er[02];
+	#"a_er[3]" := #a_er[03];
+	#"a_er[4]" := #a_er[04];
+	#"a_er[5]" := #a_er[05];
+	#"a_er[6]" := #a_er[06];
+	#"a_er[7]" := #a_er[07];
+	#"a_er[8]" := #a_er[08];
+	#"a_er[9]" := #a_er[09];
+	#"a_er[10]" := #a_er[10];
+	#"a_er[11]" := #a_er[11];
+	#"a_er[12]" := #a_er[12];
+	#"a_er[13]" := #a_er[13];
+	#"a_er[14]" := #a_er[14];
+	#"a_er[15]" := #a_er[15];
+	
+END_FUNCTION_BLOCK
+

@@ -1,0 +1,1329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="remote key activated" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xCylceStart" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xDefectMark" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xDefectNext" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xDefectPrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xHome" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xLaser" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xLoad" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xControl1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xControl2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbDoorsFwdClose" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbDoorsRevOpen" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbo1Tiltfwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbo1Tiltrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbo2RotHome" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbo2Rotrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xSwAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xSwMan" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbXfwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbxrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbyfwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbyrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbzfwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbzrev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xbo2Rotfwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="remPowerOut" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yLedShutter" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yLedAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ysirenFinished" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ySirenError" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="desk_yledShutter" Datatype="&quot;LED_FBD&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="on" Datatype="Bool" />
+          <Member Name="blink" Datatype="Bool" />
+          <Member Name="t_on" Datatype="Time" />
+          <Member Name="t_off" Datatype="Time" />
+          <Member Name="ignoreTestAll" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="y" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="testHMI" Datatype="Bool" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="blink1" Datatype="&quot;BLINKER&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="BLINK_NOW" Datatype="Bool" />
+                <Member Name="ON_t" Datatype="Time" />
+                <Member Name="OFF_t" Datatype="Time" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="yToBlink" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="tON_DB" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="tOFF_DB" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="off_mem" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="blink_st" Datatype="Bool" />
+          <Member Name="tonhmi" Datatype="TON_TIME" Version="1.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="PT" Datatype="Time" />
+                <Member Name="ET" Datatype="Time" />
+                <Member Name="IN" Datatype="Bool" />
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>BTNS_FB</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="LED_HMI" />
+        <Component Name="test_all" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="_ML2_modeDB" />
+        <Component Name="yTeam_unison" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="_ML2_modeDB" />
+        <Component Name="yOVERRIDE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="_spot_iterator" />
+        <Component Name="cycleActive" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="desk_yledAutoDB" />
+        <Component Name="on" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="_spot_iterator" />
+        <Component Name="cycleActive" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="desk_yledAutoDB" />
+        <Component Name="blink" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="_ML2_modeDB" />
+        <Component Name="yTeam_unison" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="yLedAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="buz_alarm_er_count_change" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="ySirenError" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="DefectsAllFound_beepResetMe" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="cycleDoneResetMe" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="ysirenFinished" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="DefectsAllFound_beepResetMe" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="cycleDoneResetMe" />
+      </Symbol>
+    </Access>
+    <Call UId="39">
+      <CallInfo Name="LED_lampTestAtStartup" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="40">
+          <Component Name="LED_lampTestAtStartup_DB" />
+        </Instance>
+        <Parameter Name="HMI_TEST_ALL_LEDS" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="A" UId="41">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="A" UId="42">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="43" />
+    <Part Name="A" UId="44">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="Coil" UId="45" />
+    <Call UId="46">
+      <CallInfo Name="LED_FBD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="47">
+          <Component Name="desk_yledAutoDB" />
+        </Instance>
+        <Parameter Name="on" Section="Input" Type="Bool" />
+        <Parameter Name="blink" Section="Input" Type="Bool" />
+        <Parameter Name="t_on" Section="Input" Type="Time" />
+        <Parameter Name="t_off" Section="Input" Type="Time" />
+        <Parameter Name="ignoreTestAll" Section="Input" Type="Bool" />
+        <Parameter Name="y" Section="Output" Type="Bool" />
+        <Parameter Name="testHMI" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="A" UId="48">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Call UId="49">
+      <CallInfo Name="LED_FBD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="50">
+          <Component Name="desk_yBuzAlarmDB" />
+        </Instance>
+        <Parameter Name="on" Section="Input" Type="Bool" />
+        <Parameter Name="blink" Section="Input" Type="Bool" />
+        <Parameter Name="t_on" Section="Input" Type="Time" />
+        <Parameter Name="t_off" Section="Input" Type="Time" />
+        <Parameter Name="ignoreTestAll" Section="Input" Type="Bool" />
+        <Parameter Name="y" Section="Output" Type="Bool" />
+        <Parameter Name="testHMI" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="O" UId="51">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Call UId="52">
+      <CallInfo Name="LED_FBD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="53">
+          <Component Name="desk_yBUZDoneDB" />
+        </Instance>
+        <Parameter Name="on" Section="Input" Type="Bool" />
+        <Parameter Name="blink" Section="Input" Type="Bool" />
+        <Parameter Name="t_on" Section="Input" Type="Time" />
+        <Parameter Name="t_off" Section="Input" Type="Time" />
+        <Parameter Name="ignoreTestAll" Section="Input" Type="Bool" />
+        <Parameter Name="y" Section="Output" Type="Bool" />
+        <Parameter Name="testHMI" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Part Name="RCoil" UId="54" />
+    <Part Name="RCoil" UId="55" />
+  </Parts>
+  <Wires>
+    <Wire UId="74">
+      <OpenCon UId="56" />
+      <NameCon UId="39" Name="en" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="21" />
+      <NameCon UId="39" Name="HMI_TEST_ALL_LEDS" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="22" />
+      <NameCon UId="41" Name="in1" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="23" />
+      <NameCon UId="41" Name="in2" />
+    </Wire>
+    <Wire UId="78">
+      <NameCon UId="41" Name="out" />
+      <NameCon UId="42" Name="in1" />
+      <NameCon UId="44" Name="in1" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="24" />
+      <NameCon UId="42" Name="in2" />
+    </Wire>
+    <Wire UId="80">
+      <NameCon UId="42" Name="out" />
+      <NameCon UId="43" Name="in" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="25" />
+      <NameCon UId="43" Name="operand" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="26" />
+      <NameCon UId="44" Name="in2" />
+    </Wire>
+    <Wire UId="83">
+      <NameCon UId="44" Name="out" />
+      <NameCon UId="45" Name="in" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="27" />
+      <NameCon UId="45" Name="operand" />
+    </Wire>
+    <Wire UId="85">
+      <OpenCon UId="57" />
+      <NameCon UId="46" Name="en" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="28" />
+      <NameCon UId="46" Name="on" />
+    </Wire>
+    <Wire UId="87">
+      <OpenCon UId="58" />
+      <NameCon UId="46" Name="blink" />
+    </Wire>
+    <Wire UId="88">
+      <OpenCon UId="59" />
+      <NameCon UId="46" Name="t_on" />
+    </Wire>
+    <Wire UId="89">
+      <OpenCon UId="60" />
+      <NameCon UId="46" Name="t_off" />
+    </Wire>
+    <Wire UId="90">
+      <OpenCon UId="61" />
+      <NameCon UId="46" Name="ignoreTestAll" />
+    </Wire>
+    <Wire UId="91">
+      <OpenCon UId="62" />
+      <NameCon UId="46" Name="testHMI" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="46" Name="y" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="30" />
+      <NameCon UId="48" Name="in1" />
+    </Wire>
+    <Wire UId="94">
+      <NameCon UId="48" Name="out" />
+      <NameCon UId="49" Name="on" />
+    </Wire>
+    <Wire UId="95">
+      <OpenCon UId="63" />
+      <NameCon UId="49" Name="en" />
+    </Wire>
+    <Wire UId="96">
+      <OpenCon UId="64" />
+      <NameCon UId="49" Name="blink" />
+    </Wire>
+    <Wire UId="97">
+      <OpenCon UId="65" />
+      <NameCon UId="49" Name="t_on" />
+    </Wire>
+    <Wire UId="98">
+      <OpenCon UId="66" />
+      <NameCon UId="49" Name="t_off" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="31" />
+      <NameCon UId="49" Name="ignoreTestAll" />
+    </Wire>
+    <Wire UId="100">
+      <OpenCon UId="67" />
+      <NameCon UId="49" Name="testHMI" />
+    </Wire>
+    <Wire UId="101">
+      <NameCon UId="49" Name="y" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="33" />
+      <NameCon UId="51" Name="in1" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="34" />
+      <NameCon UId="51" Name="in2" />
+    </Wire>
+    <Wire UId="104">
+      <NameCon UId="51" Name="out" />
+      <NameCon UId="52" Name="on" />
+    </Wire>
+    <Wire UId="105">
+      <OpenCon UId="68" />
+      <NameCon UId="52" Name="en" />
+    </Wire>
+    <Wire UId="106">
+      <OpenCon UId="69" />
+      <NameCon UId="52" Name="blink" />
+    </Wire>
+    <Wire UId="107">
+      <OpenCon UId="70" />
+      <NameCon UId="52" Name="t_on" />
+    </Wire>
+    <Wire UId="108">
+      <OpenCon UId="71" />
+      <NameCon UId="52" Name="t_off" />
+    </Wire>
+    <Wire UId="109">
+      <IdentCon UId="35" />
+      <NameCon UId="52" Name="ignoreTestAll" />
+    </Wire>
+    <Wire UId="110">
+      <OpenCon UId="72" />
+      <NameCon UId="52" Name="testHMI" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="52" Name="y" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="112">
+      <OpenCon UId="73" />
+      <NameCon UId="54" Name="in" />
+    </Wire>
+    <Wire UId="113">
+      <IdentCon UId="37" />
+      <NameCon UId="54" Name="operand" />
+    </Wire>
+    <Wire UId="114">
+      <NameCon UId="54" Name="out" />
+      <NameCon UId="55" Name="in" />
+    </Wire>
+    <Wire UId="115">
+      <IdentCon UId="38" />
+      <NameCon UId="55" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="yLedShutter" />
+      </Symbol>
+    </Access>
+    <Call UId="22">
+      <CallInfo Name="LED_FBD" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="23">
+          <Component Name="desk_yledShutter" />
+        </Instance>
+        <Parameter Name="on" Section="Input" Type="Bool" />
+        <Parameter Name="blink" Section="Input" Type="Bool" />
+        <Parameter Name="t_on" Section="Input" Type="Time" />
+        <Parameter Name="t_off" Section="Input" Type="Time" />
+        <Parameter Name="ignoreTestAll" Section="Input" Type="Bool" />
+        <Parameter Name="y" Section="Output" Type="Bool" />
+        <Parameter Name="testHMI" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <OpenCon UId="24" />
+      <NameCon UId="22" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <OpenCon UId="25" />
+      <NameCon UId="22" Name="on" />
+    </Wire>
+    <Wire UId="33">
+      <OpenCon UId="26" />
+      <NameCon UId="22" Name="blink" />
+    </Wire>
+    <Wire UId="34">
+      <OpenCon UId="27" />
+      <NameCon UId="22" Name="t_on" />
+    </Wire>
+    <Wire UId="35">
+      <OpenCon UId="28" />
+      <NameCon UId="22" Name="t_off" />
+    </Wire>
+    <Wire UId="36">
+      <OpenCon UId="29" />
+      <NameCon UId="22" Name="ignoreTestAll" />
+    </Wire>
+    <Wire UId="37">
+      <OpenCon UId="30" />
+      <NameCon UId="22" Name="testHMI" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="22" Name="y" />
+      <IdentCon UId="21" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ER_0_root" />
+        <Component Name="ACK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="xSwAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="xSwMan" />
+      </Symbol>
+    </Access>
+    <Part Name="A" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Call UId="25">
+      <CallInfo Name="ER_WORD" BlockType="FB">
+        <Instance Scope="GlobalVariable" UId="26">
+          <Component Name="ER_1DESK" />
+        </Instance>
+        <Parameter Name="ignoreNewEr" Section="Input" Type="Bool" />
+        <Parameter Name="ak" Section="Input" Type="Bool" />
+        <Parameter Name="x0" Section="Input" Type="Bool" />
+        <Parameter Name="x1" Section="Input" Type="Bool" />
+        <Parameter Name="x2" Section="Input" Type="Bool" />
+        <Parameter Name="x3" Section="Input" Type="Bool" />
+        <Parameter Name="x4" Section="Input" Type="Bool" />
+        <Parameter Name="x5" Section="Input" Type="Bool" />
+        <Parameter Name="x6" Section="Input" Type="Bool" />
+        <Parameter Name="x7" Section="Input" Type="Bool" />
+        <Parameter Name="x8" Section="Input" Type="Bool" />
+        <Parameter Name="x9" Section="Input" Type="Bool" />
+        <Parameter Name="x10" Section="Input" Type="Bool" />
+        <Parameter Name="x11" Section="Input" Type="Bool" />
+        <Parameter Name="x12" Section="Input" Type="Bool" />
+        <Parameter Name="x13" Section="Input" Type="Bool" />
+        <Parameter Name="x14" Section="Input" Type="Bool" />
+        <Parameter Name="x15" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset0" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset1" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset2" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset3" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset4" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset5" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset6" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset7" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset8" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset9" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset10" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset11" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset12" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset13" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset14" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset15" Section="Input" Type="Bool" />
+        <Parameter Name="_w" Section="Output" Type="Word" />
+        <Parameter Name="er" Section="Output" Type="Bool" />
+        <Parameter Name="count" Section="Output" Type="Int" />
+        <Parameter Name="a_er[0]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[1]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[2]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[3]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[4]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[5]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[6]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[7]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[8]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[9]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[10]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[11]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[12]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[13]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[14]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[15]" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="79">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="23" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="81">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="x0" />
+    </Wire>
+    <Wire UId="82">
+      <OpenCon UId="27" />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="83">
+      <OpenCon UId="28" />
+      <NameCon UId="25" Name="ignoreNewEr" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="ak" />
+    </Wire>
+    <Wire UId="85">
+      <OpenCon UId="29" />
+      <NameCon UId="25" Name="x1" />
+    </Wire>
+    <Wire UId="86">
+      <OpenCon UId="30" />
+      <NameCon UId="25" Name="x2" />
+    </Wire>
+    <Wire UId="87">
+      <OpenCon UId="31" />
+      <NameCon UId="25" Name="x3" />
+    </Wire>
+    <Wire UId="88">
+      <OpenCon UId="32" />
+      <NameCon UId="25" Name="x4" />
+    </Wire>
+    <Wire UId="89">
+      <OpenCon UId="33" />
+      <NameCon UId="25" Name="x5" />
+    </Wire>
+    <Wire UId="90">
+      <OpenCon UId="34" />
+      <NameCon UId="25" Name="x6" />
+    </Wire>
+    <Wire UId="91">
+      <OpenCon UId="35" />
+      <NameCon UId="25" Name="x7" />
+    </Wire>
+    <Wire UId="92">
+      <OpenCon UId="36" />
+      <NameCon UId="25" Name="x8" />
+    </Wire>
+    <Wire UId="93">
+      <OpenCon UId="37" />
+      <NameCon UId="25" Name="x9" />
+    </Wire>
+    <Wire UId="94">
+      <OpenCon UId="38" />
+      <NameCon UId="25" Name="x10" />
+    </Wire>
+    <Wire UId="95">
+      <OpenCon UId="39" />
+      <NameCon UId="25" Name="x11" />
+    </Wire>
+    <Wire UId="96">
+      <OpenCon UId="40" />
+      <NameCon UId="25" Name="x12" />
+    </Wire>
+    <Wire UId="97">
+      <OpenCon UId="41" />
+      <NameCon UId="25" Name="x13" />
+    </Wire>
+    <Wire UId="98">
+      <OpenCon UId="42" />
+      <NameCon UId="25" Name="x14" />
+    </Wire>
+    <Wire UId="99">
+      <OpenCon UId="43" />
+      <NameCon UId="25" Name="x15" />
+    </Wire>
+    <Wire UId="100">
+      <OpenCon UId="44" />
+      <NameCon UId="25" Name="selfreset0" />
+    </Wire>
+    <Wire UId="101">
+      <OpenCon UId="45" />
+      <NameCon UId="25" Name="selfreset1" />
+    </Wire>
+    <Wire UId="102">
+      <OpenCon UId="46" />
+      <NameCon UId="25" Name="selfreset2" />
+    </Wire>
+    <Wire UId="103">
+      <OpenCon UId="47" />
+      <NameCon UId="25" Name="selfreset3" />
+    </Wire>
+    <Wire UId="104">
+      <OpenCon UId="48" />
+      <NameCon UId="25" Name="selfreset4" />
+    </Wire>
+    <Wire UId="105">
+      <OpenCon UId="49" />
+      <NameCon UId="25" Name="selfreset5" />
+    </Wire>
+    <Wire UId="106">
+      <OpenCon UId="50" />
+      <NameCon UId="25" Name="selfreset6" />
+    </Wire>
+    <Wire UId="107">
+      <OpenCon UId="51" />
+      <NameCon UId="25" Name="selfreset7" />
+    </Wire>
+    <Wire UId="108">
+      <OpenCon UId="52" />
+      <NameCon UId="25" Name="selfreset8" />
+    </Wire>
+    <Wire UId="109">
+      <OpenCon UId="53" />
+      <NameCon UId="25" Name="selfreset9" />
+    </Wire>
+    <Wire UId="110">
+      <OpenCon UId="54" />
+      <NameCon UId="25" Name="selfreset10" />
+    </Wire>
+    <Wire UId="111">
+      <OpenCon UId="55" />
+      <NameCon UId="25" Name="selfreset11" />
+    </Wire>
+    <Wire UId="112">
+      <OpenCon UId="56" />
+      <NameCon UId="25" Name="selfreset12" />
+    </Wire>
+    <Wire UId="113">
+      <OpenCon UId="57" />
+      <NameCon UId="25" Name="selfreset13" />
+    </Wire>
+    <Wire UId="114">
+      <OpenCon UId="58" />
+      <NameCon UId="25" Name="selfreset14" />
+    </Wire>
+    <Wire UId="115">
+      <OpenCon UId="59" />
+      <NameCon UId="25" Name="selfreset15" />
+    </Wire>
+    <Wire UId="116">
+      <NameCon UId="25" Name="_w" />
+      <OpenCon UId="60" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="25" Name="er" />
+      <OpenCon UId="61" />
+    </Wire>
+    <Wire UId="118">
+      <NameCon UId="25" Name="count" />
+      <OpenCon UId="62" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="25" Name="a_er[0]" />
+      <OpenCon UId="63" />
+    </Wire>
+    <Wire UId="120">
+      <NameCon UId="25" Name="a_er[1]" />
+      <OpenCon UId="64" />
+    </Wire>
+    <Wire UId="121">
+      <NameCon UId="25" Name="a_er[2]" />
+      <OpenCon UId="65" />
+    </Wire>
+    <Wire UId="122">
+      <NameCon UId="25" Name="a_er[3]" />
+      <OpenCon UId="66" />
+    </Wire>
+    <Wire UId="123">
+      <NameCon UId="25" Name="a_er[4]" />
+      <OpenCon UId="67" />
+    </Wire>
+    <Wire UId="124">
+      <NameCon UId="25" Name="a_er[5]" />
+      <OpenCon UId="68" />
+    </Wire>
+    <Wire UId="125">
+      <NameCon UId="25" Name="a_er[6]" />
+      <OpenCon UId="69" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="25" Name="a_er[7]" />
+      <OpenCon UId="70" />
+    </Wire>
+    <Wire UId="127">
+      <NameCon UId="25" Name="a_er[8]" />
+      <OpenCon UId="71" />
+    </Wire>
+    <Wire UId="128">
+      <NameCon UId="25" Name="a_er[9]" />
+      <OpenCon UId="72" />
+    </Wire>
+    <Wire UId="129">
+      <NameCon UId="25" Name="a_er[10]" />
+      <OpenCon UId="73" />
+    </Wire>
+    <Wire UId="130">
+      <NameCon UId="25" Name="a_er[11]" />
+      <OpenCon UId="74" />
+    </Wire>
+    <Wire UId="131">
+      <NameCon UId="25" Name="a_er[12]" />
+      <OpenCon UId="75" />
+    </Wire>
+    <Wire UId="132">
+      <NameCon UId="25" Name="a_er[13]" />
+      <OpenCon UId="76" />
+    </Wire>
+    <Wire UId="133">
+      <NameCon UId="25" Name="a_er[14]" />
+      <OpenCon UId="77" />
+    </Wire>
+    <Wire UId="134">
+      <NameCon UId="25" Name="a_er[15]" />
+      <OpenCon UId="78" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="remote key activated" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="remPowerOut" />
+      </Symbol>
+    </Access>
+    <Part Name="Coil" UId="23" />
+  </Parts>
+  <Wires>
+    <Wire UId="24">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="25">
+      <IdentCon UId="22" />
+      <NameCon UId="23" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="30" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="31" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

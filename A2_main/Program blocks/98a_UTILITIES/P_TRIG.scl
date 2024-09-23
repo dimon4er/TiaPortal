@@ -1,0 +1,23 @@
+﻿FUNCTION_BLOCK "P_TRIG"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+   VAR_INPUT 
+      IN : Bool;
+   END_VAR
+
+   VAR_OUTPUT 
+      P : Bool;
+      N : Bool;
+   END_VAR
+
+   VAR 
+      WAS : Bool;
+   END_VAR
+
+
+BEGIN
+	#P := #IN AND NOT #WAS;
+	#N := NOT #IN AND #WAS;
+	#WAS := #IN;
+END_FUNCTION_BLOCK
+

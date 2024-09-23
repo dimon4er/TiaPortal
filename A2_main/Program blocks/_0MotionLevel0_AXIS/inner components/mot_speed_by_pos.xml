@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="SET_SPD_DIR" Datatype="Real" Accessibility="Public" />
+    <Member Name="POS" Datatype="Real" Accessibility="Public" />
+    <Member Name="xFwdOk" Datatype="Bool" Accessibility="Public" />
+    <Member Name="xRevOk" Datatype="Bool" Accessibility="Public" />
+    <Member Name="par_fwd_limit" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_rev_limit" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_dist_fast" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_speed_fast" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_dist_crawl" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_speed_crawl" Datatype="Real" Accessibility="Public" />
+    <Member Name="par_dist_stop" Datatype="Real" Accessibility="Public" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="speed_dir" Datatype="Real" Accessibility="Public" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Temp">
+    <Member Name="speed_limited_fwd" Datatype="Real" />
+    <Member Name="speed_limited_rev" Datatype="Real" />
+  </Section>
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>mot_speed_by_pos</Name>
+      <Namespace />
+      <Number>10</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="xFwdOk" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>1.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="par_fwd_limit" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="par_dist_crawl" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="par_dist_fast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="par_dist_stop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="par_speed_crawl" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="par_speed_fast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="speed_limited_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="xFwdOk" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="32">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="speed_limited_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="xRevOk" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>-1.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="par_rev_limit" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="par_dist_crawl" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="par_dist_fast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="par_dist_stop" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="par_speed_crawl" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="par_speed_fast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="speed_limited_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="xRevOk" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="46">
+      <Symbol>
+        <Component Name="speed_limited_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="speed_limited_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="48">
+      <Symbol>
+        <Component Name="SET_SPD_DIR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="49">
+      <Symbol>
+        <Component Name="speed_limited_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="speed_dir" />
+      </Symbol>
+    </Access>
+    <Call UId="51">
+      <CallInfo Name="mot_limited_speed" BlockType="FC">
+        <Parameter Name="inverter_int" Section="Input" Type="Real" />
+        <Parameter Name="arg_a" Section="Input" Type="Real" />
+        <Parameter Name="arg_b_bigger" Section="Input" Type="Real" />
+        <Parameter Name="distance_crawl" Section="Input" Type="Real" />
+        <Parameter Name="distance_fast" Section="Input" Type="Real" />
+        <Parameter Name="distance_stop" Section="Input" Type="Real" />
+        <Parameter Name="speed_crawl" Section="Input" Type="Real" />
+        <Parameter Name="speed_fast" Section="Input" Type="Real" />
+        <Parameter Name="speed" Section="Output" Type="Real" />
+      </CallInfo>
+    </Call>
+    <Part Name="Move" UId="52" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+      <Negated Name="en" />
+    </Part>
+    <Call UId="53">
+      <CallInfo Name="mot_limited_speed" BlockType="FC">
+        <Parameter Name="inverter_int" Section="Input" Type="Real" />
+        <Parameter Name="arg_a" Section="Input" Type="Real" />
+        <Parameter Name="arg_b_bigger" Section="Input" Type="Real" />
+        <Parameter Name="distance_crawl" Section="Input" Type="Real" />
+        <Parameter Name="distance_fast" Section="Input" Type="Real" />
+        <Parameter Name="distance_stop" Section="Input" Type="Real" />
+        <Parameter Name="speed_crawl" Section="Input" Type="Real" />
+        <Parameter Name="speed_fast" Section="Input" Type="Real" />
+        <Parameter Name="speed" Section="Output" Type="Real" />
+      </CallInfo>
+    </Call>
+    <Part Name="Move" UId="54" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+      <Negated Name="en" />
+    </Part>
+    <Part Name="LIMIT" Version="1.0" UId="55" DisabledENO="true">
+      <TemplateValue Name="value_type" Type="Type">Real</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="57">
+      <IdentCon UId="21" />
+      <NameCon UId="51" Name="en" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="22" />
+      <NameCon UId="51" Name="inverter_int" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="23" />
+      <NameCon UId="51" Name="arg_a" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="24" />
+      <NameCon UId="51" Name="arg_b_bigger" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="25" />
+      <NameCon UId="51" Name="distance_crawl" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="26" />
+      <NameCon UId="51" Name="distance_fast" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="27" />
+      <NameCon UId="51" Name="distance_stop" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="28" />
+      <NameCon UId="51" Name="speed_crawl" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="29" />
+      <NameCon UId="51" Name="speed_fast" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="51" Name="speed" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="31" />
+      <NameCon UId="52" Name="en" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="32" />
+      <NameCon UId="52" Name="in" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="52" Name="out1" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="34" />
+      <NameCon UId="53" Name="en" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="35" />
+      <NameCon UId="53" Name="inverter_int" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="36" />
+      <NameCon UId="53" Name="arg_a" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="37" />
+      <NameCon UId="53" Name="arg_b_bigger" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="38" />
+      <NameCon UId="53" Name="distance_crawl" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="39" />
+      <NameCon UId="53" Name="distance_fast" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="40" />
+      <NameCon UId="53" Name="distance_stop" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="41" />
+      <NameCon UId="53" Name="speed_crawl" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="42" />
+      <NameCon UId="53" Name="speed_fast" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="53" Name="speed" />
+      <IdentCon UId="43" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="44" />
+      <NameCon UId="54" Name="en" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="45" />
+      <NameCon UId="54" Name="in" />
+    </Wire>
+    <Wire UId="82">
+      <NameCon UId="54" Name="out1" />
+      <IdentCon UId="46" />
+    </Wire>
+    <Wire UId="83">
+      <OpenCon UId="56" />
+      <NameCon UId="55" Name="en" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="47" />
+      <NameCon UId="55" Name="MN" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="48" />
+      <NameCon UId="55" Name="IN" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="49" />
+      <NameCon UId="55" Name="MX" />
+    </Wire>
+    <Wire UId="87">
+      <NameCon UId="55" Name="OUT" />
+      <IdentCon UId="50" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="D" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="E" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

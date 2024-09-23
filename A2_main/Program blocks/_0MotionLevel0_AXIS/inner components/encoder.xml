@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="isMultiturn" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="pos_lim_fwd" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="pos_lim_rev" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENC" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="par_calpos_predef" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xPredefCal" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="POS" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="calibrated" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="saved_fwd" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="saved_rev" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ER_set" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ER_w" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="RET_DATA" Datatype="&quot;typePOSMEMcalib&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="MEM" Datatype="Real" />
+          <Member Name="offset" Datatype="Real" />
+          <Member Name="calibrated" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="target_pos" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="not_first_scan" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xPredefCal_filtered" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="tr_predef" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="tr_fwd" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="tr_rev" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="ton_filter" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="btn_calib_now_predef" Datatype="Bool" />
+    <Member Name="btn_calib_now_fwd" Datatype="Bool" />
+    <Member Name="btn_calib_now_rev" Datatype="Bool" />
+    <Member Name="length_rev_fwd" Datatype="Real" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>encoder</Name>
+      <Namespace />
+      <Number>15</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="xPredefCal" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="22">
+      <Constant>
+        <ConstantValue>T#100ms</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="xPredefCal_filtered" />
+      </Symbol>
+    </Access>
+    <Part Name="TON" Version="1.0" UId="24">
+      <Instance Scope="LocalVariable" UId="25">
+        <Component Name="ton_filter" />
+      </Instance>
+      <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="26" />
+  </Parts>
+  <Wires>
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="IN" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="PT" />
+    </Wire>
+    <Wire UId="30">
+      <NameCon UId="24" Name="ET" />
+      <OpenCon UId="27" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="24" Name="Q" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="isMultiturn" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="THEN" UId="27" />
+  <NewLine Num="1" UId="28" />
+  <Blank Num="4" UId="29" />
+  <Token Text="IF" UId="30" />
+  <Blank Num="1" UId="31" />
+  <Token Text="NOT" UId="32" />
+  <Blank Num="1" UId="33" />
+  <Access Scope="LocalVariable" UId="34">
+    <Symbol UId="35">
+      <Component Name="RET_DATA" UId="36" />
+      <Token Text="." UId="37" />
+      <Component Name="calibrated" UId="38" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="39" />
+  <Token Text="THEN" UId="40" />
+  <NewLine Num="1" UId="41" />
+  <Blank Num="8" UId="42" />
+  <Access Scope="LocalVariable" UId="43">
+    <Symbol UId="44">
+      <Component Name="RET_DATA" UId="45" />
+      <Token Text="." UId="46" />
+      <Component Name="calibrated" UId="47" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="48" />
+  <Token Text=":=" UId="49" />
+  <Blank Num="1" UId="50" />
+  <Access Scope="LiteralConstant" UId="51">
+    <Constant UId="52">
+      <ConstantValue UId="54">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="55" />
+  <NewLine Num="1" UId="56" />
+  <Blank Num="4" UId="57" />
+  <Token Text="END_IF" UId="58" />
+  <Token Text=";" UId="59" />
+  <NewLine Num="1" UId="60" />
+  <Blank Num="4" UId="61" />
+  <Token Text="IF" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="LocalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="pos_lim_fwd" UId="66" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="67" />
+  <Token Text="&gt;" UId="68" />
+  <Blank Num="1" UId="69" />
+  <Access Scope="LocalVariable" UId="70">
+    <Symbol UId="71">
+      <Component Name="pos_lim_rev" UId="72" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="73" />
+  <Token Text="THEN" UId="74" />
+  <NewLine Num="1" UId="75" />
+  <Blank Num="8" UId="76" />
+  <Access Scope="LocalVariable" UId="77">
+    <Symbol UId="78">
+      <Component Name="ER_set" UId="79" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="80" />
+  <Token Text=":=" UId="81" />
+  <Blank Num="1" UId="82" />
+  <Access Scope="LiteralConstant" UId="83">
+    <Constant UId="84">
+      <ConstantValue UId="86">false</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="87" />
+  <NewLine Num="1" UId="88" />
+  <Blank Num="8" UId="89" />
+  <Access Scope="LocalVariable" UId="90">
+    <Symbol UId="91">
+      <Component Name="ER_w" UId="92" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="93" />
+  <Token Text=":=" UId="94" />
+  <Blank Num="1" UId="95" />
+  <Access Scope="TypedConstant" UId="96">
+    <Constant UId="97">
+      <ConstantValue UId="98">WString#''</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="99" />
+  <NewLine Num="1" UId="100" />
+  <Blank Num="8" UId="101" />
+  <Access Scope="LocalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="length_rev_fwd" UId="104" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="105" />
+  <Token Text=":=" UId="106" />
+  <Blank Num="1" UId="107" />
+  <Access Scope="LocalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="pos_lim_fwd" UId="110" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="111" />
+  <Token Text="-" UId="112" />
+  <Blank Num="1" UId="113" />
+  <Access Scope="LocalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="pos_lim_rev" UId="116" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="117" />
+  <NewLine Num="1" UId="118" />
+  <Blank Num="8" UId="119" />
+  <Token Text="IF" UId="120" />
+  <Blank Num="1" UId="121" />
+  <Access Scope="LocalVariable" UId="122">
+    <Symbol UId="123">
+      <Component Name="POS" UId="124" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="125" />
+  <Token Text="&gt;=" UId="126" />
+  <Blank Num="1" UId="127" />
+  <Access Scope="LocalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="pos_lim_fwd" UId="130" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="131" />
+  <Token Text="THEN" UId="132" />
+  <NewLine Num="1" UId="133" />
+  <Blank Num="12" UId="134" />
+  <NewLine Num="1" UId="135" />
+  <Blank Num="12" UId="136" />
+  <NewLine Num="1" UId="137" />
+  <Blank Num="12" UId="138" />
+  <Access Scope="LocalVariable" UId="139">
+    <Symbol UId="140">
+      <Component Name="RET_DATA" UId="141" />
+      <Token Text="." UId="142" />
+      <Component Name="offset" UId="143" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="144" />
+  <Token Text=":=" UId="145" />
+  <Blank Num="1" UId="146" />
+  <Access Scope="LocalVariable" UId="147">
+    <Symbol UId="148">
+      <Component Name="RET_DATA" UId="149" />
+      <Token Text="." UId="150" />
+      <Component Name="offset" UId="151" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="152" />
+  <Token Text="+" UId="153" />
+  <Blank Num="1" UId="154" />
+  <Access Scope="LocalVariable" UId="155">
+    <Symbol UId="156">
+      <Component Name="length_rev_fwd" UId="157" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="158" />
+  <NewLine Num="1" UId="159" />
+  <Blank Num="8" UId="160" />
+  <Token Text="END_IF" UId="161" />
+  <Token Text=";" UId="162" />
+  <NewLine Num="1" UId="163" />
+  <Blank Num="8" UId="164" />
+  <Token Text="IF" UId="165" />
+  <Blank Num="1" UId="166" />
+  <Access Scope="LocalVariable" UId="167">
+    <Symbol UId="168">
+      <Component Name="POS" UId="169" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="170" />
+  <Token Text="&lt;" UId="171" />
+  <Blank Num="1" UId="172" />
+  <Access Scope="LocalVariable" UId="173">
+    <Symbol UId="174">
+      <Component Name="pos_lim_rev" UId="175" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="176" />
+  <Token Text="THEN" UId="177" />
+  <NewLine Num="1" UId="178" />
+  <Blank Num="12" UId="179" />
+  <Access Scope="LocalVariable" UId="180">
+    <Symbol UId="181">
+      <Component Name="RET_DATA" UId="182" />
+      <Token Text="." UId="183" />
+      <Component Name="offset" UId="184" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="185" />
+  <Token Text=":=" UId="186" />
+  <Blank Num="1" UId="187" />
+  <Access Scope="LocalVariable" UId="188">
+    <Symbol UId="189">
+      <Component Name="RET_DATA" UId="190" />
+      <Token Text="." UId="191" />
+      <Component Name="offset" UId="192" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="193" />
+  <Token Text="-" UId="194" />
+  <Blank Num="1" UId="195" />
+  <Access Scope="LocalVariable" UId="196">
+    <Symbol UId="197">
+      <Component Name="length_rev_fwd" UId="198" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="199" />
+  <NewLine Num="1" UId="200" />
+  <Blank Num="8" UId="201" />
+  <Token Text="END_IF" UId="202" />
+  <Token Text=";" UId="203" />
+  <NewLine Num="1" UId="204" />
+  <Blank Num="8" UId="205" />
+  <NewLine Num="1" UId="206" />
+  <Blank Num="8" UId="207" />
+  <NewLine Num="1" UId="208" />
+  <Blank Num="8" UId="209" />
+  <NewLine Num="1" UId="210" />
+  <Blank Num="8" UId="211" />
+  <Token Text="IF" UId="212" />
+  <Blank Num="1" UId="213" />
+  <Access Scope="LocalVariable" UId="214">
+    <Symbol UId="215">
+      <Component Name="target_pos" UId="216" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="217" />
+  <Token Text="&gt;=" UId="218" />
+  <Blank Num="1" UId="219" />
+  <Access Scope="LocalVariable" UId="220">
+    <Symbol UId="221">
+      <Component Name="pos_lim_fwd" UId="222" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="223" />
+  <Token Text="THEN" UId="224" />
+  <NewLine Num="1" UId="225" />
+  <Blank Num="12" UId="226" />
+  <Access Scope="LocalVariable" UId="227">
+    <Symbol UId="228">
+      <Component Name="target_pos" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="230" />
+  <Token Text=":=" UId="231" />
+  <Blank Num="1" UId="232" />
+  <Access Scope="LocalVariable" UId="233">
+    <Symbol UId="234">
+      <Component Name="target_pos" UId="235" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="236" />
+  <Token Text="-" UId="237" />
+  <Blank Num="1" UId="238" />
+  <Access Scope="LocalVariable" UId="239">
+    <Symbol UId="240">
+      <Component Name="length_rev_fwd" UId="241" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="242" />
+  <NewLine Num="1" UId="243" />
+  <Blank Num="8" UId="244" />
+  <Token Text="END_IF" UId="245" />
+  <Token Text=";" UId="246" />
+  <NewLine Num="1" UId="247" />
+  <Blank Num="8" UId="248" />
+  <Token Text="IF" UId="249" />
+  <Blank Num="1" UId="250" />
+  <Access Scope="LocalVariable" UId="251">
+    <Symbol UId="252">
+      <Component Name="target_pos" UId="253" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="254" />
+  <Token Text="&lt;" UId="255" />
+  <Blank Num="1" UId="256" />
+  <Access Scope="LocalVariable" UId="257">
+    <Symbol UId="258">
+      <Component Name="pos_lim_rev" UId="259" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="260" />
+  <Token Text="THEN" UId="261" />
+  <NewLine Num="1" UId="262" />
+  <Blank Num="12" UId="263" />
+  <Access Scope="LocalVariable" UId="264">
+    <Symbol UId="265">
+      <Component Name="target_pos" UId="266" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="267" />
+  <Token Text=":=" UId="268" />
+  <Blank Num="1" UId="269" />
+  <Access Scope="LocalVariable" UId="270">
+    <Symbol UId="271">
+      <Component Name="target_pos" UId="272" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="273" />
+  <Token Text="+" UId="274" />
+  <Blank Num="1" UId="275" />
+  <Access Scope="LocalVariable" UId="276">
+    <Symbol UId="277">
+      <Component Name="length_rev_fwd" UId="278" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="279" />
+  <NewLine Num="1" UId="280" />
+  <Blank Num="8" UId="281" />
+  <Token Text="END_IF" UId="282" />
+  <Token Text=";" UId="283" />
+  <NewLine Num="1" UId="284" />
+  <Blank Num="4" UId="285" />
+  <Token Text="ELSE" UId="286" />
+  <NewLine Num="1" UId="287" />
+  <Blank Num="8" UId="288" />
+  <Access Scope="LocalVariable" UId="289">
+    <Symbol UId="290">
+      <Component Name="ER_set" UId="291" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="292" />
+  <Token Text=":=" UId="293" />
+  <Blank Num="1" UId="294" />
+  <Access Scope="LiteralConstant" UId="295">
+    <Constant UId="296">
+      <ConstantValue UId="298">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="299" />
+  <NewLine Num="1" UId="300" />
+  <Blank Num="8" UId="301" />
+  <Access Scope="LocalVariable" UId="302">
+    <Symbol UId="303">
+      <Component Name="ER_w" UId="304" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="305" />
+  <Token Text=":=" UId="306" />
+  <Blank Num="1" UId="307" />
+  <Access Scope="TypedConstant" UId="308">
+    <Constant UId="309">
+      <ConstantValue UId="310">WString#'enc_fwd_lt_rev'</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="311" />
+  <NewLine Num="1" UId="312" />
+  <Blank Num="4" UId="313" />
+  <Token Text="END_IF" UId="314" />
+  <Token Text=";" UId="315" />
+  <NewLine Num="1" UId="316" />
+  <Token Text="END_IF" UId="317" />
+  <Token Text=";" UId="318" />
+  <NewLine Num="1" UId="319" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="not_first_scan" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="ENC" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="RET_DATA" />
+        <Component Name="MEM" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="RET_DATA" />
+        <Component Name="offset" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="RET_DATA" />
+        <Component Name="MEM" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="not_first_scan" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="not_first_scan" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="ENC" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="RET_DATA" />
+        <Component Name="offset" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="RET_DATA" />
+        <Component Name="MEM" />
+      </Symbol>
+    </Access>
+    <Part Name="Sub" UId="34" DisabledENO="true">
+      <AutomaticTyped Name="SrcType" />
+      <Negated Name="en" />
+    </Part>
+    <Part Name="Move" UId="35" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="SCoil" UId="36" />
+    <Part Name="Sub" UId="37" DisabledENO="true">
+      <AutomaticTyped Name="SrcType" />
+    </Part>
+    <Part Name="Move" UId="38" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <IdentCon UId="21" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="22" />
+      <NameCon UId="34" Name="in1" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="34" Name="in2" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="34" Name="out" />
+      <IdentCon UId="24" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="34" Name="eno" />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="35" Name="out1" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="35" Name="eno" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="en" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="30" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="37" Name="out" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="37" Name="eno" />
+      <NameCon UId="38" Name="en" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="32" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="38" Name="out1" />
+      <IdentCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="tr_predef" UId="23" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="24">
+    <Instruction UId="25">
+      <Token Text="(" UId="26" />
+      <Parameter Name="CLK" UId="27">
+        <Blank Num="1" UId="28" />
+        <Token Text=":=" UId="29" />
+        <Blank Num="1" UId="30" />
+        <Access Scope="LocalVariable" UId="31">
+          <Symbol UId="32">
+            <Component Name="xPredefCal_filtered" UId="33" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="34" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="35" />
+  <NewLine Num="2" UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="btn_calib_now_predef" UId="39" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="40" />
+  <Token Text=":=" UId="41" />
+  <Blank Num="1" UId="42" />
+  <Access Scope="LocalVariable" UId="43">
+    <Symbol UId="44">
+      <Component Name="tr_predef" UId="45" />
+      <Token Text="." UId="46" />
+      <Component Name="Q" UId="47" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="48" />
+  <NewLine Num="2" UId="49" />
+  <Token Text="IF" UId="50" />
+  <Blank Num="1" UId="51" />
+  <Access Scope="LocalVariable" UId="52">
+    <Symbol UId="53">
+      <Component Name="btn_calib_now_predef" UId="54" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="55" />
+  <Token Text="THEN" UId="56" />
+  <NewLine Num="1" UId="57" />
+  <Blank Num="4" UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="RET_DATA" UId="61" />
+      <Token Text="." UId="62" />
+      <Component Name="offset" UId="63" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="64" />
+  <Token Text=":=" UId="65" />
+  <Blank Num="1" UId="66" />
+  <Access Scope="LocalVariable" UId="67">
+    <Symbol UId="68">
+      <Component Name="ENC" UId="69" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="70" />
+  <Token Text="-" UId="71" />
+  <Blank Num="1" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="par_calpos_predef" UId="75" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="4" UId="78" />
+  <Access Scope="LocalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="RET_DATA" UId="81" />
+      <Token Text="." UId="82" />
+      <Component Name="calibrated" UId="83" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="84" />
+  <Token Text=":=" UId="85" />
+  <Blank Num="1" UId="86" />
+  <Access Scope="LiteralConstant" UId="87">
+    <Constant UId="88">
+      <ConstantValue UId="90">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="91" />
+  <NewLine Num="1" UId="92" />
+  <Token Text="END_IF" UId="93" />
+  <Token Text=";" UId="94" />
+  <NewLine Num="2" UId="95" />
+  <Access Scope="LocalVariable" UId="96">
+    <Symbol UId="97">
+      <Component Name="calibrated" UId="98" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="99" />
+  <Token Text=":=" UId="100" />
+  <Blank Num="1" UId="101" />
+  <Access Scope="LocalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="RET_DATA" UId="104" />
+      <Token Text="." UId="105" />
+      <Component Name="calibrated" UId="106" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="107" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="17" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="18" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,1720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Tags.PlcTagTable ID="0">
+    <AttributeList>
+      <Name>Default tag table_1</Name>
+    </AttributeList>
+    <ObjectList>
+      <SW.Tags.PlcTag ID="1" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW100</LogicalAddress>
+          <Name>qw100_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="4" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW0</LogicalAddress>
+          <Name>iw0_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="7" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW0</LogicalAddress>
+          <Name>qw0</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="A" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW500</LogicalAddress>
+          <Name>iw500_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="D" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW500</LogicalAddress>
+          <Name>qw500_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="10" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW100</LogicalAddress>
+          <Name>iw100_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="11" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="13" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW600</LogicalAddress>
+          <Name>qw600_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="14" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="16" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW102</LogicalAddress>
+          <Name>iw102_3</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="17" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="19" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW602</LogicalAddress>
+          <Name>qw602_3</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="1C" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW600</LogicalAddress>
+          <Name>iw600_1</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="1F" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW602</LogicalAddress>
+          <Name>iw602_3</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="20" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="21" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="22" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW102</LogicalAddress>
+          <Name>w102_3</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="23" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="25" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID800</LogicalAddress>
+          <Name>di_800</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="26" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="28" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID804</LogicalAddress>
+          <Name>di_801</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="29" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2B" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID808</LogicalAddress>
+          <Name>di_802</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2E" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID812</LogicalAddress>
+          <Name>di_803</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="31" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID816</LogicalAddress>
+          <Name>di_804</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="32" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="33" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="34" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID820</LogicalAddress>
+          <Name>di_805</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="35" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="36" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="37" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID824</LogicalAddress>
+          <Name>di_806na</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="38" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="3A" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD700</LogicalAddress>
+          <Name>vdq700</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="3D" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD704</LogicalAddress>
+          <Name>vdq701</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="40" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD708</LogicalAddress>
+          <Name>vdq702</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="41" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="43" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD712</LogicalAddress>
+          <Name>vdq703</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="44" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="45" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="46" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD716</LogicalAddress>
+          <Name>vdq704</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="47" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="49" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD720</LogicalAddress>
+          <Name>vdq705</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="4C" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD724</LogicalAddress>
+          <Name>vdq706na</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="4F" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD800</LogicalAddress>
+          <Name>dq800</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="50" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="51" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="52" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD804</LogicalAddress>
+          <Name>dq801</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="53" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="54" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="55" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD808</LogicalAddress>
+          <Name>dq802</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="56" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="57" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="58" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD812</LogicalAddress>
+          <Name>dq803</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="5B" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD816</LogicalAddress>
+          <Name>dq804</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="5E" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD820</LogicalAddress>
+          <Name>dq805</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="60" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="61" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QD824</LogicalAddress>
+          <Name>dq806na</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="62" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="63" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="64" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID700</LogicalAddress>
+          <Name>vdi700</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="65" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="66" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="67" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID704</LogicalAddress>
+          <Name>vdi701</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="68" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="69" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="6A" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID708</LogicalAddress>
+          <Name>vdi702</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="6D" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID712</LogicalAddress>
+          <Name>vdi703</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="70" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID716</LogicalAddress>
+          <Name>vdi704</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="71" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="72" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="73" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID720</LogicalAddress>
+          <Name>vdi705</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="74" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="75" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="76" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>DWord</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%ID724</LogicalAddress>
+          <Name>vdi706na</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="77" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="78" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="79" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%IW50</LogicalAddress>
+          <Name>commiw_50</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="7C" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%QW50</LogicalAddress>
+          <Name>commqw_50</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="7F" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%M0.0</LogicalAddress>
+          <Name>Connection_lost</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="80" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="81" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="82" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Word</DataTypeName>
+          <ExternalAccessible>true</ExternalAccessible>
+          <ExternalVisible>true</ExternalVisible>
+          <ExternalWritable>true</ExternalWritable>
+          <LogicalAddress>%MW2</LogicalAddress>
+          <Name>mem</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="83" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="84" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcUserConstant ID="85" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>None(1)</Name>
+          <Value>65535</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="86" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="87" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="88" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>Automatic update(1)</Name>
+          <Value>0</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="89" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="8A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="8B" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>PIP 1(1)</Name>
+          <Value>1</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="8D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="8E" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>PIP 2(1)</Name>
+          <Value>2</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="90" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="91" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>PIP 3(1)</Name>
+          <Value>3</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="92" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="93" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="94" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>PIP 4(1)</Name>
+          <Value>4</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="95" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="96" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="97" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Pip</DataTypeName>
+          <Name>PIP OB Servo(1)</Name>
+          <Value>32768</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="98" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="99" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="9A" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~MC(1)</Name>
+          <Value>51</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="9C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="9D" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~Exec(1)</Name>
+          <Value>52</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="9F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="A0" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local(1)</Name>
+          <Value>49</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="A1" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A2" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="A3" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Interface</DataTypeName>
+          <Name>Local~PROFINET_interface_1(1)</Name>
+          <Value>64</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="A4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="A6" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Interface</DataTypeName>
+          <Name>Local~PROFINET_interface_1~Port_1(1)</Name>
+          <Value>65</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="A7" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="A9" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Interface</DataTypeName>
+          <Name>Local~PROFINET_interface_1~Port_2(1)</Name>
+          <Value>66</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="AA" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="AB" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="AC" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_1(1)</Name>
+          <Value>257</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="AD" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="AE" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="AF" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_2(1)</Name>
+          <Value>258</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B0" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="B1" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="B2" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_3(1)</Name>
+          <Value>259</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B3" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="B4" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="B5" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_4(1)</Name>
+          <Value>260</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="B7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="B8" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_5(1)</Name>
+          <Value>261</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="B9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="BA" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="BB" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Hsc</DataTypeName>
+          <Name>Local~HSC_6(1)</Name>
+          <Value>262</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="BC" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="BD" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="BE" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~AI_2_AQ_2_1(1)</Name>
+          <Value>263</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="BF" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C0" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="C1" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~DI_14_DQ_10_1(1)</Name>
+          <Value>264</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="C4" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~OPC_UA(1)</Name>
+          <Value>117</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="C7" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Pwm</DataTypeName>
+          <Name>Local~Pulse_1(1)</Name>
+          <Value>265</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="C8" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="C9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="CA" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Pwm</DataTypeName>
+          <Name>Local~Pulse_2(1)</Name>
+          <Value>266</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="CB" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="CC" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="CD" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Pwm</DataTypeName>
+          <Name>Local~Pulse_3(1)</Name>
+          <Value>267</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="CE" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="CF" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="D0" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Pwm</DataTypeName>
+          <Name>Local~Pulse_4(1)</Name>
+          <Value>268</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="D1" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D2" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="D3" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Device</DataTypeName>
+          <Name>Local~PROFINET_interface_1~IODevice</Name>
+          <Value>270</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="D4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="D6" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~bool0</Name>
+          <Value>272</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="D7" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="D8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="D9" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~bool1</Name>
+          <Value>273</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="DA" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="DB" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="DC" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~analog0</Name>
+          <Value>274</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="DD" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="DE" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="DF" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~anolog1</Name>
+          <Value>275</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E0" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="E1" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="E2" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~hsc</Name>
+          <Value>276</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E3" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="E4" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="E5" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~pulse</Name>
+          <Value>277</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="E7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="E8" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~comm0</Name>
+          <Value>278</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="EA" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="EB" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~PROFINET_interface_1~comm1</Name>
+          <Value>279</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="EC" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="ED" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="EE" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~Common(1)</Name>
+          <Value>50</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="EF" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F0" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="F1" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_Device</DataTypeName>
+          <Name>Local~Device(1)</Name>
+          <Value>32</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F2" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F3" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="F4" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>Hw_SubModule</DataTypeName>
+          <Name>Local~Configuration(1)</Name>
+          <Value>33</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+      <SW.Tags.PlcUserConstant ID="F7" CompositionName="UserConstants">
+        <AttributeList>
+          <DataTypeName>OB_Cyclic</DataTypeName>
+          <Name>OB_Cyclic interrupt(1)</Name>
+          <Value>30</Value>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F8" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcUserConstant>
+    </ObjectList>
+  </SW.Tags.PlcTagTable>
+</Document>

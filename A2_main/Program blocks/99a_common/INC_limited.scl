@@ -1,0 +1,25 @@
+﻿FUNCTION_BLOCK "INC_limited"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      CLK : Bool;
+      N : Int;
+   END_VAR
+
+   VAR_IN_OUT 
+      I : Int;
+   END_VAR
+
+   VAR 
+      mem : Bool;
+   END_VAR
+
+
+BEGIN
+	IF #CLK AND NOT #mem THEN
+	    #I := (#I + 1)MOD #N;
+	END_IF;
+	#mem := #CLK;
+	    
+END_FUNCTION_BLOCK
+

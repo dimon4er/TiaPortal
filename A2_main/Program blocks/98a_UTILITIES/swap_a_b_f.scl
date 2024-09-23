@@ -1,0 +1,20 @@
+﻿FUNCTION "swap_a_b_f" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_IN_OUT 
+      A : Real;
+      B : Real;
+   END_VAR
+
+   VAR_TEMP 
+      buf : Real;
+   END_VAR
+
+
+BEGIN
+	
+	#buf := #A;
+	#A := #B;
+	#B := #buf;
+END_FUNCTION
+

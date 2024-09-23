@@ -1,0 +1,130 @@
+﻿FUNCTION_BLOCK "last_button_stands"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      Reset_all : Bool;
+      pt : Time := T#100ms;
+   END_VAR
+
+   VAR_OUTPUT 
+      safe1 : Bool;
+      safe2 : Bool;
+      safe3 : Bool;
+      safe4 : Bool;
+      safe5 : Bool;
+      safe6 : Bool;
+      safe7 : Bool;
+      safe8 : Bool;
+      none_selected : Bool;
+      change_trig { ExternalAccessible := 'False'; ExternalVisible := 'False'; ExternalWritable := 'False'} : Bool;
+      reset_or_ch_or_none : Bool;
+   END_VAR
+
+   VAR_IN_OUT 
+      B1 : Bool;
+      B2 : Bool;
+      B3 : Bool;
+      B4 : Bool;
+      B5 : Bool;
+      B6 : Bool;
+      B7 : Bool;
+      B8 : Bool;
+   END_VAR
+
+   VAR 
+      t {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : Array[1..#N] of R_TRIG;
+      B { S7_SetPoint := 'True'} : Array[1..#N] of Bool;
+      S { S7_SetPoint := 'True'} : Array[1..#N] of Bool;
+      tp { S7_SetPoint := 'False'} : "tp_peter";
+   END_VAR
+
+   VAR_TEMP 
+      i : Int;
+      j : Int;
+   END_VAR
+
+   VAR CONSTANT 
+      N : Int := 8;
+   END_VAR
+
+
+BEGIN
+	#B[1] := #B1;
+	#B[2] := #B2;
+	#B[3] := #B3;
+	#B[4] := #B4;
+	#B[5] := #B5;
+	#B[6] := #B6;
+	#B[7] := #B7;
+	#B[8] := #B8;
+	
+	IF #Reset_all THEN
+	    FOR #i := 1 TO #N DO
+	        #B[#i] := false;
+	    END_FOR;
+	ELSE
+	    FOR #i := 1 TO #N DO
+	        #t[#i](CLK := #B[#i]);
+	    END_FOR;
+	    
+	    
+	    
+	    FOR #i := 1 TO #N DO
+	        IF #t[#i].Q THEN
+	            FOR #j := 1 TO #N DO
+	                IF #i <> #j THEN
+	                    #B[#j] := false;
+	                END_IF;
+	            END_FOR;
+	        END_IF;
+	    END_FOR;
+	    
+	    #change_trig := false;
+	    
+	    FOR #i := 1 TO #N DO
+	        #change_trig := #change_trig OR #t[#i].Q;
+	    END_FOR;
+	    #tp(CLK := #change_trig,
+	        pt := #pt);
+	    
+	    
+	    FOR #i := 1 TO #N DO
+	        #S[#i] := #B[#i] AND NOT #tp.Q;
+	    END_FOR;
+	END_IF;
+	
+	IF #Reset_all THEN
+	    #none_selected := false;
+	ELSE
+	    #none_selected := TRUE;
+	    FOR #i := 1 TO #N DO
+	        #none_selected := #none_selected AND NOT #B[#i];
+	    END_FOR;
+	    #none_selected := #none_selected;
+	END_IF;
+	
+	#reset_or_ch_or_none := #none_selected OR  #change_trig OR #Reset_all;
+	
+	#B1 := #B[1];
+	#B2 := #B[2];
+	#B3 := #B[3];
+	#B4 := #B[4];
+	#B5 := #B[5];
+	#B6 := #B[6];
+	#B7 := #B[7];
+	#B8 := #B[8];
+	
+	
+	
+	
+	#safe1 := #S[1];
+	#safe2 := #S[2];
+	#safe3 := #S[3];
+	#safe4 := #S[4];
+	#safe5 := #S[5];
+	#safe6 := #S[6];
+	#safe7 := #S[7];
+	#safe8 := #S[8];
+	
+END_FUNCTION_BLOCK
+

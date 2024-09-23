@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="cur_pos_set" Datatype="&quot;typePositions&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="M1Z" Datatype="Real" />
+          <Member Name="M2Y" Datatype="Real" />
+          <Member Name="M3X" Datatype="Real" />
+          <Member Name="M4O1" Datatype="Real" />
+          <Member Name="M5O2" Datatype="Real" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="hmi_pos_set" Datatype="&quot;typePositions&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="M1Z" Datatype="Real" />
+          <Member Name="M2Y" Datatype="Real" />
+          <Member Name="M3X" Datatype="Real" />
+          <Member Name="M4O1" Datatype="Real" />
+          <Member Name="M5O2" Datatype="Real" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="hmi_to_spot_allowed" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Spot_positions_now" Datatype="&quot;typePositions&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="M1Z" Datatype="Real" />
+          <Member Name="M2Y" Datatype="Real" />
+          <Member Name="M3X" Datatype="Real" />
+          <Member Name="M4O1" Datatype="Real" />
+          <Member Name="M5O2" Datatype="Real" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="spot_set_encoder" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="spot_set_hmi" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="spot_ws" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="part_was" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="spotSaver" Datatype="&quot;_hmi_singleSpotManager&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="hmi_PosSet" Datatype="&quot;typePositions&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="M1Z" Datatype="Real" />
+                <Member Name="M2Y" Datatype="Real" />
+                <Member Name="M3X" Datatype="Real" />
+                <Member Name="M4O1" Datatype="Real" />
+                <Member Name="M5O2" Datatype="Real" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="cur_pos_set" Datatype="&quot;typePositions&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="M1Z" Datatype="Real" />
+                <Member Name="M2Y" Datatype="Real" />
+                <Member Name="M3X" Datatype="Real" />
+                <Member Name="M4O1" Datatype="Real" />
+                <Member Name="M5O2" Datatype="Real" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Output" />
+        <Section Name="InOut">
+          <Member Name="hmiFromHmi" Datatype="Bool" />
+          <Member Name="hmiSFromEncoder" Datatype="Bool" />
+          <Member Name="posToModify" Datatype="&quot;typePositions&quot;">
+            <Sections>
+              <Section Name="None" />
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Static">
+          <Member Name="N_max" Datatype="Int" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>_hmi_spot_manager</Name>
+      <Namespace />
+      <Number>47</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="hmi_pos_set" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="Mot_Positions" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="spot_set_hmi" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="spot_set_encoder" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="_ML3_importantPositionsRETAIN" />
+        <Component Name="Home" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="_hmi_singleSpotManager" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="28">
+          <Component Name="spotSaver" />
+        </Instance>
+        <Parameter Name="hmi_PosSet" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="cur_pos_set" Section="Input" Type="&quot;typePositions&quot;" />
+        <Parameter Name="hmiFromHmi" Section="InOut" Type="Bool" />
+        <Parameter Name="hmiSFromEncoder" Section="InOut" Type="Bool" />
+        <Parameter Name="posToModify" Section="InOut" Type="&quot;typePositions&quot;" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="29">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="hmi_PosSet" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="cur_pos_set" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="24" />
+      <NameCon UId="27" Name="hmiFromHmi" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="25" />
+      <NameCon UId="27" Name="hmiSFromEncoder" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="26" />
+      <NameCon UId="27" Name="posToModify" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="_SPOT_DB" />
+        <Component Name="Spot_i" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="_SPOT_DB" />
+        <Component Name="Spot_i" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="_SPOT_DB" />
+        <Component Name="SpotListNow" />
+        <Component Name="N" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="hmi_to_spot_allowed" />
+      </Symbol>
+    </Access>
+    <Part Name="Ge" UId="26">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="27">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="A" UId="28">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="29" />
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="in1" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="in2" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="28" Name="in1" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="in1" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="24" />
+      <NameCon UId="27" Name="in2" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in2" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Token Text="IF" UId="21" />
+  <Blank Num="1" UId="22" />
+  <Access Scope="LocalVariable" UId="23">
+    <Symbol UId="24">
+      <Component Name="part_was" UId="25" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="26" />
+  <Token Text="&lt;&gt;" UId="27" />
+  <Blank Num="1" UId="28" />
+  <Access Scope="GlobalVariable" UId="29">
+    <Symbol UId="30">
+      <Component Name="_SPOT_DB" UId="31">
+        <BooleanAttribute Name="HasQuotes" UId="32">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="33" />
+      <Component Name="Part_selected" UId="34" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="35" />
+  <Token Text="THEN" UId="36" />
+  <NewLine Num="1" UId="37" />
+  <Blank Num="4" UId="38" />
+  <Token Text="IF" UId="39" />
+  <Blank Num="1" UId="40" />
+  <Access Scope="GlobalVariable" UId="41">
+    <Symbol UId="42">
+      <Component Name="_SPOT_DB" UId="43">
+        <BooleanAttribute Name="HasQuotes" UId="44">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="45" />
+      <Component Name="Part_selected" UId="46" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="47" />
+  <Token Text="&gt;" UId="48" />
+  <Blank Num="1" UId="49" />
+  <Access Scope="LiteralConstant" UId="50">
+    <Constant UId="51">
+      <ConstantValue UId="53">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="54" />
+  <Token Text="AND" UId="55" />
+  <Blank Num="1" UId="56" />
+  <Access Scope="GlobalVariable" UId="57">
+    <Symbol UId="58">
+      <Component Name="_SPOT_DB" UId="59">
+        <BooleanAttribute Name="HasQuotes" UId="60">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="61" />
+      <Component Name="Part_selected" UId="62" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="63" />
+  <Token Text="&lt;=" UId="64" />
+  <Blank Num="1" UId="65" />
+  <Access Scope="GlobalVariable" UId="66">
+    <Symbol UId="67">
+      <Component Name="_SPOT_DB" UId="68">
+        <BooleanAttribute Name="HasQuotes" UId="69">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="70" />
+      <Component Name="Spot_N_max" UId="71" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="72" />
+  <Token Text="THEN" UId="73" />
+  <NewLine Num="1" UId="74" />
+  <Blank Num="8" UId="75" />
+  <Access Scope="GlobalVariable" UId="76">
+    <Symbol UId="77">
+      <Component Name="_SPOT_DB" UId="78">
+        <BooleanAttribute Name="HasQuotes" UId="79">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="80" />
+      <Component Name="SpotListNow" UId="81" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="82" />
+  <Token Text=":=" UId="83" />
+  <Blank Num="1" UId="84" />
+  <Access Scope="GlobalVariable" UId="85">
+    <Symbol UId="86">
+      <Component Name="_SPOT_DB" UId="87">
+        <BooleanAttribute Name="HasQuotes" UId="88">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="89" />
+      <Component Name="Parts" UId="90">
+        <Token Text="[" UId="91" />
+        <Access Scope="GlobalVariable" UId="92">
+          <Symbol UId="93">
+            <Component Name="_SPOT_DB" UId="94">
+              <BooleanAttribute Name="HasQuotes" UId="95">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="96" />
+            <Component Name="Part_selected" UId="97" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="98" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="99" />
+  <NewLine Num="1" UId="100" />
+  <Blank Num="4" UId="101" />
+  <Token Text="END_IF" UId="102" />
+  <Token Text=";" UId="103" />
+  <NewLine Num="1" UId="104" />
+  <Token Text="ELSE" UId="105" />
+  <NewLine Num="1" UId="106" />
+  <Blank Num="4" UId="107" />
+  <Token Text="IF" UId="108" />
+  <Blank Num="1" UId="109" />
+  <Access Scope="GlobalVariable" UId="110">
+    <Symbol UId="111">
+      <Component Name="_SPOT_DB" UId="112">
+        <BooleanAttribute Name="HasQuotes" UId="113">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="114" />
+      <Component Name="Part_selected" UId="115" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="116" />
+  <Token Text="&gt;" UId="117" />
+  <Blank Num="1" UId="118" />
+  <Access Scope="LiteralConstant" UId="119">
+    <Constant UId="120">
+      <ConstantValue UId="122">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="123" />
+  <Token Text="AND" UId="124" />
+  <Blank Num="1" UId="125" />
+  <Access Scope="GlobalVariable" UId="126">
+    <Symbol UId="127">
+      <Component Name="_SPOT_DB" UId="128">
+        <BooleanAttribute Name="HasQuotes" UId="129">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="130" />
+      <Component Name="Part_selected" UId="131" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="132" />
+  <Token Text="&lt;" UId="133" />
+  <Blank Num="1" UId="134" />
+  <Access Scope="GlobalVariable" UId="135">
+    <Symbol UId="136">
+      <Component Name="_SPOT_DB" UId="137">
+        <BooleanAttribute Name="HasQuotes" UId="138">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="139" />
+      <Component Name="Spot_N_max" UId="140" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="141" />
+  <Token Text="THEN" UId="142" />
+  <NewLine Num="1" UId="143" />
+  <Blank Num="8" UId="144" />
+  <Access Scope="GlobalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="_SPOT_DB" UId="147">
+        <BooleanAttribute Name="HasQuotes" UId="148">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="149" />
+      <Component Name="Parts" UId="150">
+        <Token Text="[" UId="151" />
+        <Access Scope="GlobalVariable" UId="152">
+          <Symbol UId="153">
+            <Component Name="_SPOT_DB" UId="154">
+              <BooleanAttribute Name="HasQuotes" UId="155">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="156" />
+            <Component Name="Part_selected" UId="157" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="158" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="159" />
+  <Token Text=":=" UId="160" />
+  <Blank Num="1" UId="161" />
+  <Access Scope="GlobalVariable" UId="162">
+    <Symbol UId="163">
+      <Component Name="_SPOT_DB" UId="164">
+        <BooleanAttribute Name="HasQuotes" UId="165">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="166" />
+      <Component Name="SpotListNow" UId="167" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="168" />
+  <NewLine Num="1" UId="169" />
+  <Blank Num="4" UId="170" />
+  <Token Text="END_IF" UId="171" />
+  <Token Text=";" UId="172" />
+  <NewLine Num="1" UId="173" />
+  <Token Text="END_IF" UId="174" />
+  <Token Text=";" UId="175" />
+  <NewLine Num="2" UId="176" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="177">
+    <Text UId="178">#Spot_positions_now :=  "_SPOT_DB".SpotListNow.pos_AR["_SPOT_DB".Spot_i];</Text>
+  </LineComment>
+  <NewLine Num="3" UId="179" />
+  <Access Scope="LocalVariable" UId="180">
+    <Symbol UId="181">
+      <Component Name="part_was" UId="182" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="183" />
+  <Token Text=":=" UId="184" />
+  <Blank Num="1" UId="185" />
+  <Access Scope="GlobalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="_SPOT_DB" UId="188">
+        <BooleanAttribute Name="HasQuotes" UId="189">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="190" />
+      <Component Name="Part_selected" UId="191" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="192" />
+  <NewLine Num="2" UId="193" />
+  <Blank Num="4" UId="194" />
+  <NewLine Num="1" UId="195" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="12" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="13" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

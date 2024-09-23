@@ -1,0 +1,3929 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="mm_per_ reductur outputshaft_rev (AskURmechEngineer)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <StartValue>10.0</StartValue>
+    </Member>
+    <Member Name="reduction_ rotation (AskURmechEngineer)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <StartValue>1.0</StartValue>
+    </Member>
+    <Member Name="ABincrements_per_ encoder_rev (CheckEnc Label and HSC hardware settings dont forget input filtration)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <StartValue>4096.0</StartValue>
+    </Member>
+    <Member Name="max_revs_ at_10V (CheckMotorLabel)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <StartValue>1360.0</StartValue>
+    </Member>
+    <Member Name="enc_placed_ on_motor not reductor output shaft(visually inspect)" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="isMultiturn (visually inspect)" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="soft_speed_change_req" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENC_REVERSED_DIR" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENCODER_DINT" Datatype="DInt" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetUnison" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetHome" Datatype="Real" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bHome" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bFwd" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Desk_bRev" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_fwd_mechOK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_rev_mecOK" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_fwd_ind" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_rev_ind" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xPredifCal" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_MODE_EN" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_FWD" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_REV" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALIEN_SPDABS" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ExecUni" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TheseAreDoors" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="xOverrideLocal" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hbStepPlus" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hbStepMinus" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="TargetStep" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамические_границы_используются" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамическая_граница_fwd" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="динамическая_граница_rev" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="max_speed_10V_p_mm" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="speed_V" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="speed" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yaINTSPEED" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yFWD" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yREV" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yFwd_STOP" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yRev_STOP" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="yIN_POS" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ER" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="WN" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ALLOWED" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="dist_stop(check t_acc)" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="MovingHomeWhileFree" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ERWSTRING" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="aut_target" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="para" Datatype="&quot;typeMotPara&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="POS" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="calibrated" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ENC_RET" Datatype="&quot;typePOSMEMcalib&quot;" Accessibility="Public">
+      <Sections>
+        <Section Name="None">
+          <Member Name="MEM" Datatype="Real" />
+          <Member Name="offset" Datatype="Real" />
+          <Member Name="calibrated" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Static">
+    <Member Name="para_ArtLimits" Datatype="&quot;typeMotPara&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="v_absMax" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="au_execute" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="AMANGRDB" Datatype="&quot;axis_manager&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="allowed" Datatype="Bool" />
+          <Member Name="targetUnison" Datatype="Real" />
+          <Member Name="targetHome" Datatype="Real" />
+          <Member Name="targetStep" Datatype="Real" />
+          <Member Name="bSoftStop" Datatype="Bool" />
+          <Member Name="bHome" Datatype="Bool" />
+          <Member Name="hbStepPlus" Datatype="Bool" />
+          <Member Name="hbStepMinus" Datatype="Bool" />
+          <Member Name="bFwd" Datatype="Bool" />
+          <Member Name="bRev" Datatype="Bool" />
+          <Member Name="Params" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ExecUni" Datatype="Bool" />
+          <Member Name="theseAreDoors" Datatype="Bool" />
+          <Member Name="xOverrideLOCAL" Datatype="Bool" />
+          <Member Name="POS" Datatype="Real" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="team_unison" Datatype="Bool" />
+          <Member Name="team_free" Datatype="Bool" />
+          <Member Name="team_override" Datatype="Bool" />
+          <Member Name="Desk_slowly" Datatype="Bool" />
+          <Member Name="yaSpeedManual" Datatype="Real" />
+          <Member Name="yaSpeedAuto" Datatype="Real" />
+          <Member Name="m_auto" Datatype="Bool" />
+          <Member Name="m_man" Datatype="Bool" />
+          <Member Name="au_execute" Datatype="Bool" />
+          <Member Name="aut_target" Datatype="Real" />
+          <Member Name="OVERRIDE" Datatype="Bool" />
+          <Member Name="ExecutingManuverFreeMode" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="st_Fwd" Datatype="Bool" />
+          <Member Name="st_Rev" Datatype="Bool" />
+          <Member Name="st_speed_slow_or_fast_negative" Datatype="Real" />
+          <Member Name="aman_sel_target_Instance" Datatype="&quot;aman_sel_target&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="allowed" Datatype="Bool" />
+                <Member Name="team_unison" Datatype="Bool" />
+                <Member Name="team_free" Datatype="Bool" />
+                <Member Name="team_override" Datatype="Bool" />
+                <Member Name="xbtnAnyMan" Datatype="Bool" />
+                <Member Name="xbtnHome" Datatype="Bool" />
+                <Member Name="xbtnStepPlus" Datatype="Bool" />
+                <Member Name="xbtnStepMinus" Datatype="Bool" />
+                <Member Name="execUni" Datatype="Bool" />
+                <Member Name="targetUni" Datatype="Real" />
+                <Member Name="targetHome" Datatype="Real" />
+                <Member Name="targetStep" Datatype="Real" />
+                <Member Name="POS" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="ExecuteSemiAutoManuver" Datatype="Bool" />
+                <Member Name="m_auto" Datatype="Bool" />
+                <Member Name="m_man" Datatype="Bool" />
+                <Member Name="m_override" Datatype="Bool" />
+                <Member Name="target" Datatype="Real" />
+                <Member Name="execute" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="auto_allowed" Datatype="Bool" />
+                <Member Name="anyBtn" Datatype="Bool" />
+                <Member Name="xbtnHome_was" Datatype="Bool" />
+                <Member Name="bsuhome" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="p1Home" Datatype="Bool" />
+                <Member Name="q1Home" Datatype="Bool" />
+                <Member Name="Q_integer" Datatype="Int" />
+                <Member Name="bsu_step_plus" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="p2StepPlus" Datatype="Bool" />
+                <Member Name="q2StepPlus" Datatype="Bool" />
+                <Member Name="p3StepMinus" Datatype="Bool" />
+                <Member Name="q3StepMinus" Datatype="Bool" />
+                <Member Name="bsu_step_minus" Datatype="&quot;_ML2_ts_block1_subunit&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Q_mine" Datatype="Int" />
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="CLK_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="P_flag" Datatype="Bool" />
+                      <Member Name="Q_flag" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="Q_INT" Datatype="Int" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="MOTDB" Datatype="&quot;__mot_universal_&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ALLOWED" Datatype="Bool" />
+          <Member Name="ALLOWED_ONLY_IN_OVERRIDE" Datatype="Bool" />
+          <Member Name="OVERRIDE_NOW" Datatype="Bool" />
+          <Member Name="isMultiturn" Datatype="Bool" />
+          <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+          <Member Name="xFwdOk" Datatype="Bool" />
+          <Member Name="xRevOk" Datatype="Bool" />
+          <Member Name="xPredefCal" Datatype="Bool" />
+          <Member Name="MAN_SET_SPEED_maxParSpeed" Datatype="Real" />
+          <Member Name="ENC" Datatype="Real" />
+          <Member Name="par" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="partnerCalibrated" Datatype="Bool" />
+          <Member Name="artLimits" Datatype="Bool" />
+          <Member Name="artLimFwd" Datatype="Real" />
+          <Member Name="artLimRev" Datatype="Real" />
+          <Member Name="AU_EXECUTE_TO_TARGET" Datatype="Bool" />
+          <Member Name="AU_SPD" Datatype="Real" />
+          <Member Name="AUT_MD_SPD_notPos" Datatype="Bool" />
+          <Member Name="AUT" Datatype="Bool" />
+          <Member Name="MAN" Datatype="Bool" />
+          <Member Name="CLOCK_S_P_SCAN" Datatype="Real" />
+          <Member Name="ALIEN_HOST_CONTROL_MODE_ENABLE" Datatype="Bool" />
+          <Member Name="ALIEN_FWD" Datatype="Bool" />
+          <Member Name="ALIEN_REV" Datatype="Bool" />
+          <Member Name="ALIEN_SPEED_ABS" Datatype="Real" />
+          <Member Name="TheseAreDoors" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="AU_INPOS" Datatype="Bool" />
+          <Member Name="FWD" Datatype="Bool" />
+          <Member Name="REV" Datatype="Bool" />
+          <Member Name="BRK_REL" Datatype="Bool" />
+          <Member Name="SPEED_ABS" Datatype="Real" />
+          <Member Name="SPEED" Datatype="Real" />
+          <Member Name="BLIND" Datatype="Bool" />
+          <Member Name="ER_FOLLOW" Datatype="Bool" />
+          <Member Name="ER_SET" Datatype="Bool" />
+          <Member Name="ER_FWD" Datatype="Bool" />
+          <Member Name="ER_REV" Datatype="Bool" />
+          <Member Name="er_ws" Datatype="WString" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="AU_TRGT" Datatype="Real" />
+          <Member Name="calibrated" Datatype="Bool" />
+          <Member Name="POS" Datatype="Real" />
+          <Member Name="ENC_RET_DATA" Datatype="&quot;typePOSMEMcalib&quot;">
+            <Sections>
+              <Section Name="None" />
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Static">
+          <Member Name="par_Local" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="SERV_block" Datatype="Bool" />
+          <Member Name="AUTO_static" Datatype="Bool" />
+          <Member Name="MAN_static" Datatype="Bool" />
+          <Member Name="M_MD" Datatype="&quot;MD&quot;">
+            <Sections>
+              <Section Name="Input" />
+              <Section Name="Output">
+                <Member Name="CHAN_TR" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut">
+                <Member Name="AUT" Datatype="Bool" />
+                <Member Name="MAN" Datatype="Bool" />
+                <Member Name="SERV" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="lbs" Datatype="&quot;last_button_stands&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Reset_all" Datatype="Bool" />
+                      <Member Name="pt" Datatype="Time" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="safe1" Datatype="Bool" />
+                      <Member Name="safe2" Datatype="Bool" />
+                      <Member Name="safe3" Datatype="Bool" />
+                      <Member Name="safe4" Datatype="Bool" />
+                      <Member Name="safe5" Datatype="Bool" />
+                      <Member Name="safe6" Datatype="Bool" />
+                      <Member Name="safe7" Datatype="Bool" />
+                      <Member Name="safe8" Datatype="Bool" />
+                      <Member Name="none_selected" Datatype="Bool" />
+                      <Member Name="change_trig" Datatype="Bool" />
+                      <Member Name="reset_or_ch_or_none" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut">
+                      <Member Name="B1" Datatype="Bool" />
+                      <Member Name="B2" Datatype="Bool" />
+                      <Member Name="B3" Datatype="Bool" />
+                      <Member Name="B4" Datatype="Bool" />
+                      <Member Name="B5" Datatype="Bool" />
+                      <Member Name="B6" Datatype="Bool" />
+                      <Member Name="B7" Datatype="Bool" />
+                      <Member Name="B8" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Static">
+                      <Member Name="t" Datatype="Array[1..8] of R_TRIG" Version="1.0">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="Stat_Bit" Datatype="Bool" />
+                          </Section>
+                        </Sections>
+                      </Member>
+                      <Member Name="B" Datatype="Array[1..8] of Bool" />
+                      <Member Name="S" Datatype="Array[1..8] of Bool" />
+                      <Member Name="tp" Datatype="&quot;tp_peter&quot;">
+                        <Sections>
+                          <Section Name="Input">
+                            <Member Name="CLK" Datatype="Bool" />
+                            <Member Name="pt" Datatype="Time" />
+                          </Section>
+                          <Section Name="Output">
+                            <Member Name="Q" Datatype="Bool" />
+                          </Section>
+                          <Section Name="InOut" />
+                          <Section Name="Static">
+                            <Member Name="was" Datatype="Bool" />
+                            <Member Name="ton" Datatype="TON_TIME" Version="1.0">
+                              <Sections>
+                                <Section Name="None">
+                                  <Member Name="PT" Datatype="Time" />
+                                  <Member Name="ET" Datatype="Time" />
+                                  <Member Name="IN" Datatype="Bool" />
+                                  <Member Name="Q" Datatype="Bool" />
+                                </Section>
+                              </Sections>
+                            </Member>
+                          </Section>
+                        </Sections>
+                      </Member>
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ENC_DB" Datatype="&quot;encoder&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="pos_lim_fwd" Datatype="Real" />
+                <Member Name="pos_lim_rev" Datatype="Real" />
+                <Member Name="ENC" Datatype="Real" />
+                <Member Name="par_calpos_predef" Datatype="Real" />
+                <Member Name="xPredefCal" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="calibrated" Datatype="Bool" />
+                <Member Name="saved_fwd" Datatype="Real" />
+                <Member Name="saved_rev" Datatype="Real" />
+                <Member Name="ER_set" Datatype="Bool" />
+                <Member Name="ER_w" Datatype="WString" />
+              </Section>
+              <Section Name="InOut">
+                <Member Name="RET_DATA" Datatype="&quot;typePOSMEMcalib&quot;">
+                  <Sections>
+                    <Section Name="None" />
+                  </Sections>
+                </Member>
+                <Member Name="target_pos" Datatype="Real" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="not_first_scan" Datatype="Bool" />
+                <Member Name="xPredefCal_filtered" Datatype="Bool" />
+                <Member Name="tr_predef" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="tr_fwd" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="tr_rev" Datatype="R_TRIG" Version="1.0">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="CLK" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="Stat_Bit" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="ton_filter" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="manual" Datatype="&quot;manual_analog&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="ALLOWED_ONLY_IN_OVERRIDE" Datatype="Bool" />
+                <Member Name="OVERRIDE_NOW" Datatype="Bool" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="SET_SPEED" Datatype="Real" />
+                <Member Name="xFwdOk" Datatype="Bool" />
+                <Member Name="xRevOk" Datatype="Bool" />
+                <Member Name="clibrated" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absmax" Datatype="Real" />
+                <Member Name="par_speed_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_spd_blind" Datatype="Real" />
+                <Member Name="par_fwd_limit" Datatype="Real" />
+                <Member Name="par_rev_limit" Datatype="Real" />
+                <Member Name="par_t_acc" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="er_ws" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="speed_slowly_accelerated" Datatype="Real" />
+                <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed__wdir" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                      <Member Name="STOP_NOW" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="speed_is_zero" Datatype="Bool" />
+                      <Member Name="speed_is_zero_was" Datatype="Bool" />
+                      <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="auto" Datatype="&quot;auto_analog_NORMAL&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="arrived_missed" Datatype="Bool" />
+                <Member Name="SET_SPD_ABS" Datatype="Real" />
+                <Member Name="POS" Datatype="Real" />
+                <Member Name="TARGET" Datatype="Real" />
+                <Member Name="FOLLOW" Datatype="Bool" />
+                <Member Name="xFwdOK" Datatype="Bool" />
+                <Member Name="xRevOK" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absMax" Datatype="Real" />
+                <Member Name="par_spd_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_lim_fwd" Datatype="Real" />
+                <Member Name="par_lim_rev" Datatype="Real" />
+                <Member Name="par_prec_au" Datatype="Real" />
+                <Member Name="par_tout_follw" Datatype="Time" />
+                <Member Name="par_t_acc" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="INPOS" Datatype="Bool" />
+                <Member Name="ER_follow" Datatype="Bool" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="ER" Datatype="Bool" />
+                <Member Name="erws" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="SET_SPD_ABS_slowlyaccelerated" Datatype="Real" />
+                <Member Name="should_go" Datatype="Bool" />
+                <Member Name="mot_speed_slowly_accelerated_Instance" Datatype="&quot;mot_speed_abs_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed_abs" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_abs" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="ALLOWED" Datatype="Bool" />
+                      <Member Name="set_speed__wdir" Datatype="Real" />
+                      <Member Name="v_absMax" Datatype="Real" />
+                      <Member Name="t_acc" Datatype="Real" />
+                      <Member Name="STOP_NOW" Datatype="Bool" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static">
+                      <Member Name="speed_is_zero" Datatype="Bool" />
+                      <Member Name="speed_is_zero_was" Datatype="Bool" />
+                      <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="arrived1" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="arrived2" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="arrived3" Datatype="&quot;mot_auto_calc_arrivedFB&quot;">
+                  <Sections>
+                    <Section Name="Input">
+                      <Member Name="Target" Datatype="Real" />
+                      <Member Name="Pos" Datatype="Real" />
+                      <Member Name="Modifier_delta" Datatype="Real" />
+                      <Member Name="par_prec_au" Datatype="Real" />
+                      <Member Name="par_dist_stop" Datatype="Real" />
+                    </Section>
+                    <Section Name="Output">
+                      <Member Name="arrived" Datatype="Bool" />
+                      <Member Name="distance" Datatype="Real" />
+                      <Member Name="stop_now" Datatype="Bool" />
+                    </Section>
+                    <Section Name="InOut" />
+                    <Section Name="Static" />
+                  </Sections>
+                </Member>
+                <Member Name="IEC_Timer_0_Instance" Datatype="TOF_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ENC_CHECK" Datatype="&quot;enc_no_change_in_time&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="pt" Datatype="Time" />
+                <Member Name="FWD" Datatype="Bool" />
+                <Member Name="REV" Datatype="Bool" />
+                <Member Name="POS" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="ER_FWD" Datatype="Bool" />
+                <Member Name="ER_REV" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="going_fwd" Datatype="Bool" />
+                <Member Name="going_rev" Datatype="Bool" />
+                <Member Name="going_not" Datatype="Bool" />
+                <Member Name="mem" Datatype="Real" />
+                <Member Name="t_fwd" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+                <Member Name="t_rev" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="BRK_DB" Datatype="&quot;BRK_FB&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SpeedZero" Datatype="Bool" />
+                <Member Name="fwd" Datatype="Bool" />
+                <Member Name="rev" Datatype="Bool" />
+                <Member Name="pt" Datatype="Time" />
+                <Member Name="error" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="BRK_REL" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="IEC_Timer_0_Instance" Datatype="TOF_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="sr_auto" Datatype="&quot;SR_TRIG&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SR_CNTRL" Datatype="Bool" />
+              </Section>
+              <Section Name="Output" />
+              <Section Name="InOut">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="mem1" Datatype="Bool" />
+                <Member Name="mem2" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="sr_man" Datatype="&quot;SR_TRIG&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="SR_CNTRL" Datatype="Bool" />
+              </Section>
+              <Section Name="Output" />
+              <Section Name="InOut">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="Static">
+                <Member Name="mem1" Datatype="Bool" />
+                <Member Name="mem2" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="auto_analog_Speed_Instance" Datatype="&quot;auto_analog_copySpeed&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="SET_SPD_wDir" Datatype="Real" />
+                <Member Name="MASTER_POS" Datatype="Real" />
+                <Member Name="MY_POS" Datatype="Real" />
+                <Member Name="par_max_Vcor" Datatype="Real" />
+                <Member Name="par_max_Pos_delta" Datatype="Real" />
+                <Member Name="xFwdOK" Datatype="Bool" />
+                <Member Name="xRevOK" Datatype="Bool" />
+                <Member Name="par_spd_absmax" Datatype="Real" />
+                <Member Name="par_dist_absmax" Datatype="Real" />
+                <Member Name="par_spd_crawl" Datatype="Real" />
+                <Member Name="par_dist_crawl" Datatype="Real" />
+                <Member Name="par_dist_stop" Datatype="Real" />
+                <Member Name="par_lim_fwd" Datatype="Real" />
+                <Member Name="par_lim_rev" Datatype="Real" />
+                <Member Name="par_prec_au" Datatype="Real" />
+                <Member Name="par_tout_follw" Datatype="Time" />
+                <Member Name="par_SpeedTHreshold" Datatype="Real" />
+                <Member Name="isMultiturn" Datatype="Bool" />
+                <Member Name="MultiTurnGoesFwdOnly" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="SPEED" Datatype="Real" />
+                <Member Name="INPOS" Datatype="Bool" />
+                <Member Name="ER_follow" Datatype="Bool" />
+                <Member Name="ER_settings" Datatype="Bool" />
+                <Member Name="ER_SET2" Datatype="Bool" />
+                <Member Name="ER_W" Datatype="WString" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="should_move_static" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="speed_slowed_by_inertia" Datatype="Real" />
+          <Member Name="speed_command" Datatype="Real" />
+          <Member Name="mot_speed_wdir_slowly_accelerated_Instance" Datatype="&quot;mot_speed_wdir_slowly_accelerated&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="ALLOWED" Datatype="Bool" />
+                <Member Name="set_speed__wdir" Datatype="Real" />
+                <Member Name="v_absMax" Datatype="Real" />
+                <Member Name="t_acc" Datatype="Real" />
+                <Member Name="STOP_NOW" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="speed_accelerated_slowly_wdir" Datatype="Real" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="speed_is_zero" Datatype="Bool" />
+                <Member Name="speed_is_zero_was" Datatype="Bool" />
+                <Member Name="speed_is_zero_CLK" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="mot_missed_target" Datatype="&quot;mot_universal_arrived_missed&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="target" Datatype="Real" />
+                <Member Name="pos" Datatype="Real" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="arrived_misesd" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="target_was" Datatype="Real" />
+                <Member Name="dir_to_target_pos" Datatype="Bool" />
+                <Member Name="dir_to_target_pos_was" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="arrived_missed" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="WNDB" Datatype="&quot;ER_WORD&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ignoreNewEr" Datatype="Bool" />
+          <Member Name="ak" Datatype="Bool" />
+          <Member Name="x0" Datatype="Bool" />
+          <Member Name="x1" Datatype="Bool" />
+          <Member Name="x2" Datatype="Bool" />
+          <Member Name="x3" Datatype="Bool" />
+          <Member Name="x4" Datatype="Bool" />
+          <Member Name="x5" Datatype="Bool" />
+          <Member Name="x6" Datatype="Bool" />
+          <Member Name="x7" Datatype="Bool" />
+          <Member Name="x8" Datatype="Bool" />
+          <Member Name="x9" Datatype="Bool" />
+          <Member Name="x10" Datatype="Bool" />
+          <Member Name="x11" Datatype="Bool" />
+          <Member Name="x12" Datatype="Bool" />
+          <Member Name="x13" Datatype="Bool" />
+          <Member Name="x14" Datatype="Bool" />
+          <Member Name="x15" Datatype="Bool" />
+          <Member Name="selfreset0" Datatype="Bool" />
+          <Member Name="selfreset1" Datatype="Bool" />
+          <Member Name="selfreset2" Datatype="Bool" />
+          <Member Name="selfreset3" Datatype="Bool" />
+          <Member Name="selfreset4" Datatype="Bool" />
+          <Member Name="selfreset5" Datatype="Bool" />
+          <Member Name="selfreset6" Datatype="Bool" />
+          <Member Name="selfreset7" Datatype="Bool" />
+          <Member Name="selfreset8" Datatype="Bool" />
+          <Member Name="selfreset9" Datatype="Bool" />
+          <Member Name="selfreset10" Datatype="Bool" />
+          <Member Name="selfreset11" Datatype="Bool" />
+          <Member Name="selfreset12" Datatype="Bool" />
+          <Member Name="selfreset13" Datatype="Bool" />
+          <Member Name="selfreset14" Datatype="Bool" />
+          <Member Name="selfreset15" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="_w" Datatype="Word" />
+          <Member Name="er" Datatype="Bool" />
+          <Member Name="count" Datatype="Int" />
+          <Member Name="a_er[0]" Datatype="Bool" />
+          <Member Name="a_er[1]" Datatype="Bool" />
+          <Member Name="a_er[2]" Datatype="Bool" />
+          <Member Name="a_er[3]" Datatype="Bool" />
+          <Member Name="a_er[4]" Datatype="Bool" />
+          <Member Name="a_er[5]" Datatype="Bool" />
+          <Member Name="a_er[6]" Datatype="Bool" />
+          <Member Name="a_er[7]" Datatype="Bool" />
+          <Member Name="a_er[8]" Datatype="Bool" />
+          <Member Name="a_er[9]" Datatype="Bool" />
+          <Member Name="a_er[10]" Datatype="Bool" />
+          <Member Name="a_er[11]" Datatype="Bool" />
+          <Member Name="a_er[12]" Datatype="Bool" />
+          <Member Name="a_er[13]" Datatype="Bool" />
+          <Member Name="a_er[14]" Datatype="Bool" />
+          <Member Name="a_er[15]" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="a_er" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_x" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_is_self_reset" Datatype="Array[0..15] of Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="ERDB" Datatype="&quot;ER_WORD&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="ignoreNewEr" Datatype="Bool" />
+          <Member Name="ak" Datatype="Bool" />
+          <Member Name="x0" Datatype="Bool" />
+          <Member Name="x1" Datatype="Bool" />
+          <Member Name="x2" Datatype="Bool" />
+          <Member Name="x3" Datatype="Bool" />
+          <Member Name="x4" Datatype="Bool" />
+          <Member Name="x5" Datatype="Bool" />
+          <Member Name="x6" Datatype="Bool" />
+          <Member Name="x7" Datatype="Bool" />
+          <Member Name="x8" Datatype="Bool" />
+          <Member Name="x9" Datatype="Bool" />
+          <Member Name="x10" Datatype="Bool" />
+          <Member Name="x11" Datatype="Bool" />
+          <Member Name="x12" Datatype="Bool" />
+          <Member Name="x13" Datatype="Bool" />
+          <Member Name="x14" Datatype="Bool" />
+          <Member Name="x15" Datatype="Bool" />
+          <Member Name="selfreset0" Datatype="Bool" />
+          <Member Name="selfreset1" Datatype="Bool" />
+          <Member Name="selfreset2" Datatype="Bool" />
+          <Member Name="selfreset3" Datatype="Bool" />
+          <Member Name="selfreset4" Datatype="Bool" />
+          <Member Name="selfreset5" Datatype="Bool" />
+          <Member Name="selfreset6" Datatype="Bool" />
+          <Member Name="selfreset7" Datatype="Bool" />
+          <Member Name="selfreset8" Datatype="Bool" />
+          <Member Name="selfreset9" Datatype="Bool" />
+          <Member Name="selfreset10" Datatype="Bool" />
+          <Member Name="selfreset11" Datatype="Bool" />
+          <Member Name="selfreset12" Datatype="Bool" />
+          <Member Name="selfreset13" Datatype="Bool" />
+          <Member Name="selfreset14" Datatype="Bool" />
+          <Member Name="selfreset15" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="_w" Datatype="Word" />
+          <Member Name="er" Datatype="Bool" />
+          <Member Name="count" Datatype="Int" />
+          <Member Name="a_er[0]" Datatype="Bool" />
+          <Member Name="a_er[1]" Datatype="Bool" />
+          <Member Name="a_er[2]" Datatype="Bool" />
+          <Member Name="a_er[3]" Datatype="Bool" />
+          <Member Name="a_er[4]" Datatype="Bool" />
+          <Member Name="a_er[5]" Datatype="Bool" />
+          <Member Name="a_er[6]" Datatype="Bool" />
+          <Member Name="a_er[7]" Datatype="Bool" />
+          <Member Name="a_er[8]" Datatype="Bool" />
+          <Member Name="a_er[9]" Datatype="Bool" />
+          <Member Name="a_er[10]" Datatype="Bool" />
+          <Member Name="a_er[11]" Datatype="Bool" />
+          <Member Name="a_er[12]" Datatype="Bool" />
+          <Member Name="a_er[13]" Datatype="Bool" />
+          <Member Name="a_er[14]" Datatype="Bool" />
+          <Member Name="a_er[15]" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="a_er" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_x" Datatype="Array[0..15] of Bool" />
+          <Member Name="a_is_self_reset" Datatype="Array[0..15] of Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="erw_calcspd" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="hmiResetCalib" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="IEC_Timer_0_Instance" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="PT" Datatype="Time" />
+          <Member Name="ET" Datatype="Time" />
+          <Member Name="IN" Datatype="Bool" />
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="artLimiter_Instance" Datatype="&quot;artLimiter&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="AckEr" Datatype="Bool" />
+          <Member Name="UseArtLimitw" Datatype="Bool" />
+          <Member Name="artLimfwd" Datatype="Real" />
+          <Member Name="artLimRev" Datatype="Real" />
+          <Member Name="para_in" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+        <Section Name="Output">
+          <Member Name="para_Artlimits" Datatype="&quot;typeMotPara&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+                <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+                <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+                <Member Name="v_crawl_USER" Datatype="Real" />
+                <Member Name="dist_crawl_USER" Datatype="Real" />
+                <Member Name="dist_stop_USER" Datatype="Real" />
+                <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+                <Member Name="pos_calib_USER" Datatype="Real" />
+                <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+                <Member Name="pos_lim_rev_USER" Datatype="Real" />
+                <Member Name="v_blind_USER" Datatype="Real" />
+                <Member Name="v_manual_USER" Datatype="Real" />
+                <Member Name="v_auto_USER" Datatype="Real" />
+                <Member Name="t_er" Datatype="Time" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="ER_WS" Datatype="WString" />
+          <Member Name="ER" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static" />
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="counts_per_mm" Datatype="Real" />
+    <Member Name="er_params_mech" Datatype="Bool" />
+    <Member Name="ENC" Datatype="DInt" />
+    <Member Name="selected_man_speed" Datatype="Real" />
+    <Member Name="AUTO" Datatype="Bool" />
+    <Member Name="MAN" Datatype="Bool" />
+    <Member Name="OVERRIDE" Datatype="Bool" />
+    <Member Name="counts_real" Datatype="Real" />
+    <Member Name="Enc_real_mm" Datatype="Real" />
+    <Member Name="er_follow" Datatype="Bool" />
+    <Member Name="er_set" Datatype="Bool" />
+    <Member Name="er_fwd" Datatype="Bool" />
+    <Member Name="er_rev" Datatype="Bool" />
+    <Member Name="partners_calibrated" Datatype="Bool" />
+    <Member Name="Selected_speed_auto" Datatype="Real" />
+    <Member Name="ошибка_динамических_границ" Datatype="Bool" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>axis_FBD</Name>
+      <Namespace />
+      <Number>53</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="mm_per_ reductur outputshaft_rev (AskURmechEngineer)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="reduction_ rotation (AskURmechEngineer)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="max_revs_ at_10V (CheckMotorLabel)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="ABincrements_per_ encoder_rev (CheckEnc Label and HSC hardware settings dont forget input filtration)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="enc_placed_ on_motor not reductor output shaft(visually inspect)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="para" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="dist_stop(check t_acc)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="max_speed_10V_p_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="counts_per_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="er_params_mech" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="erw_calcspd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="ENCODER_DINT" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="ENC" />
+      </Symbol>
+    </Access>
+    <Call UId="34">
+      <CallInfo Name="calc_speeds_from_mechanics" BlockType="FC">
+        <Parameter Name="mm_per_outputshaft_rev" Section="Input" Type="Real" />
+        <Parameter Name="reduction_ration" Section="Input" Type="Real" />
+        <Parameter Name="max_revs_at_10V" Section="Input" Type="Real" />
+        <Parameter Name="counts_per_encoder_rev" Section="Input" Type="Real" />
+        <Parameter Name="encoder_placed_on_motor" Section="Input" Type="Bool" />
+        <Parameter Name="dist_stop" Section="Output" Type="Real" />
+        <Parameter Name="Vabsmax_mm_per_s" Section="Output" Type="Real" />
+        <Parameter Name="counts_per_mm" Section="Output" Type="Real" />
+        <Parameter Name="ER_params" Section="Output" Type="Bool" />
+        <Parameter Name="er_w" Section="Output" Type="WString" />
+        <Parameter Name="para" Section="InOut" Type="&quot;typeMotPara&quot;" />
+      </CallInfo>
+    </Call>
+    <Part Name="Move" UId="35" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="38">
+      <OpenCon UId="36" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="21" />
+      <NameCon UId="34" Name="mm_per_outputshaft_rev" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="22" />
+      <NameCon UId="34" Name="reduction_ration" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="34" Name="max_revs_at_10V" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="24" />
+      <NameCon UId="34" Name="counts_per_encoder_rev" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="25" />
+      <NameCon UId="34" Name="encoder_placed_on_motor" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="26" />
+      <NameCon UId="34" Name="para" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="34" Name="dist_stop" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="34" Name="Vabsmax_mm_per_s" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="34" Name="counts_per_mm" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="ER_params" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="er_w" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="50">
+      <OpenCon UId="37" />
+      <NameCon UId="35" Name="en" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="32" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="35" Name="out1" />
+      <IdentCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ER_0_root" />
+        <Component Name="ACK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="динамические_границы_используются" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="динамическая_граница_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="динамическая_граница_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="para" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="para_ArtLimits" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="ошибка_динамических_границ" />
+      </Symbol>
+    </Access>
+    <Call UId="28">
+      <CallInfo Name="artLimiter" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="29">
+          <Component Name="artLimiter_Instance" />
+        </Instance>
+        <Parameter Name="AckEr" Section="Input" Type="Bool" />
+        <Parameter Name="UseArtLimitw" Section="Input" Type="Bool" />
+        <Parameter Name="artLimfwd" Section="Input" Type="Real" />
+        <Parameter Name="artLimRev" Section="Input" Type="Real" />
+        <Parameter Name="para_in" Section="Input" Type="&quot;typeMotPara&quot;" />
+        <Parameter Name="para_Artlimits" Section="Output" Type="&quot;typeMotPara&quot;" />
+        <Parameter Name="ER_WS" Section="Output" Type="WString" />
+        <Parameter Name="ER" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <OpenCon UId="30" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="AckEr" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="28" Name="UseArtLimitw" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="artLimfwd" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="artLimRev" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="28" Name="para_in" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="28" Name="para_Artlimits" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="28" Name="ER_WS" />
+      <OpenCon UId="31" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="28" Name="ER" />
+      <IdentCon UId="27" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="ALLOWED" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="TargetUnison" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="TargetHome" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="TargetStep" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="_ML2_modeDB" />
+        <Component Name="xSoftSTOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="Desk_bHome" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="hbStepPlus" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="hbStepMinus" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="Desk_bFwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="Desk_bRev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="para_ArtLimits" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="ExecUni" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="_ML2_modeDB" />
+        <Component Name="yExecuteAll" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="TheseAreDoors" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="TheseAreDoors" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="xOverrideLocal" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="selected_man_speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="Selected_speed_auto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="AUTO" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="MAN" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="au_execute" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="aut_target" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="OVERRIDE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="45">
+      <Symbol>
+        <Component Name="MovingHomeWhileFree" />
+      </Symbol>
+    </Access>
+    <Part Name="A" UId="46">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="O" UId="47">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Call UId="48">
+      <CallInfo Name="axis_manager" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="49">
+          <Component Name="AMANGRDB" />
+        </Instance>
+        <Parameter Name="allowed" Section="Input" Type="Bool" />
+        <Parameter Name="targetUnison" Section="Input" Type="Real" />
+        <Parameter Name="targetHome" Section="Input" Type="Real" />
+        <Parameter Name="targetStep" Section="Input" Type="Real" />
+        <Parameter Name="bSoftStop" Section="Input" Type="Bool" />
+        <Parameter Name="bHome" Section="Input" Type="Bool" />
+        <Parameter Name="hbStepPlus" Section="Input" Type="Bool" />
+        <Parameter Name="hbStepMinus" Section="Input" Type="Bool" />
+        <Parameter Name="bFwd" Section="Input" Type="Bool" />
+        <Parameter Name="bRev" Section="Input" Type="Bool" />
+        <Parameter Name="Params" Section="Input" Type="&quot;typeMotPara&quot;" />
+        <Parameter Name="ExecUni" Section="Input" Type="Bool" />
+        <Parameter Name="theseAreDoors" Section="Input" Type="Bool" />
+        <Parameter Name="xOverrideLOCAL" Section="Input" Type="Bool" />
+        <Parameter Name="POS" Section="Input" Type="Real" />
+        <Parameter Name="team_unison" Section="Output" Type="Bool" />
+        <Parameter Name="team_free" Section="Output" Type="Bool" />
+        <Parameter Name="team_override" Section="Output" Type="Bool" />
+        <Parameter Name="Desk_slowly" Section="Output" Type="Bool" />
+        <Parameter Name="yaSpeedManual" Section="Output" Type="Real" />
+        <Parameter Name="yaSpeedAuto" Section="Output" Type="Real" />
+        <Parameter Name="m_auto" Section="Output" Type="Bool" />
+        <Parameter Name="m_man" Section="Output" Type="Bool" />
+        <Parameter Name="au_execute" Section="Output" Type="Bool" />
+        <Parameter Name="aut_target" Section="Output" Type="Real" />
+        <Parameter Name="OVERRIDE" Section="Output" Type="Bool" />
+        <Parameter Name="ExecutingManuverFreeMode" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="55">
+      <IdentCon UId="33" />
+      <NameCon UId="46" Name="in1" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="34" />
+      <NameCon UId="46" Name="in2" />
+    </Wire>
+    <Wire UId="57">
+      <NameCon UId="46" Name="out" />
+      <NameCon UId="47" Name="in2" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="32" />
+      <NameCon UId="47" Name="in1" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="47" Name="out" />
+      <NameCon UId="48" Name="ExecUni" />
+    </Wire>
+    <Wire UId="60">
+      <OpenCon UId="50" />
+      <NameCon UId="48" Name="en" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="21" />
+      <NameCon UId="48" Name="allowed" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="22" />
+      <NameCon UId="48" Name="targetUnison" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="23" />
+      <NameCon UId="48" Name="targetHome" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="24" />
+      <NameCon UId="48" Name="targetStep" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="25" />
+      <NameCon UId="48" Name="bSoftStop" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="26" />
+      <NameCon UId="48" Name="bHome" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="27" />
+      <NameCon UId="48" Name="hbStepPlus" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="28" />
+      <NameCon UId="48" Name="hbStepMinus" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="29" />
+      <NameCon UId="48" Name="bFwd" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="30" />
+      <NameCon UId="48" Name="bRev" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="31" />
+      <NameCon UId="48" Name="Params" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="35" />
+      <NameCon UId="48" Name="theseAreDoors" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="36" />
+      <NameCon UId="48" Name="xOverrideLOCAL" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="37" />
+      <NameCon UId="48" Name="POS" />
+    </Wire>
+    <Wire UId="75">
+      <NameCon UId="48" Name="team_unison" />
+      <OpenCon UId="51" />
+    </Wire>
+    <Wire UId="76">
+      <NameCon UId="48" Name="team_free" />
+      <OpenCon UId="52" />
+    </Wire>
+    <Wire UId="77">
+      <NameCon UId="48" Name="team_override" />
+      <OpenCon UId="53" />
+    </Wire>
+    <Wire UId="78">
+      <NameCon UId="48" Name="Desk_slowly" />
+      <OpenCon UId="54" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="48" Name="yaSpeedManual" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="80">
+      <NameCon UId="48" Name="yaSpeedAuto" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="81">
+      <NameCon UId="48" Name="m_auto" />
+      <IdentCon UId="40" />
+    </Wire>
+    <Wire UId="82">
+      <NameCon UId="48" Name="m_man" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="83">
+      <NameCon UId="48" Name="au_execute" />
+      <IdentCon UId="42" />
+    </Wire>
+    <Wire UId="84">
+      <NameCon UId="48" Name="aut_target" />
+      <IdentCon UId="43" />
+    </Wire>
+    <Wire UId="85">
+      <NameCon UId="48" Name="OVERRIDE" />
+      <IdentCon UId="44" />
+    </Wire>
+    <Wire UId="86">
+      <NameCon UId="48" Name="ExecutingManuverFreeMode" />
+      <IdentCon UId="45" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="22">
+    <Text UId="23">/1024 ppr, *4* mm per rev /10 reduction = mm</Text>
+  </LineComment>
+  <NewLine Num="1" UId="24" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="25">
+    <Text UId="26" />
+  </LineComment>
+  <NewLine Num="1" UId="27" />
+  <Token Text="IF" UId="28" />
+  <Blank Num="1" UId="29" />
+  <Access Scope="LocalVariable" UId="30">
+    <Symbol UId="31">
+      <Component Name="ENC_REVERSED_DIR" UId="32" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="33" />
+  <Token Text="THEN" UId="34" />
+  <NewLine Num="1" UId="35" />
+  <Blank Num="4" UId="36" />
+  <Access Scope="LocalVariable" UId="37">
+    <Symbol UId="38">
+      <Component Name="counts_real" UId="39" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="40" />
+  <Token Text=":=" UId="41" />
+  <Blank Num="1" UId="42" />
+  <Token Text="-" UId="43" />
+  <Blank Num="1" UId="44" />
+  <Access Scope="Call" UId="45">
+    <Instruction Name="DINT_TO_REAL" UId="46">
+      <Token Text="(" UId="47" />
+      <NamelessParameter UId="48">
+        <Access Scope="LocalVariable" UId="49">
+          <Symbol UId="50">
+            <Component Name="ENC" UId="51" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="53" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="54" />
+  <NewLine Num="1" UId="55" />
+  <Token Text="ELSE" UId="56" />
+  <NewLine Num="1" UId="57" />
+  <Blank Num="4" UId="58" />
+  <Access Scope="LocalVariable" UId="59">
+    <Symbol UId="60">
+      <Component Name="counts_real" UId="61" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="62" />
+  <Token Text=":=" UId="63" />
+  <Blank Num="1" UId="64" />
+  <Token Text="+" UId="65" />
+  <Blank Num="1" UId="66" />
+  <Access Scope="Call" UId="67">
+    <Instruction Name="DINT_TO_REAL" UId="68">
+      <Token Text="(" UId="69" />
+      <NamelessParameter UId="70">
+        <Access Scope="LocalVariable" UId="71">
+          <Symbol UId="72">
+            <Component Name="ENC" UId="73" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="75" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Token Text="END_IF" UId="78" />
+  <Token Text=";" UId="79" />
+  <NewLine Num="3" UId="80" />
+  <Access Scope="LocalVariable" UId="81">
+    <Symbol UId="82">
+      <Component Name="Enc_real_mm" UId="83" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="84" />
+  <Token Text=":=" UId="85" />
+  <Blank Num="2" UId="86" />
+  <Access Scope="LocalVariable" UId="87">
+    <Symbol UId="88">
+      <Component Name="counts_real" UId="89" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text="/" UId="91" />
+  <Blank Num="1" UId="92" />
+  <Access Scope="LocalVariable" UId="93">
+    <Symbol UId="94">
+      <Component Name="counts_per_mm" UId="95" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="96" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ER_0ESTOPS" />
+        <Component Name="er" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="ERDB" />
+        <Component Name="er" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="s_fwd_mechOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="s_rev_mecOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="ER_1AxisMain" />
+        <Component Name="er" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="TheseAreDoors" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="ALLOWED" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="ER_0ESTOPS" />
+        <Component Name="er" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="OVERRIDE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="isMultiturn (visually inspect)" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="MultiTurnGoesFwdOnly" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="s_fwd_mechOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="s_fwd_ind" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="s_rev_mecOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="35">
+      <Symbol>
+        <Component Name="s_rev_ind" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="xPredifCal" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="37">
+      <Symbol>
+        <Component Name="selected_man_speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="Enc_real_mm" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="para_ArtLimits" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="au_execute" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="Selected_speed_auto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="42">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="43">
+      <Symbol>
+        <Component Name="AUTO" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="MAN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="_MAIN_DB" />
+        <Component Name="CLOCK_S_P_SCAN" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="46">
+      <Symbol>
+        <Component Name="ALIEN_MODE_EN" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="ALIEN_FWD" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="48">
+      <Symbol>
+        <Component Name="ALIEN_REV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="49">
+      <Symbol>
+        <Component Name="ALIEN_SPDABS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="aut_target" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="51">
+      <Symbol>
+        <Component Name="calibrated" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="52">
+      <Symbol>
+        <Component Name="POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="53">
+      <Symbol>
+        <Component Name="ENC_RET" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="54">
+      <Symbol>
+        <Component Name="yIN_POS" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="55">
+      <Symbol>
+        <Component Name="yFWD" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="56">
+      <Symbol>
+        <Component Name="yREV" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="57">
+      <Symbol>
+        <Component Name="speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="58">
+      <Symbol>
+        <Component Name="er_follow" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="59">
+      <Symbol>
+        <Component Name="er_set" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="60">
+      <Symbol>
+        <Component Name="er_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="61">
+      <Symbol>
+        <Component Name="er_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="62">
+      <Symbol>
+        <Component Name="ERWSTRING" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="63">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="64">
+      <Symbol>
+        <Component Name="yFwd_STOP" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="65">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="66">
+      <Symbol>
+        <Component Name="yRev_STOP" />
+      </Symbol>
+    </Access>
+    <Part Name="A" UId="67">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="O" UId="68">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in1" />
+    </Part>
+    <Part Name="A" UId="69">
+      <TemplateValue Name="Card" Type="Cardinality">4</TemplateValue>
+      <Negated Name="in1" />
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="Coil" UId="70" />
+    <Part Name="A" UId="71">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+      <Negated Name="in1" />
+    </Part>
+    <Part Name="A" UId="72">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="A" UId="73">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Call UId="74">
+      <CallInfo Name="__mot_universal_" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="75">
+          <Component Name="MOTDB" />
+        </Instance>
+        <Parameter Name="ALLOWED" Section="Input" Type="Bool" />
+        <Parameter Name="ALLOWED_ONLY_IN_OVERRIDE" Section="Input" Type="Bool" />
+        <Parameter Name="OVERRIDE_NOW" Section="Input" Type="Bool" />
+        <Parameter Name="isMultiturn" Section="Input" Type="Bool" />
+        <Parameter Name="MultiTurnGoesFwdOnly" Section="Input" Type="Bool" />
+        <Parameter Name="xFwdOk" Section="Input" Type="Bool" />
+        <Parameter Name="xRevOk" Section="Input" Type="Bool" />
+        <Parameter Name="xPredefCal" Section="Input" Type="Bool" />
+        <Parameter Name="MAN_SET_SPEED_maxParSpeed" Section="Input" Type="Real" />
+        <Parameter Name="ENC" Section="Input" Type="Real" />
+        <Parameter Name="par" Section="Input" Type="&quot;typeMotPara&quot;" />
+        <Parameter Name="partnerCalibrated" Section="Input" Type="Bool" />
+        <Parameter Name="artLimits" Section="Input" Type="Bool" />
+        <Parameter Name="artLimFwd" Section="Input" Type="Real" />
+        <Parameter Name="artLimRev" Section="Input" Type="Real" />
+        <Parameter Name="AU_EXECUTE_TO_TARGET" Section="Input" Type="Bool" />
+        <Parameter Name="AU_SPD" Section="Input" Type="Real" />
+        <Parameter Name="AUT_MD_SPD_notPos" Section="Input" Type="Bool" />
+        <Parameter Name="AUT" Section="Input" Type="Bool" />
+        <Parameter Name="MAN" Section="Input" Type="Bool" />
+        <Parameter Name="CLOCK_S_P_SCAN" Section="Input" Type="Real" />
+        <Parameter Name="ALIEN_HOST_CONTROL_MODE_ENABLE" Section="Input" Type="Bool" />
+        <Parameter Name="ALIEN_FWD" Section="Input" Type="Bool" />
+        <Parameter Name="ALIEN_REV" Section="Input" Type="Bool" />
+        <Parameter Name="ALIEN_SPEED_ABS" Section="Input" Type="Real" />
+        <Parameter Name="TheseAreDoors" Section="Input" Type="Bool" />
+        <Parameter Name="AU_INPOS" Section="Output" Type="Bool" />
+        <Parameter Name="FWD" Section="Output" Type="Bool" />
+        <Parameter Name="REV" Section="Output" Type="Bool" />
+        <Parameter Name="BRK_REL" Section="Output" Type="Bool" />
+        <Parameter Name="SPEED_ABS" Section="Output" Type="Real" />
+        <Parameter Name="SPEED" Section="Output" Type="Real" />
+        <Parameter Name="BLIND" Section="Output" Type="Bool" />
+        <Parameter Name="ER_FOLLOW" Section="Output" Type="Bool" />
+        <Parameter Name="ER_SET" Section="Output" Type="Bool" />
+        <Parameter Name="ER_FWD" Section="Output" Type="Bool" />
+        <Parameter Name="ER_REV" Section="Output" Type="Bool" />
+        <Parameter Name="er_ws" Section="Output" Type="WString" />
+        <Parameter Name="AU_TRGT" Section="InOut" Type="Real" />
+        <Parameter Name="calibrated" Section="InOut" Type="Bool" />
+        <Parameter Name="POS" Section="InOut" Type="Real" />
+        <Parameter Name="ENC_RET_DATA" Section="InOut" Type="&quot;typePOSMEMcalib&quot;" />
+      </CallInfo>
+    </Call>
+    <Part Name="Coil" UId="76" />
+    <Part Name="Coil" UId="77" />
+  </Parts>
+  <Wires>
+    <Wire UId="87">
+      <IdentCon UId="23" />
+      <NameCon UId="67" Name="in1" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="24" />
+      <NameCon UId="67" Name="in2" />
+    </Wire>
+    <Wire UId="89">
+      <NameCon UId="67" Name="out" />
+      <NameCon UId="69" Name="in3" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="25" />
+      <NameCon UId="68" Name="in1" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="26" />
+      <NameCon UId="68" Name="in2" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="68" Name="out" />
+      <NameCon UId="69" Name="in4" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="21" />
+      <NameCon UId="69" Name="in1" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="22" />
+      <NameCon UId="69" Name="in2" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="69" Name="out" />
+      <NameCon UId="70" Name="in" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="27" />
+      <NameCon UId="70" Name="operand" />
+    </Wire>
+    <Wire UId="97">
+      <NameCon UId="70" Name="out" />
+      <NameCon UId="74" Name="ALLOWED" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="28" />
+      <NameCon UId="71" Name="in1" />
+    </Wire>
+    <Wire UId="99">
+      <NameCon UId="71" Name="out" />
+      <NameCon UId="74" Name="ALLOWED_ONLY_IN_OVERRIDE" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="32" />
+      <NameCon UId="72" Name="in1" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="33" />
+      <NameCon UId="72" Name="in2" />
+    </Wire>
+    <Wire UId="102">
+      <NameCon UId="72" Name="out" />
+      <NameCon UId="74" Name="xFwdOk" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="34" />
+      <NameCon UId="73" Name="in1" />
+    </Wire>
+    <Wire UId="104">
+      <IdentCon UId="35" />
+      <NameCon UId="73" Name="in2" />
+    </Wire>
+    <Wire UId="105">
+      <NameCon UId="73" Name="out" />
+      <NameCon UId="74" Name="xRevOk" />
+    </Wire>
+    <Wire UId="106">
+      <OpenCon UId="78" />
+      <NameCon UId="74" Name="en" />
+    </Wire>
+    <Wire UId="107">
+      <IdentCon UId="29" />
+      <NameCon UId="74" Name="OVERRIDE_NOW" />
+    </Wire>
+    <Wire UId="108">
+      <IdentCon UId="30" />
+      <NameCon UId="74" Name="isMultiturn" />
+    </Wire>
+    <Wire UId="109">
+      <IdentCon UId="31" />
+      <NameCon UId="74" Name="MultiTurnGoesFwdOnly" />
+    </Wire>
+    <Wire UId="110">
+      <IdentCon UId="36" />
+      <NameCon UId="74" Name="xPredefCal" />
+    </Wire>
+    <Wire UId="111">
+      <IdentCon UId="37" />
+      <NameCon UId="74" Name="MAN_SET_SPEED_maxParSpeed" />
+    </Wire>
+    <Wire UId="112">
+      <IdentCon UId="38" />
+      <NameCon UId="74" Name="ENC" />
+    </Wire>
+    <Wire UId="113">
+      <IdentCon UId="39" />
+      <NameCon UId="74" Name="par" />
+    </Wire>
+    <Wire UId="114">
+      <OpenCon UId="79" />
+      <NameCon UId="74" Name="partnerCalibrated" />
+    </Wire>
+    <Wire UId="115">
+      <OpenCon UId="80" />
+      <NameCon UId="74" Name="artLimits" />
+    </Wire>
+    <Wire UId="116">
+      <OpenCon UId="81" />
+      <NameCon UId="74" Name="artLimFwd" />
+    </Wire>
+    <Wire UId="117">
+      <OpenCon UId="82" />
+      <NameCon UId="74" Name="artLimRev" />
+    </Wire>
+    <Wire UId="118">
+      <IdentCon UId="40" />
+      <NameCon UId="74" Name="AU_EXECUTE_TO_TARGET" />
+    </Wire>
+    <Wire UId="119">
+      <IdentCon UId="41" />
+      <NameCon UId="74" Name="AU_SPD" />
+    </Wire>
+    <Wire UId="120">
+      <IdentCon UId="42" />
+      <NameCon UId="74" Name="AUT_MD_SPD_notPos" />
+    </Wire>
+    <Wire UId="121">
+      <IdentCon UId="43" />
+      <NameCon UId="74" Name="AUT" />
+    </Wire>
+    <Wire UId="122">
+      <IdentCon UId="44" />
+      <NameCon UId="74" Name="MAN" />
+    </Wire>
+    <Wire UId="123">
+      <IdentCon UId="45" />
+      <NameCon UId="74" Name="CLOCK_S_P_SCAN" />
+    </Wire>
+    <Wire UId="124">
+      <IdentCon UId="46" />
+      <NameCon UId="74" Name="ALIEN_HOST_CONTROL_MODE_ENABLE" />
+    </Wire>
+    <Wire UId="125">
+      <IdentCon UId="47" />
+      <NameCon UId="74" Name="ALIEN_FWD" />
+    </Wire>
+    <Wire UId="126">
+      <IdentCon UId="48" />
+      <NameCon UId="74" Name="ALIEN_REV" />
+    </Wire>
+    <Wire UId="127">
+      <IdentCon UId="49" />
+      <NameCon UId="74" Name="ALIEN_SPEED_ABS" />
+    </Wire>
+    <Wire UId="128">
+      <OpenCon UId="83" />
+      <NameCon UId="74" Name="TheseAreDoors" />
+    </Wire>
+    <Wire UId="129">
+      <IdentCon UId="50" />
+      <NameCon UId="74" Name="AU_TRGT" />
+    </Wire>
+    <Wire UId="130">
+      <IdentCon UId="51" />
+      <NameCon UId="74" Name="calibrated" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="52" />
+      <NameCon UId="74" Name="POS" />
+    </Wire>
+    <Wire UId="132">
+      <IdentCon UId="53" />
+      <NameCon UId="74" Name="ENC_RET_DATA" />
+    </Wire>
+    <Wire UId="133">
+      <NameCon UId="74" Name="AU_INPOS" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="134">
+      <NameCon UId="74" Name="FWD" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="135">
+      <NameCon UId="74" Name="REV" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="136">
+      <NameCon UId="74" Name="BRK_REL" />
+      <OpenCon UId="84" />
+    </Wire>
+    <Wire UId="137">
+      <NameCon UId="74" Name="SPEED_ABS" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="138">
+      <NameCon UId="74" Name="SPEED" />
+      <OpenCon UId="85" />
+    </Wire>
+    <Wire UId="139">
+      <NameCon UId="74" Name="BLIND" />
+      <OpenCon UId="86" />
+    </Wire>
+    <Wire UId="140">
+      <NameCon UId="74" Name="ER_FOLLOW" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="141">
+      <NameCon UId="74" Name="ER_SET" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="142">
+      <NameCon UId="74" Name="ER_FWD" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="143">
+      <NameCon UId="74" Name="ER_REV" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="144">
+      <NameCon UId="74" Name="er_ws" />
+      <IdentCon UId="62" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="63" />
+      <NameCon UId="76" Name="in" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="64" />
+      <NameCon UId="76" Name="operand" />
+    </Wire>
+    <Wire UId="147">
+      <IdentCon UId="65" />
+      <NameCon UId="77" Name="in" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="66" />
+      <NameCon UId="77" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <Access Scope="LocalVariable" UId="21">
+    <Symbol UId="22">
+      <Component Name="speed_V" UId="23" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="24" />
+  <Token Text=":=" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="LocalVariable" UId="27">
+    <Symbol UId="28">
+      <Component Name="speed" UId="29" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="30" />
+  <Token Text="/" UId="31" />
+  <Blank Num="1" UId="32" />
+  <Access Scope="LocalVariable" UId="33">
+    <Symbol UId="34">
+      <Component Name="max_speed_10V_p_mm" UId="35" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="36" />
+  <Token Text="*" UId="37" />
+  <Blank Num="1" UId="38" />
+  <Access Scope="LiteralConstant" UId="39">
+    <Constant UId="40">
+      <ConstantValue UId="42">10.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="43" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="speed_V" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="yaINTSPEED" />
+      </Symbol>
+    </Access>
+    <Call UId="23">
+      <CallInfo Name="f_ao_10V" BlockType="FC">
+        <Parameter Name="in 0.0-10.0" Section="Input" Type="Real" />
+        <Parameter Name="Ret_Val" Section="Return" Type="Int" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <OpenCon UId="24" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in 0.0-10.0" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="Ret_Val" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ER_0_root" />
+        <Component Name="ACK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="er_follow" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="er_set" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="ошибка_динамических_границ" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="er_fwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="er_rev" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="s_fwd_mechOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="OVERRIDE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="s_rev_mecOK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="OVERRIDE" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="er_params_mech" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="ER" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="ER_0_root" />
+        <Component Name="ACK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="calibrated" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>true</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="WN" />
+      </Symbol>
+    </Access>
+    <Part Name="O" UId="37">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="A" UId="38">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in1" />
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="A" UId="39">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in1" />
+      <Negated Name="in2" />
+    </Part>
+    <Call UId="40">
+      <CallInfo Name="ER_WORD" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="41">
+          <Component Name="ERDB" />
+        </Instance>
+        <Parameter Name="ignoreNewEr" Section="Input" Type="Bool" />
+        <Parameter Name="ak" Section="Input" Type="Bool" />
+        <Parameter Name="x0" Section="Input" Type="Bool" />
+        <Parameter Name="x1" Section="Input" Type="Bool" />
+        <Parameter Name="x2" Section="Input" Type="Bool" />
+        <Parameter Name="x3" Section="Input" Type="Bool" />
+        <Parameter Name="x4" Section="Input" Type="Bool" />
+        <Parameter Name="x5" Section="Input" Type="Bool" />
+        <Parameter Name="x6" Section="Input" Type="Bool" />
+        <Parameter Name="x7" Section="Input" Type="Bool" />
+        <Parameter Name="x8" Section="Input" Type="Bool" />
+        <Parameter Name="x9" Section="Input" Type="Bool" />
+        <Parameter Name="x10" Section="Input" Type="Bool" />
+        <Parameter Name="x11" Section="Input" Type="Bool" />
+        <Parameter Name="x12" Section="Input" Type="Bool" />
+        <Parameter Name="x13" Section="Input" Type="Bool" />
+        <Parameter Name="x14" Section="Input" Type="Bool" />
+        <Parameter Name="x15" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset0" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset1" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset2" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset3" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset4" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset5" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset6" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset7" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset8" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset9" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset10" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset11" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset12" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset13" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset14" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset15" Section="Input" Type="Bool" />
+        <Parameter Name="_w" Section="Output" Type="Word" />
+        <Parameter Name="er" Section="Output" Type="Bool" />
+        <Parameter Name="count" Section="Output" Type="Int" />
+        <Parameter Name="a_er[0]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[1]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[2]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[3]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[4]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[5]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[6]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[7]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[8]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[9]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[10]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[11]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[12]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[13]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[14]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[15]" Section="Output" Type="Bool" />
+      </CallInfo>
+    </Call>
+    <Call UId="42">
+      <CallInfo Name="ER_WORD" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="43">
+          <Component Name="WNDB" />
+        </Instance>
+        <Parameter Name="ignoreNewEr" Section="Input" Type="Bool" />
+        <Parameter Name="ak" Section="Input" Type="Bool" />
+        <Parameter Name="x0" Section="Input" Type="Bool" />
+        <Parameter Name="x1" Section="Input" Type="Bool" />
+        <Parameter Name="x2" Section="Input" Type="Bool" />
+        <Parameter Name="x3" Section="Input" Type="Bool" />
+        <Parameter Name="x4" Section="Input" Type="Bool" />
+        <Parameter Name="x5" Section="Input" Type="Bool" />
+        <Parameter Name="x6" Section="Input" Type="Bool" />
+        <Parameter Name="x7" Section="Input" Type="Bool" />
+        <Parameter Name="x8" Section="Input" Type="Bool" />
+        <Parameter Name="x9" Section="Input" Type="Bool" />
+        <Parameter Name="x10" Section="Input" Type="Bool" />
+        <Parameter Name="x11" Section="Input" Type="Bool" />
+        <Parameter Name="x12" Section="Input" Type="Bool" />
+        <Parameter Name="x13" Section="Input" Type="Bool" />
+        <Parameter Name="x14" Section="Input" Type="Bool" />
+        <Parameter Name="x15" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset0" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset1" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset2" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset3" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset4" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset5" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset6" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset7" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset8" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset9" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset10" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset11" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset12" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset13" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset14" Section="Input" Type="Bool" />
+        <Parameter Name="selfreset15" Section="Input" Type="Bool" />
+        <Parameter Name="_w" Section="Output" Type="Word" />
+        <Parameter Name="er" Section="Output" Type="Bool" />
+        <Parameter Name="count" Section="Output" Type="Int" />
+        <Parameter Name="a_er[0]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[1]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[2]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[3]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[4]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[5]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[6]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[7]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[8]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[9]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[10]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[11]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[12]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[13]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[14]" Section="Output" Type="Bool" />
+        <Parameter Name="a_er[15]" Section="Output" Type="Bool" />
+      </CallInfo>
+      <Negated Name="x0" />
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="139">
+      <IdentCon UId="23" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="140">
+      <IdentCon UId="24" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="141">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="40" Name="x1" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="27" />
+      <NameCon UId="38" Name="in1" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="28" />
+      <NameCon UId="38" Name="in2" />
+    </Wire>
+    <Wire UId="144">
+      <NameCon UId="38" Name="out" />
+      <NameCon UId="40" Name="x4" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="29" />
+      <NameCon UId="39" Name="in1" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="30" />
+      <NameCon UId="39" Name="in2" />
+    </Wire>
+    <Wire UId="147">
+      <NameCon UId="39" Name="out" />
+      <NameCon UId="40" Name="x5" />
+    </Wire>
+    <Wire UId="148">
+      <OpenCon UId="44" />
+      <NameCon UId="40" Name="en" />
+    </Wire>
+    <Wire UId="149">
+      <OpenCon UId="45" />
+      <NameCon UId="40" Name="ignoreNewEr" />
+    </Wire>
+    <Wire UId="150">
+      <IdentCon UId="21" />
+      <NameCon UId="40" Name="ak" />
+    </Wire>
+    <Wire UId="151">
+      <IdentCon UId="22" />
+      <NameCon UId="40" Name="x0" />
+    </Wire>
+    <Wire UId="152">
+      <IdentCon UId="25" />
+      <NameCon UId="40" Name="x2" />
+    </Wire>
+    <Wire UId="153">
+      <IdentCon UId="26" />
+      <NameCon UId="40" Name="x3" />
+    </Wire>
+    <Wire UId="154">
+      <IdentCon UId="31" />
+      <NameCon UId="40" Name="x6" />
+    </Wire>
+    <Wire UId="155">
+      <OpenCon UId="46" />
+      <NameCon UId="40" Name="x7" />
+    </Wire>
+    <Wire UId="156">
+      <OpenCon UId="47" />
+      <NameCon UId="40" Name="x8" />
+    </Wire>
+    <Wire UId="157">
+      <OpenCon UId="48" />
+      <NameCon UId="40" Name="x9" />
+    </Wire>
+    <Wire UId="158">
+      <OpenCon UId="49" />
+      <NameCon UId="40" Name="x10" />
+    </Wire>
+    <Wire UId="159">
+      <OpenCon UId="50" />
+      <NameCon UId="40" Name="x11" />
+    </Wire>
+    <Wire UId="160">
+      <OpenCon UId="51" />
+      <NameCon UId="40" Name="x12" />
+    </Wire>
+    <Wire UId="161">
+      <OpenCon UId="52" />
+      <NameCon UId="40" Name="x13" />
+    </Wire>
+    <Wire UId="162">
+      <OpenCon UId="53" />
+      <NameCon UId="40" Name="x14" />
+    </Wire>
+    <Wire UId="163">
+      <OpenCon UId="54" />
+      <NameCon UId="40" Name="x15" />
+    </Wire>
+    <Wire UId="164">
+      <OpenCon UId="55" />
+      <NameCon UId="40" Name="selfreset0" />
+    </Wire>
+    <Wire UId="165">
+      <OpenCon UId="56" />
+      <NameCon UId="40" Name="selfreset1" />
+    </Wire>
+    <Wire UId="166">
+      <OpenCon UId="57" />
+      <NameCon UId="40" Name="selfreset2" />
+    </Wire>
+    <Wire UId="167">
+      <OpenCon UId="58" />
+      <NameCon UId="40" Name="selfreset3" />
+    </Wire>
+    <Wire UId="168">
+      <OpenCon UId="59" />
+      <NameCon UId="40" Name="selfreset4" />
+    </Wire>
+    <Wire UId="169">
+      <OpenCon UId="60" />
+      <NameCon UId="40" Name="selfreset5" />
+    </Wire>
+    <Wire UId="170">
+      <OpenCon UId="61" />
+      <NameCon UId="40" Name="selfreset6" />
+    </Wire>
+    <Wire UId="171">
+      <OpenCon UId="62" />
+      <NameCon UId="40" Name="selfreset7" />
+    </Wire>
+    <Wire UId="172">
+      <OpenCon UId="63" />
+      <NameCon UId="40" Name="selfreset8" />
+    </Wire>
+    <Wire UId="173">
+      <OpenCon UId="64" />
+      <NameCon UId="40" Name="selfreset9" />
+    </Wire>
+    <Wire UId="174">
+      <OpenCon UId="65" />
+      <NameCon UId="40" Name="selfreset10" />
+    </Wire>
+    <Wire UId="175">
+      <OpenCon UId="66" />
+      <NameCon UId="40" Name="selfreset11" />
+    </Wire>
+    <Wire UId="176">
+      <OpenCon UId="67" />
+      <NameCon UId="40" Name="selfreset12" />
+    </Wire>
+    <Wire UId="177">
+      <OpenCon UId="68" />
+      <NameCon UId="40" Name="selfreset13" />
+    </Wire>
+    <Wire UId="178">
+      <OpenCon UId="69" />
+      <NameCon UId="40" Name="selfreset14" />
+    </Wire>
+    <Wire UId="179">
+      <OpenCon UId="70" />
+      <NameCon UId="40" Name="selfreset15" />
+    </Wire>
+    <Wire UId="180">
+      <NameCon UId="40" Name="_w" />
+      <OpenCon UId="71" />
+    </Wire>
+    <Wire UId="181">
+      <NameCon UId="40" Name="er" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="182">
+      <NameCon UId="40" Name="count" />
+      <OpenCon UId="72" />
+    </Wire>
+    <Wire UId="183">
+      <NameCon UId="40" Name="a_er[0]" />
+      <OpenCon UId="73" />
+    </Wire>
+    <Wire UId="184">
+      <NameCon UId="40" Name="a_er[1]" />
+      <OpenCon UId="74" />
+    </Wire>
+    <Wire UId="185">
+      <NameCon UId="40" Name="a_er[2]" />
+      <OpenCon UId="75" />
+    </Wire>
+    <Wire UId="186">
+      <NameCon UId="40" Name="a_er[3]" />
+      <OpenCon UId="76" />
+    </Wire>
+    <Wire UId="187">
+      <NameCon UId="40" Name="a_er[4]" />
+      <OpenCon UId="77" />
+    </Wire>
+    <Wire UId="188">
+      <NameCon UId="40" Name="a_er[5]" />
+      <OpenCon UId="78" />
+    </Wire>
+    <Wire UId="189">
+      <NameCon UId="40" Name="a_er[6]" />
+      <OpenCon UId="79" />
+    </Wire>
+    <Wire UId="190">
+      <NameCon UId="40" Name="a_er[7]" />
+      <OpenCon UId="80" />
+    </Wire>
+    <Wire UId="191">
+      <NameCon UId="40" Name="a_er[8]" />
+      <OpenCon UId="81" />
+    </Wire>
+    <Wire UId="192">
+      <NameCon UId="40" Name="a_er[9]" />
+      <OpenCon UId="82" />
+    </Wire>
+    <Wire UId="193">
+      <NameCon UId="40" Name="a_er[10]" />
+      <OpenCon UId="83" />
+    </Wire>
+    <Wire UId="194">
+      <NameCon UId="40" Name="a_er[11]" />
+      <OpenCon UId="84" />
+    </Wire>
+    <Wire UId="195">
+      <NameCon UId="40" Name="a_er[12]" />
+      <OpenCon UId="85" />
+    </Wire>
+    <Wire UId="196">
+      <NameCon UId="40" Name="a_er[13]" />
+      <OpenCon UId="86" />
+    </Wire>
+    <Wire UId="197">
+      <NameCon UId="40" Name="a_er[14]" />
+      <OpenCon UId="87" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="40" Name="a_er[15]" />
+      <OpenCon UId="88" />
+    </Wire>
+    <Wire UId="199">
+      <OpenCon UId="89" />
+      <NameCon UId="42" Name="en" />
+    </Wire>
+    <Wire UId="200">
+      <OpenCon UId="90" />
+      <NameCon UId="42" Name="ignoreNewEr" />
+    </Wire>
+    <Wire UId="201">
+      <IdentCon UId="33" />
+      <NameCon UId="42" Name="ak" />
+    </Wire>
+    <Wire UId="202">
+      <IdentCon UId="34" />
+      <NameCon UId="42" Name="x0" />
+    </Wire>
+    <Wire UId="203">
+      <OpenCon UId="91" />
+      <NameCon UId="42" Name="x1" />
+    </Wire>
+    <Wire UId="204">
+      <OpenCon UId="92" />
+      <NameCon UId="42" Name="x2" />
+    </Wire>
+    <Wire UId="205">
+      <OpenCon UId="93" />
+      <NameCon UId="42" Name="x3" />
+    </Wire>
+    <Wire UId="206">
+      <OpenCon UId="94" />
+      <NameCon UId="42" Name="x4" />
+    </Wire>
+    <Wire UId="207">
+      <OpenCon UId="95" />
+      <NameCon UId="42" Name="x5" />
+    </Wire>
+    <Wire UId="208">
+      <OpenCon UId="96" />
+      <NameCon UId="42" Name="x6" />
+    </Wire>
+    <Wire UId="209">
+      <OpenCon UId="97" />
+      <NameCon UId="42" Name="x7" />
+    </Wire>
+    <Wire UId="210">
+      <OpenCon UId="98" />
+      <NameCon UId="42" Name="x8" />
+    </Wire>
+    <Wire UId="211">
+      <OpenCon UId="99" />
+      <NameCon UId="42" Name="x9" />
+    </Wire>
+    <Wire UId="212">
+      <OpenCon UId="100" />
+      <NameCon UId="42" Name="x10" />
+    </Wire>
+    <Wire UId="213">
+      <OpenCon UId="101" />
+      <NameCon UId="42" Name="x11" />
+    </Wire>
+    <Wire UId="214">
+      <OpenCon UId="102" />
+      <NameCon UId="42" Name="x12" />
+    </Wire>
+    <Wire UId="215">
+      <OpenCon UId="103" />
+      <NameCon UId="42" Name="x13" />
+    </Wire>
+    <Wire UId="216">
+      <OpenCon UId="104" />
+      <NameCon UId="42" Name="x14" />
+    </Wire>
+    <Wire UId="217">
+      <OpenCon UId="105" />
+      <NameCon UId="42" Name="x15" />
+    </Wire>
+    <Wire UId="218">
+      <IdentCon UId="35" />
+      <NameCon UId="42" Name="selfreset0" />
+    </Wire>
+    <Wire UId="219">
+      <OpenCon UId="106" />
+      <NameCon UId="42" Name="selfreset1" />
+    </Wire>
+    <Wire UId="220">
+      <OpenCon UId="107" />
+      <NameCon UId="42" Name="selfreset2" />
+    </Wire>
+    <Wire UId="221">
+      <OpenCon UId="108" />
+      <NameCon UId="42" Name="selfreset3" />
+    </Wire>
+    <Wire UId="222">
+      <OpenCon UId="109" />
+      <NameCon UId="42" Name="selfreset4" />
+    </Wire>
+    <Wire UId="223">
+      <OpenCon UId="110" />
+      <NameCon UId="42" Name="selfreset5" />
+    </Wire>
+    <Wire UId="224">
+      <OpenCon UId="111" />
+      <NameCon UId="42" Name="selfreset6" />
+    </Wire>
+    <Wire UId="225">
+      <OpenCon UId="112" />
+      <NameCon UId="42" Name="selfreset7" />
+    </Wire>
+    <Wire UId="226">
+      <OpenCon UId="113" />
+      <NameCon UId="42" Name="selfreset8" />
+    </Wire>
+    <Wire UId="227">
+      <OpenCon UId="114" />
+      <NameCon UId="42" Name="selfreset9" />
+    </Wire>
+    <Wire UId="228">
+      <OpenCon UId="115" />
+      <NameCon UId="42" Name="selfreset10" />
+    </Wire>
+    <Wire UId="229">
+      <OpenCon UId="116" />
+      <NameCon UId="42" Name="selfreset11" />
+    </Wire>
+    <Wire UId="230">
+      <OpenCon UId="117" />
+      <NameCon UId="42" Name="selfreset12" />
+    </Wire>
+    <Wire UId="231">
+      <OpenCon UId="118" />
+      <NameCon UId="42" Name="selfreset13" />
+    </Wire>
+    <Wire UId="232">
+      <OpenCon UId="119" />
+      <NameCon UId="42" Name="selfreset14" />
+    </Wire>
+    <Wire UId="233">
+      <OpenCon UId="120" />
+      <NameCon UId="42" Name="selfreset15" />
+    </Wire>
+    <Wire UId="234">
+      <NameCon UId="42" Name="_w" />
+      <OpenCon UId="121" />
+    </Wire>
+    <Wire UId="235">
+      <NameCon UId="42" Name="er" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="236">
+      <NameCon UId="42" Name="count" />
+      <OpenCon UId="122" />
+    </Wire>
+    <Wire UId="237">
+      <NameCon UId="42" Name="a_er[0]" />
+      <OpenCon UId="123" />
+    </Wire>
+    <Wire UId="238">
+      <NameCon UId="42" Name="a_er[1]" />
+      <OpenCon UId="124" />
+    </Wire>
+    <Wire UId="239">
+      <NameCon UId="42" Name="a_er[2]" />
+      <OpenCon UId="125" />
+    </Wire>
+    <Wire UId="240">
+      <NameCon UId="42" Name="a_er[3]" />
+      <OpenCon UId="126" />
+    </Wire>
+    <Wire UId="241">
+      <NameCon UId="42" Name="a_er[4]" />
+      <OpenCon UId="127" />
+    </Wire>
+    <Wire UId="242">
+      <NameCon UId="42" Name="a_er[5]" />
+      <OpenCon UId="128" />
+    </Wire>
+    <Wire UId="243">
+      <NameCon UId="42" Name="a_er[6]" />
+      <OpenCon UId="129" />
+    </Wire>
+    <Wire UId="244">
+      <NameCon UId="42" Name="a_er[7]" />
+      <OpenCon UId="130" />
+    </Wire>
+    <Wire UId="245">
+      <NameCon UId="42" Name="a_er[8]" />
+      <OpenCon UId="131" />
+    </Wire>
+    <Wire UId="246">
+      <NameCon UId="42" Name="a_er[9]" />
+      <OpenCon UId="132" />
+    </Wire>
+    <Wire UId="247">
+      <NameCon UId="42" Name="a_er[10]" />
+      <OpenCon UId="133" />
+    </Wire>
+    <Wire UId="248">
+      <NameCon UId="42" Name="a_er[11]" />
+      <OpenCon UId="134" />
+    </Wire>
+    <Wire UId="249">
+      <NameCon UId="42" Name="a_er[12]" />
+      <OpenCon UId="135" />
+    </Wire>
+    <Wire UId="250">
+      <NameCon UId="42" Name="a_er[13]" />
+      <OpenCon UId="136" />
+    </Wire>
+    <Wire UId="251">
+      <NameCon UId="42" Name="a_er[14]" />
+      <OpenCon UId="137" />
+    </Wire>
+    <Wire UId="252">
+      <NameCon UId="42" Name="a_er[15]" />
+      <OpenCon UId="138" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="para" />
+        <Component Name="v_absoluteMax_LOGIC" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="v_absMax" />
+      </Symbol>
+    </Access>
+    <Part Name="Move" UId="23" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <OpenCon UId="24" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="out1" />
+      <IdentCon UId="22" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="hmiResetCalib" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="22">
+      <Constant>
+        <ConstantValue>T#5s</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="ENC_RET" />
+        <Component Name="calibrated" />
+      </Symbol>
+    </Access>
+    <Part Name="TON" Version="1.0" UId="24">
+      <Instance Scope="LocalVariable" UId="25">
+        <Component Name="IEC_Timer_0_Instance" />
+      </Instance>
+      <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+    </Part>
+    <Part Name="RCoil" UId="26" />
+  </Parts>
+  <Wires>
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="IN" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="PT" />
+    </Wire>
+    <Wire UId="30">
+      <NameCon UId="24" Name="ET" />
+      <OpenCon UId="27" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="24" Name="Q" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="3A" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="3B" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

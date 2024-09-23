@@ -1,0 +1,1503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="R_ALL" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="SwAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="AutoRuning" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Arrived" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="R_SeimAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="CLK_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="Q0_Auto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="q0_AutoWaiting" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q0_SemiAuto" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P1_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q1_Spot" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P2_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q2_Defect" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P3_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q3_Home" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P4_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q4_Load" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P5_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q5_Control1" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="P6_Control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q6_control2" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q99_none" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Q99_Any" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="memarrived" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="reset_Qs" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="last_button_stands_Instance" Datatype="&quot;last_button_stands&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="pt" Datatype="Time" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="safe1" Datatype="Bool" />
+          <Member Name="safe2" Datatype="Bool" />
+          <Member Name="safe3" Datatype="Bool" />
+          <Member Name="safe4" Datatype="Bool" />
+          <Member Name="safe5" Datatype="Bool" />
+          <Member Name="safe6" Datatype="Bool" />
+          <Member Name="safe7" Datatype="Bool" />
+          <Member Name="safe8" Datatype="Bool" />
+          <Member Name="none_selected" Datatype="Bool" />
+          <Member Name="change_trig" Datatype="Bool" />
+          <Member Name="reset_or_ch_or_none" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="B1" Datatype="Bool" />
+          <Member Name="B2" Datatype="Bool" />
+          <Member Name="B3" Datatype="Bool" />
+          <Member Name="B4" Datatype="Bool" />
+          <Member Name="B5" Datatype="Bool" />
+          <Member Name="B6" Datatype="Bool" />
+          <Member Name="B7" Datatype="Bool" />
+          <Member Name="B8" Datatype="Bool" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="t" Datatype="Array[1..8] of R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+          <Member Name="B" Datatype="Array[1..8] of Bool" />
+          <Member Name="S" Datatype="Array[1..8] of Bool" />
+          <Member Name="tp" Datatype="&quot;tp_peter&quot;">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+                <Member Name="pt" Datatype="Time" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="was" Datatype="Bool" />
+                <Member Name="ton" Datatype="TON_TIME" Version="1.0">
+                  <Sections>
+                    <Section Name="None">
+                      <Member Name="PT" Datatype="Time" />
+                      <Member Name="ET" Datatype="Time" />
+                      <Member Name="IN" Datatype="Bool" />
+                      <Member Name="Q" Datatype="Bool" />
+                    </Section>
+                  </Sections>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Q_integer" Datatype="Int" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="trDefect" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="trSpot" Datatype="R_TRIG" Version="1.0" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="CLK" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="Q" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="Stat_Bit" Datatype="Bool" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_Spot" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_Defect" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuHome" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsu_load" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuControl1" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="bsuControl2" Datatype="&quot;_ML2_ts_block1_subunit&quot;" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input">
+          <Member Name="Q_mine" Datatype="Int" />
+          <Member Name="Reset_all" Datatype="Bool" />
+          <Member Name="CLK_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="Output">
+          <Member Name="P_flag" Datatype="Bool" />
+          <Member Name="Q_flag" Datatype="Bool" />
+        </Section>
+        <Section Name="InOut">
+          <Member Name="Q_INT" Datatype="Int" />
+        </Section>
+        <Section Name="Static">
+          <Member Name="tr" Datatype="R_TRIG" Version="1.0">
+            <Sections>
+              <Section Name="Input">
+                <Member Name="CLK" Datatype="Bool" />
+              </Section>
+              <Section Name="Output">
+                <Member Name="Q" Datatype="Bool" />
+              </Section>
+              <Section Name="InOut" />
+              <Section Name="Static">
+                <Member Name="Stat_Bit" Datatype="Bool" />
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="Qi0_off" Datatype="Int" Accessibility="Public">
+      <StartValue>0</StartValue>
+    </Member>
+    <Member Name="Qi1_Spot" Datatype="Int" Accessibility="Public">
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="Qi2_Defect" Datatype="Int" Accessibility="Public">
+      <StartValue>2</StartValue>
+    </Member>
+    <Member Name="Qi3Home" Datatype="Int" Accessibility="Public">
+      <StartValue>3</StartValue>
+    </Member>
+    <Member Name="Qi4Load" Datatype="Int" Accessibility="Public">
+      <StartValue>4</StartValue>
+    </Member>
+    <Member Name="Qi5Control1" Datatype="Int" Accessibility="Public">
+      <StartValue>5</StartValue>
+    </Member>
+    <Member Name="Qi6Control2" Datatype="Int" Accessibility="Public">
+      <StartValue>6</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>_ML2_ts_block1</Name>
+      <Namespace />
+      <Number>49</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="R_ALL" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="AutoRuning" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="SwAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Q0_Auto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="R_ALL" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="AutoRuning" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="SwAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="q0_AutoWaiting" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="R_ALL" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="Arrived" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="memarrived" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="SwAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="33">
+      <Symbol>
+        <Component Name="R_SeimAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="34">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="35">
+      <Constant Name="Qi0_off" />
+    </Access>
+    <Access Scope="LocalVariable" UId="36">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="37">
+      <Constant Name="Qi1_Spot" />
+    </Access>
+    <Access Scope="LocalVariable" UId="38">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="39">
+      <Symbol>
+        <Component Name="CLK_Spot" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="40">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="41">
+      <Symbol>
+        <Component Name="P1_Spot" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="42">
+      <Symbol>
+        <Component Name="Q1_Spot" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="43">
+      <Constant Name="Qi2_Defect" />
+    </Access>
+    <Access Scope="LocalVariable" UId="44">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="45">
+      <Symbol>
+        <Component Name="CLK_Defect" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="46">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="47">
+      <Symbol>
+        <Component Name="P2_Defect" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="48">
+      <Symbol>
+        <Component Name="Q2_Defect" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="49">
+      <Constant Name="Qi3Home" />
+    </Access>
+    <Access Scope="LocalVariable" UId="50">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="51">
+      <Symbol>
+        <Component Name="CLK_Home" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="52">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="53">
+      <Symbol>
+        <Component Name="P3_Home" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="54">
+      <Symbol>
+        <Component Name="Q3_Home" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="55">
+      <Constant Name="Qi4Load" />
+    </Access>
+    <Access Scope="LocalVariable" UId="56">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="57">
+      <Symbol>
+        <Component Name="CLK_Load" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="58">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="59">
+      <Symbol>
+        <Component Name="P4_Load" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="60">
+      <Symbol>
+        <Component Name="Q4_Load" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="61">
+      <Constant Name="Qi5Control1" />
+    </Access>
+    <Access Scope="LocalVariable" UId="62">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="63">
+      <Symbol>
+        <Component Name="CLK_Control1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="64">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="65">
+      <Symbol>
+        <Component Name="P5_Control1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="66">
+      <Symbol>
+        <Component Name="Q5_Control1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalConstant" UId="67">
+      <Constant Name="Qi6Control2" />
+    </Access>
+    <Access Scope="LocalVariable" UId="68">
+      <Symbol>
+        <Component Name="reset_Qs" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="69">
+      <Symbol>
+        <Component Name="CLK_Control2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="70">
+      <Symbol>
+        <Component Name="Q_integer" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="71">
+      <Symbol>
+        <Component Name="P6_Control2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="72">
+      <Symbol>
+        <Component Name="Q6_control2" />
+      </Symbol>
+    </Access>
+    <Part Name="A" UId="73">
+      <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+      <Negated Name="in1" />
+    </Part>
+    <Part Name="Coil" UId="74" />
+    <Part Name="A" UId="75">
+      <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+      <Negated Name="in1" />
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="Coil" UId="76" />
+    <Part Name="PBox" UId="77" />
+    <Part Name="O" UId="78">
+      <TemplateValue Name="Card" Type="Cardinality">4</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="79" />
+    <Part Name="Move" UId="80" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Call UId="81">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="82">
+          <Component Name="bsu_Spot" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+    <Call UId="83">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="84">
+          <Component Name="bsu_Defect" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+    <Call UId="85">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="86">
+          <Component Name="bsuHome" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+    <Call UId="87">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="88">
+          <Component Name="bsu_load" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+    <Call UId="89">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="90">
+          <Component Name="bsuControl1" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+    <Call UId="91">
+      <CallInfo Name="_ML2_ts_block1_subunit" BlockType="FB">
+        <Instance Scope="LocalVariable" UId="92">
+          <Component Name="bsuControl2" />
+        </Instance>
+        <Parameter Name="Q_mine" Section="Input" Type="Int" />
+        <Parameter Name="Reset_all" Section="Input" Type="Bool" />
+        <Parameter Name="CLK_flag" Section="Input" Type="Bool" />
+        <Parameter Name="P_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_flag" Section="Output" Type="Bool" />
+        <Parameter Name="Q_INT" Section="InOut" Type="Int" />
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="99">
+      <IdentCon UId="21" />
+      <NameCon UId="73" Name="in1" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="22" />
+      <NameCon UId="73" Name="in2" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="23" />
+      <NameCon UId="73" Name="in3" />
+    </Wire>
+    <Wire UId="102">
+      <NameCon UId="73" Name="out" />
+      <NameCon UId="74" Name="in" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="24" />
+      <NameCon UId="74" Name="operand" />
+    </Wire>
+    <Wire UId="104">
+      <IdentCon UId="25" />
+      <NameCon UId="75" Name="in1" />
+    </Wire>
+    <Wire UId="105">
+      <IdentCon UId="26" />
+      <NameCon UId="75" Name="in2" />
+    </Wire>
+    <Wire UId="106">
+      <IdentCon UId="27" />
+      <NameCon UId="75" Name="in3" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="75" Name="out" />
+      <NameCon UId="76" Name="in" />
+    </Wire>
+    <Wire UId="108">
+      <IdentCon UId="28" />
+      <NameCon UId="76" Name="operand" />
+    </Wire>
+    <Wire UId="109">
+      <IdentCon UId="30" />
+      <NameCon UId="77" Name="in" />
+    </Wire>
+    <Wire UId="110">
+      <IdentCon UId="31" />
+      <NameCon UId="77" Name="bit" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="77" Name="out" />
+      <NameCon UId="78" Name="in2" />
+    </Wire>
+    <Wire UId="112">
+      <IdentCon UId="29" />
+      <NameCon UId="78" Name="in1" />
+    </Wire>
+    <Wire UId="113">
+      <IdentCon UId="32" />
+      <NameCon UId="78" Name="in3" />
+    </Wire>
+    <Wire UId="114">
+      <IdentCon UId="33" />
+      <NameCon UId="78" Name="in4" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="78" Name="out" />
+      <NameCon UId="79" Name="in" />
+    </Wire>
+    <Wire UId="116">
+      <IdentCon UId="34" />
+      <NameCon UId="79" Name="operand" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="79" Name="out" />
+      <NameCon UId="80" Name="en" />
+    </Wire>
+    <Wire UId="118">
+      <IdentCon UId="35" />
+      <NameCon UId="80" Name="in" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="80" Name="out1" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="120">
+      <OpenCon UId="93" />
+      <NameCon UId="81" Name="en" />
+    </Wire>
+    <Wire UId="121">
+      <IdentCon UId="37" />
+      <NameCon UId="81" Name="Q_mine" />
+    </Wire>
+    <Wire UId="122">
+      <IdentCon UId="38" />
+      <NameCon UId="81" Name="Reset_all" />
+    </Wire>
+    <Wire UId="123">
+      <IdentCon UId="39" />
+      <NameCon UId="81" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="124">
+      <IdentCon UId="40" />
+      <NameCon UId="81" Name="Q_INT" />
+    </Wire>
+    <Wire UId="125">
+      <NameCon UId="81" Name="P_flag" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="81" Name="Q_flag" />
+      <IdentCon UId="42" />
+    </Wire>
+    <Wire UId="127">
+      <OpenCon UId="94" />
+      <NameCon UId="83" Name="en" />
+    </Wire>
+    <Wire UId="128">
+      <IdentCon UId="43" />
+      <NameCon UId="83" Name="Q_mine" />
+    </Wire>
+    <Wire UId="129">
+      <IdentCon UId="44" />
+      <NameCon UId="83" Name="Reset_all" />
+    </Wire>
+    <Wire UId="130">
+      <IdentCon UId="45" />
+      <NameCon UId="83" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="46" />
+      <NameCon UId="83" Name="Q_INT" />
+    </Wire>
+    <Wire UId="132">
+      <NameCon UId="83" Name="P_flag" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="133">
+      <NameCon UId="83" Name="Q_flag" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="134">
+      <OpenCon UId="95" />
+      <NameCon UId="85" Name="en" />
+    </Wire>
+    <Wire UId="135">
+      <IdentCon UId="49" />
+      <NameCon UId="85" Name="Q_mine" />
+    </Wire>
+    <Wire UId="136">
+      <IdentCon UId="50" />
+      <NameCon UId="85" Name="Reset_all" />
+    </Wire>
+    <Wire UId="137">
+      <IdentCon UId="51" />
+      <NameCon UId="85" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="138">
+      <IdentCon UId="52" />
+      <NameCon UId="85" Name="Q_INT" />
+    </Wire>
+    <Wire UId="139">
+      <NameCon UId="85" Name="P_flag" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="140">
+      <NameCon UId="85" Name="Q_flag" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="141">
+      <OpenCon UId="96" />
+      <NameCon UId="87" Name="en" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="55" />
+      <NameCon UId="87" Name="Q_mine" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="56" />
+      <NameCon UId="87" Name="Reset_all" />
+    </Wire>
+    <Wire UId="144">
+      <IdentCon UId="57" />
+      <NameCon UId="87" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="58" />
+      <NameCon UId="87" Name="Q_INT" />
+    </Wire>
+    <Wire UId="146">
+      <NameCon UId="87" Name="P_flag" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="147">
+      <NameCon UId="87" Name="Q_flag" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="148">
+      <OpenCon UId="97" />
+      <NameCon UId="89" Name="en" />
+    </Wire>
+    <Wire UId="149">
+      <IdentCon UId="61" />
+      <NameCon UId="89" Name="Q_mine" />
+    </Wire>
+    <Wire UId="150">
+      <IdentCon UId="62" />
+      <NameCon UId="89" Name="Reset_all" />
+    </Wire>
+    <Wire UId="151">
+      <IdentCon UId="63" />
+      <NameCon UId="89" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="152">
+      <IdentCon UId="64" />
+      <NameCon UId="89" Name="Q_INT" />
+    </Wire>
+    <Wire UId="153">
+      <NameCon UId="89" Name="P_flag" />
+      <IdentCon UId="65" />
+    </Wire>
+    <Wire UId="154">
+      <NameCon UId="89" Name="Q_flag" />
+      <IdentCon UId="66" />
+    </Wire>
+    <Wire UId="155">
+      <OpenCon UId="98" />
+      <NameCon UId="91" Name="en" />
+    </Wire>
+    <Wire UId="156">
+      <IdentCon UId="67" />
+      <NameCon UId="91" Name="Q_mine" />
+    </Wire>
+    <Wire UId="157">
+      <IdentCon UId="68" />
+      <NameCon UId="91" Name="Reset_all" />
+    </Wire>
+    <Wire UId="158">
+      <IdentCon UId="69" />
+      <NameCon UId="91" Name="CLK_flag" />
+    </Wire>
+    <Wire UId="159">
+      <IdentCon UId="70" />
+      <NameCon UId="91" Name="Q_INT" />
+    </Wire>
+    <Wire UId="160">
+      <NameCon UId="91" Name="P_flag" />
+      <IdentCon UId="71" />
+    </Wire>
+    <Wire UId="161">
+      <NameCon UId="91" Name="Q_flag" />
+      <IdentCon UId="72" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="Q1_Spot" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Q2_Defect" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Q3_Home" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Q5_Control1" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="Q6_control2" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="Q4_Load" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="Q0_SemiAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="Q0_Auto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="Q0_SemiAuto" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="Q99_Any" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="q0_AutoWaiting" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="32">
+      <Symbol>
+        <Component Name="Q99_none" />
+      </Symbol>
+    </Access>
+    <Part Name="O" UId="33">
+      <TemplateValue Name="Card" Type="Cardinality">6</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="34" />
+    <Part Name="O" UId="35">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="36">
+      <Negated Name="out" />
+    </Part>
+    <Part Name="A" UId="37">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <Negated Name="in2" />
+    </Part>
+    <Part Name="Coil" UId="38" />
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="in3" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="in4" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="in5" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="in6" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="in1" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="29" />
+      <NameCon UId="35" Name="in2" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="30" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="31" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="32" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="17" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="18" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V18" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="AckEr" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="UseArtLimitw" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="artLimfwd" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="artLimRev" Datatype="Real" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="para_in" Datatype="&quot;typeMotPara&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="para_Artlimits" Datatype="&quot;typeMotPara&quot;" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="t_acc_50Hz_USER" Datatype="Real" />
+          <Member Name="v_absoluteMax_LOGIC" Datatype="Real" />
+          <Member Name="dist_absMax_LOGIC" Datatype="Real" />
+          <Member Name="v_crawl_USER" Datatype="Real" />
+          <Member Name="dist_crawl_USER" Datatype="Real" />
+          <Member Name="dist_stop_USER" Datatype="Real" />
+          <Member Name="dist_auto_done_LOGIC" Datatype="Real" />
+          <Member Name="pos_calib_USER" Datatype="Real" />
+          <Member Name="pos_lim_fwd_USER" Datatype="Real" />
+          <Member Name="pos_lim_rev_USER" Datatype="Real" />
+          <Member Name="v_blind_USER" Datatype="Real" />
+          <Member Name="v_manual_USER" Datatype="Real" />
+          <Member Name="v_auto_USER" Datatype="Real" />
+          <Member Name="t_er" Datatype="Time" />
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="ER_WS" Datatype="WString" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ER" Datatype="Bool" Remanence="NonRetain" Accessibility="Public">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static" />
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="ER_WSlimfwdrev" Datatype="WString" Accessibility="Public">
+      <StartValue>WSTRING#'art lim rev&gt;fwd'</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>artLimiter</Name>
+      <Namespace />
+      <Number>73</Number>
+      <ProgrammingLanguage>FBD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="AckEr" />
+      </Symbol>
+    </Access>
+    <Access Scope="TypedConstant" UId="22">
+      <Constant>
+        <ConstantValue>WSTRING#''</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="ER_WS" />
+      </Symbol>
+    </Access>
+    <Part Name="S_Move" UId="24" DisabledENO="true" />
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="24" Name="out" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <Access Scope="LocalVariable" UId="22">
+    <Symbol UId="23">
+      <Component Name="para_Artlimits" UId="24" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="25" />
+  <Token Text=":=" UId="26" />
+  <Blank Num="1" UId="27" />
+  <Access Scope="LocalVariable" UId="28">
+    <Symbol UId="29">
+      <Component Name="para_in" UId="30" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="31" />
+  <NewLine Num="1" UId="32" />
+  <Access Scope="LocalVariable" UId="33">
+    <Symbol UId="34">
+      <Component Name="ER" UId="35" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="36" />
+  <Token Text=":=" UId="37" />
+  <Blank Num="1" UId="38" />
+  <Access Scope="LiteralConstant" UId="39">
+    <Constant UId="40">
+      <ConstantValue UId="42">false</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="43" />
+  <NewLine Num="1" UId="44" />
+  <Token Text="IF" UId="45" />
+  <Blank Num="1" UId="46" />
+  <Access Scope="LocalVariable" UId="47">
+    <Symbol UId="48">
+      <Component Name="artLimfwd" UId="49" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="50" />
+  <Token Text="&lt;" UId="51" />
+  <Blank Num="1" UId="52" />
+  <Access Scope="LocalVariable" UId="53">
+    <Symbol UId="54">
+      <Component Name="artLimRev" UId="55" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="56" />
+  <Token Text="THEN" UId="57" />
+  <NewLine Num="1" UId="58" />
+  <Blank Num="4" UId="59" />
+  <Access Scope="LocalVariable" UId="60">
+    <Symbol UId="61">
+      <Component Name="ER_WS" UId="62" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="63" />
+  <Token Text=":=" UId="64" />
+  <Blank Num="1" UId="65" />
+  <Access Scope="LocalConstant" UId="66">
+    <Constant Name="ER_WSlimfwdrev" UId="67" />
+  </Access>
+  <Token Text=";" UId="70" />
+  <NewLine Num="1" UId="71" />
+  <Blank Num="4" UId="72" />
+  <Access Scope="LocalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="ER" UId="75" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="76" />
+  <Token Text=":=" UId="77" />
+  <Blank Num="1" UId="78" />
+  <Access Scope="LiteralConstant" UId="79">
+    <Constant UId="80">
+      <ConstantValue UId="82">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="83" />
+  <NewLine Num="1" UId="84" />
+  <Token Text="ELSIF" UId="85" />
+  <Blank Num="1" UId="86" />
+  <Access Scope="LocalVariable" UId="87">
+    <Symbol UId="88">
+      <Component Name="UseArtLimitw" UId="89" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="90" />
+  <Token Text="THEN" UId="91" />
+  <NewLine Num="1" UId="92" />
+  <Blank Num="4" UId="93" />
+  <Access Scope="LocalVariable" UId="94">
+    <Symbol UId="95">
+      <Component Name="para_Artlimits" UId="96" />
+      <Token Text="." UId="97" />
+      <Component Name="pos_lim_fwd_USER" UId="98" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="99" />
+  <Token Text=":=" UId="100" />
+  <Blank Num="1" UId="101" />
+  <Access Scope="Call" UId="102">
+    <Instruction Name="MIN" UId="103">
+      <Token Text="(" UId="104" />
+      <Parameter Name="IN1" UId="105">
+        <Blank Num="1" UId="106" />
+        <Token Text=":=" UId="107" />
+        <Blank Num="1" UId="108" />
+        <Access Scope="LocalVariable" UId="109">
+          <Symbol UId="110">
+            <Component Name="para_in" UId="111" />
+            <Token Text="." UId="112" />
+            <Component Name="pos_lim_fwd_USER" UId="113" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="114" />
+      <Blank Num="1" UId="115" />
+      <Parameter Name="IN2" UId="116">
+        <Blank Num="1" UId="117" />
+        <Token Text=":=" UId="118" />
+        <Blank Num="1" UId="119" />
+        <Access Scope="LocalVariable" UId="120">
+          <Symbol UId="121">
+            <Component Name="artLimfwd" UId="122" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="124" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="125" />
+  <NewLine Num="1" UId="126" />
+  <Blank Num="4" UId="127" />
+  <Access Scope="LocalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="para_Artlimits" UId="130" />
+      <Token Text="." UId="131" />
+      <Component Name="pos_lim_rev_USER" UId="132" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="133" />
+  <Token Text=":=" UId="134" />
+  <Blank Num="1" UId="135" />
+  <Access Scope="Call" UId="136">
+    <Instruction Name="MAX" UId="137">
+      <Token Text="(" UId="138" />
+      <Parameter Name="IN1" UId="139">
+        <Blank Num="1" UId="140" />
+        <Token Text=":=" UId="141" />
+        <Blank Num="1" UId="142" />
+        <Access Scope="LocalVariable" UId="143">
+          <Symbol UId="144">
+            <Component Name="para_in" UId="145" />
+            <Token Text="." UId="146" />
+            <Component Name="pos_lim_rev_USER" UId="147" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="148" />
+      <Blank Num="1" UId="149" />
+      <Parameter Name="IN2" UId="150">
+        <Blank Num="1" UId="151" />
+        <Token Text=":=" UId="152" />
+        <Blank Num="1" UId="153" />
+        <Access Scope="LocalVariable" UId="154">
+          <Symbol UId="155">
+            <Component Name="artLimRev" UId="156" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="158" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="159" />
+  <NewLine Num="1" UId="160" />
+  <Token Text="END_IF" UId="161" />
+  <Token Text=";" UId="162" />
+  <NewLine Num="1" UId="163" />
+  <Blank Num="4" UId="164" />
+  <NewLine Num="1" UId="165" />
+  <Blank Num="4" UId="166" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="D" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="E" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

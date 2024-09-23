@@ -1,0 +1,60 @@
+﻿FUNCTION_BLOCK "TRIG_MULTI"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_INPUT 
+      IN : Bool;
+      allowed_on : Bool := TRUE;
+      allowed_change : Bool := TRUE;
+   END_VAR
+
+   VAR_OUTPUT 
+      P : Bool;
+      N : Bool;
+      changed : Bool;
+   END_VAR
+
+   VAR_IN_OUT 
+      SR : Bool;
+      RS : Bool;
+      S : Bool;
+      R : Bool;
+      INVERT : Bool;
+   END_VAR
+
+   VAR 
+      tr : "P_TRIG";
+      tr_al : "P_TRIG";
+   END_VAR
+
+
+BEGIN
+	
+	#tr(IN:=#IN );
+	#tr_al(IN := #allowed_on);
+	#P := #tr.P AND #allowed_on;
+	IF #P AND #allowed_change THEN
+	    #SR := true;
+	    #RS := false;
+	    #S := true;
+	    #INVERT := NOT #INVERT;
+	END_IF;
+	
+	IF #tr.N AND #allowed_change THEN
+	    #SR := false;
+	    #RS := true;
+	    
+	    #R := false;
+	END_IF;
+	
+	IF #tr_al.N AND #allowed_change THEN
+	    #SR := false;
+	    #RS := true;
+	    #R := false;
+	    #INVERT := false;
+	END_IF;
+	
+	#N := #tr_al.N OR #tr.N;
+	
+	#changed := #tr.N OR #tr.P;
+END_FUNCTION_BLOCK
+
